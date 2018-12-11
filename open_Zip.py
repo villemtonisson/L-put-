@@ -8,7 +8,7 @@ file_name = "pakk.zip"
 # opening the zip file in READ mode 
 with ZipFile(file_name, 'r') as zip: 
     # printing all the contents of the zip file 
-  #  zip.printdir() 
+    #  zip.printdir() 
     print(zip.namelist())
     zip.extract('2016-10-02_13-31-39_0.txt')
     # extracting all the files 
