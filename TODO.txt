@@ -1,0 +1,5 @@
+ZIP x
+RAR x
+7Z
+Tar
+TarGZ
