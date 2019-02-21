@@ -1,0 +1,49 @@
+[
+    {
+        "view_id": "OutlineView",
+        "sequence": "ShowView",
+        "time": "2016-12-21T21:59:45.611746",
+        "view_class": "OutlineView"
+    },
+    {
+        "editor_class": "Editor",
+        "text_widget_id": 82500400,
+        "time": "2016-12-21T21:59:45.620746",
+        "editor_id": 43072976,
+        "text_widget_class": "CodeViewText",
+        "sequence": "EditorTextCreated"
+    },
+    {
+        "index2": "2.0",
+        "text_widget_id": 82500400,
+        "time": "2016-12-21T21:59:45.620746",
+        "text_widget_class": "CodeViewText",
+        "index1": "1.0",
+        "sequence": "TextDelete"
+    },
+    {
+        "tags": "()",
+        "text": "def rek_abs(sisend):\n    v\u00e4ljund=[]\n    \n    for i in (sisend):\n        if type(i)==list:\n            v\u00e4ljund.append(rek_abs(i))\n        else:\n            v\u00e4ljund.append(abs(i))\n    return(v\u00e4ljund)\n            \nprint(rek_abs([2,-6, [8,-12,-12, [4, [-6], -3]], 7, [3.55, -3.55]]))",
+        "text_widget_id": 82500400,
+        "time": "2016-12-21T21:59:45.633747",
+        "index": "1.0",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-12-21T21:59:45.670749",
+        "tags": "('toplevel', 'prompt')",
+        "text": ">>> ",
+        "text_widget_id": 43018672,
+        "text_widget_context": "shell",
+        "index": "1.0",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText"
+    },
+    {
+        "widget_class": "Workbench",
+        "widget_id": 42943536,
+        "time": "2016-12-21T21:59:45.671749",
+        "sequence": "<FocusIn>"
+    }
+]

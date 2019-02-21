@@ -1,0 +1,670 @@
+[
+    {
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:28:13.155695",
+        "sequence": "EditorTextCreated",
+        "text_widget_id": 81926256,
+        "editor_id": 17968336
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index2": "2.0",
+        "index1": "1.0",
+        "time": "2016-11-26T12:28:13.155695",
+        "sequence": "TextDelete",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "from urllib.request import urlopen\nfrom html.parser import HTMLParser\nimport matplotlib.pyplot as plt\n\n##Kuulutan v\u00e4lja klassi, mille abil \u00f5iged andmed veebilehelt saada\nclass MyHTMLParser(HTMLParser):\n    \n    def __init__(self):\n        HTMLParser.__init__(self)\n        self.andmed=[]\n        self.l\u00f5putag=None\n        self.algustag=None\n    def handle_starttag(self, tag, attrs):\n        if tag==\"td\" and attrs == []:\n            self.algustag=\"td\"\n\n    def handle_endtag(self, tag):\n        if tag==\"td\":\n            self.l\u00f5putag=\"td\"\n    \n    def handle_data(self, data):\n        if self.algustag==\"td\" and self.l\u00f5putag==\"td\":\n            self.andmed.append(data.strip())\n            self.algustag=\"\"\n            self.l\u00f5putag=\"\"\n\n##Loen lehek\u00fcljelt info sisse\nf = urlopen(\"http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_Dinov_020108_HeightsWeights\")\nlehek\u00fclje_sisu = f.read().decode(\"UTF-8\")\nf.close()\n\n##HTMLParseriga loen info kahte listi\nparser = MyHTMLParser()\nparser.feed(lehek\u00fclje_sisu)\nandmed=parser.andmed\npikkused=[]\nkaalud=[]\nfor i, data in enumerate(andmed):\n    if (i+1)%3==2:\n        pikkused.append(float(data))\n    elif (i+1)%3==0:\n        kaalud.append(float(data))\n\n##Matplotlibiga joonistamine\nfig = plt.figure()\nax = fig.add_subplot(1,1,1)\nax.hist(pikkused, 11)\nax.set_xlabel(\"Pikkused\")\n\nfig2 = plt.figure()\nax2 = fig2.add_subplot(1, 1 ,1)\nax2.hist(kaalud, 9)\nax2.set_xlabel(\"Kaalud\")\n\nfig3=plt.figure()\nax3=fig3.add_subplot(1,1,1)\nax3.scatter(pikkused, kaalud)\nax3.set_xlabel(\"Pikkused\")\nax3.set_ylabel(\"Kaalud\")\n\nfig.show()\nfig2.show()\nfig3.show()\n\n\n\n",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:28:13.169696",
+        "index": "1.0",
+        "tags": "()",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "time": "2016-11-26T12:28:13.236700",
+        "index": "1.0",
+        "tags": "('toplevel', 'prompt')",
+        "sequence": "TextInsert",
+        "text_widget_id": 17412432
+    },
+    {
+        "widget_id": 17798288,
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "time": "2016-11-26T12:28:13.236700"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:28:14.494772",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index2": "2.0",
+        "index1": "1.4",
+        "time": "2016-11-26T12:28:16.515887",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "text_widget_id": 17412432
+    },
+    {
+        "text": "%Run Histogramm.py\n",
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "time": "2016-11-26T12:28:16.516887",
+        "index": "1.4",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "sequence": "TextInsert",
+        "text_widget_id": 17412432
+    },
+    {
+        "command_text": "%Run Histogramm.py\n",
+        "time": "2016-11-26T12:28:16.635894",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2016-11-26T12:28:16.635894",
+        "sequence": "Command",
+        "denied": "False",
+        "command_id": "run_current_script"
+    },
+    {
+        "widget_id": 17798288,
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "time": "2016-11-26T12:28:18.886023"
+    },
+    {
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "time": "2016-11-26T12:28:19.340049",
+        "index": "2.0",
+        "tags": "('toplevel', 'prompt')",
+        "sequence": "TextInsert",
+        "text_widget_id": 17412432
+    },
+    {
+        "widget_id": 17798288,
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "time": "2016-11-26T12:29:36.862483"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:36.863483",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:39.263620",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:45.871998",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "#",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:46.389028",
+        "index": "61.0",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:46.809052",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "#",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:47.133070",
+        "index": "62.0",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:47.459089",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "#",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:47.765106",
+        "index": "63.0",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:48.143128",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "\n",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:48.885170",
+        "index": "63.12",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:48.888171",
+        "index": "64.0",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "p",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:49.741219",
+        "index": "64.0",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "r",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:49.933230",
+        "index": "64.1",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "i",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:50.069238",
+        "index": "64.2",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "n",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:50.149243",
+        "index": "64.3",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "t",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:50.205246",
+        "index": "64.4",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "(",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:50.421258",
+        "index": "64.5",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": ")",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:50.517264",
+        "index": "64.6",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "l",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:51.573324",
+        "index": "64.6",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "h",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:51.821338",
+        "index": "64.7",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "e",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:51.933345",
+        "index": "64.8",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index2": "None",
+        "index1": "64.8",
+        "time": "2016-11-26T12:29:52.693388",
+        "sequence": "TextDelete",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index2": "None",
+        "index1": "64.7",
+        "time": "2016-11-26T12:29:52.852397",
+        "sequence": "TextDelete",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "e",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:52.973404",
+        "index": "64.7",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "h",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:53.069410",
+        "index": "64.8",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "e",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:53.197417",
+        "index": "64.9",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "k",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:53.997463",
+        "index": "64.10",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "\u00fc",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:54.461489",
+        "index": "64.11",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "l",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:54.709504",
+        "index": "64.12",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "j",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:54.988520",
+        "index": "64.13",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "e",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:55.132528",
+        "index": "64.14",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "_",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:55.508549",
+        "index": "64.15",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "s",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:55.788565",
+        "index": "64.16",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "i",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:55.884571",
+        "index": "64.17",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "s",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:56.004578",
+        "index": "64.18",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text": "u",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:29:56.132585",
+        "index": "64.19",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "editor_class": "Editor",
+        "time": "2016-11-26T12:29:56.683616",
+        "sequence": "Save",
+        "text_widget_id": 81926256,
+        "editor_id": 17968336
+    },
+    {
+        "time": "2016-11-26T12:29:56.686617",
+        "sequence": "Command",
+        "denied": "False",
+        "command_id": "save_file"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index2": "3.0",
+        "index1": "2.4",
+        "time": "2016-11-26T12:29:57.043637",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "text_widget_id": 17412432
+    },
+    {
+        "text": "%Run Histogramm.py\n",
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "time": "2016-11-26T12:29:57.043637",
+        "index": "2.4",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "sequence": "TextInsert",
+        "text_widget_id": 17412432
+    },
+    {
+        "command_text": "%Run Histogramm.py\n",
+        "time": "2016-11-26T12:29:57.180645",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2016-11-26T12:29:57.180645",
+        "sequence": "Command",
+        "denied": "False",
+        "command_id": "run_current_script"
+    },
+    {
+        "widget_id": 17798288,
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "time": "2016-11-26T12:29:59.396772"
+    },
+    {
+        "text": "<",
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "time": "2016-11-26T12:29:59.684788",
+        "index": "3.0",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "sequence": "TextInsert",
+        "text_widget_id": 17412432
+    },
+    {
+        "text": "!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\" dir=\"ltr\">\n\t<head>\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n\t\t<meta http-equiv=\"Content-Style-Type\" content=\"text/css\" />\n\t\t<meta name=\"generator\" content=\"MediaWiki 1.15.1\" />\n\t\t<meta name=\"keywords\" content=\"SOCR Data Dinov 020108 HeightsWeights,SOCR Data,SOCR Data MLB HeightsWeights\" />\n\t\t<link rel=\"shortcut icon\" href=\"/favicon.ico\" />\n\t\t<link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"/socr/opensearch_desc.php\" title=\"Socr (en)\" />\n\t\t<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Socr RSS Feed\" href=\"/socr/index.php?title=Special:RecentChanges&amp;feed=rss\" />\n\t\t<link rel=\"alternate\" type=\"application/atom+xml\" title=\"Socr Atom Feed\" href=\"/socr/index.php?title=Special:RecentChanges&amp;feed=atom\" />\n\t\t<title>SOCR Data Dinov 020108 HeightsWeights - Socr</title>\n\t\t<link rel=\"stylesheet\" href=\"/socr/skins/common/shared.css?207\" type=\"text/css\" media=\"screen\" />\n\t\t<link rel=\"stylesheet\" href=\"/socr/skins/common/commonPrint.css?207\" type=\"text/css\" media=\"print\" />\n\t\t<link rel=\"stylesheet\" href=\"/socr/skins/monobook/main.css?207\" type=\"text/css\" media=\"screen\" />\n\t\t<!--[if lt IE 5.5000]><link rel=\"stylesheet\" href=\"/socr/skins/monobook/IE50Fixes.css?207\" type=\"text/css\" media=\"screen\" /><![endif]-->\n\t\t<!--[if IE 5.5000]><link rel=\"stylesheet\" href=\"/socr/skins/monobook/IE55Fixes.css?207\" type=\"text/css\" media=\"screen\" /><![endif]-->\n\t\t<!--[if IE 6]><link rel=\"stylesheet\" href=\"/socr/skins/monobook/IE60Fixes.css?207\" type=\"text/css\" media=\"screen\" /><![endif]-->\n\t\t<!--[if IE 7]><link rel=\"stylesheet\" href=\"/socr/skins/monobook/IE70Fixes.css?207\" type=\"text/css\" media=\"screen\" /><![endif]-->\n\t\t<link rel=\"stylesheet\" href=\"/socr/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000\" type=\"text/css\" />\n\t\t<link rel=\"stylesheet\" href=\"/socr/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000\" type=\"text/css\" media=\"print\" />\n\t\t<link rel=\"stylesheet\" href=\"/socr/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000\" type=\"text/css\" />\n\t\t<link rel=\"stylesheet\" href=\"/socr/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css\" type=\"text/css\" />\n\t\t<!--[if lt IE 7]><script type=\"text/javascript\" src=\"/socr/skins/common/IEFixes.js?207\"></script>\n\t\t<meta http-equiv=\"imagetoolbar\" content=\"no\" /><![endif]-->\n\n\t\t<script type= \"text/javascript\">/*<![CDATA[*/\n\t\tvar skin = \"monobook\";\n\t\tvar stylepath = \"/socr/skins\";\n\t\tvar wgArticlePath = \"/socr/index.php/$1\";\n\t\tvar wgScriptPath = \"/socr\";\n\t\tvar wgScript = \"/socr/index.php\";\n\t\tvar wgVariantArticlePath = false;\n\t\tvar wgActionPaths = {};\n\t\tvar wgServer = \"http://wiki.stat.ucla.edu\";\n\t\tvar wgCanonicalNamespace = \"\";\n\t\tvar wgCanonicalSpecialPageName = false;\n\t\tvar wgNamespaceNumber = 0;\n\t\tvar wgPageName = \"SOCR_Data_Dinov_020108_HeightsWeights\";\n\t\tvar wgTitle = \"SOCR Data Dinov 020108 HeightsWeights\";\n\t\tvar wgAction = \"view\";\n\t\tvar wgArticleId = \"2818\";\n\t\tvar wgIsArticle = true;\n\t\tvar wgUserName = null;\n\t\tvar wgUserGroups = null;\n\t\tvar wgUserLanguage = \"en\";\n\t\tvar wgContentLanguage = \"en\";\n\t\tvar wgBreakFrames = false;\n\t\tvar wgCurRevisionId = 11616;\n\t\tvar wgVersion = \"1.15.1\";\n\t\tvar wgEnableAPI = true;\n\t\tvar wgEnableWriteAPI = true;\n\t\tvar wgSeparatorTransformTable = [\"\", \"\"];\n\t\tvar wgDigitTransformTable = [\"\", \"\"];\n\t\tvar wgRestrictionEdit = [];\n\t\tvar wgRestrictionMove = [];\n\t\t/*]]>*/</script>\n\n\t\t<script type=\"text/javascript\" src=\"/socr/skins/common/wikibits.js?207\"><!-- wikibits js --></script>\n\t\t<!-- Head Scripts -->\n\t\t<script type=\"text/javascript\" src=\"/socr/skins/common/ajax.js?207\"></script>\n\t\t<script type=\"text/javascript\" src=\"/socr/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook\"><!-- site js --></script>\n\t</head>\n<body class=\"mediawiki ltr ns-0 ns-subject page-SOCR_Data_Dinov_020108_HeightsWeights skin-monobook\">\n\t<div id=\"globalWrapper\">\n\t\t<div id=\"column-content\">\n\t<div id=\"content\">\n\t\t<a name=\"top\" id=\"top\"></a>\n\t\t\t\t<h1 id=\"firstHeading\" class=\"firstHeading\">SOCR Data Dinov 020108 HeightsWeights</h1>\n\t\t<div id=\"bodyContent\">\n\t\t\t<h3 id=\"siteSub\">From Socr</h3>\n\t\t\t<div id=\"contentSub\"></div>\n\t\t\t\t\t\t\t\t\t<div id=\"jump-to-nav\">Jump to: <a href=\"#column-one\">navigation</a>, <a href=\"#searchInput\">search</a></div>\t\t\t<!-- start content -->\n\t\t\t<table id=\"toc\" class=\"toc\" summary=\"Contents\"><tr><td><div id=\"toctitle\"><h2>Contents</h2></div>\n<ul>\n<li class=\"toclevel-1\"><a href=\"#SOCR_Data_-_25.2C000_Records_of_Human_Heights_.28in.29_and_Weights_.28lbs.29\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">SOCR Data - 25,000 Records of Human Heights (in) and Weights (lbs)</span></a>\n<ul>\n<li class=\"toclevel-2\"><a href=\"#Summary\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Summary</span></a></li>\n<li class=\"toclevel-2\"><a href=\"#Complete_Data\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Complete Data</span></a></li>\n<li class=\"toclevel-2\"><a href=\"#Sample_of_200_Individuals\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Sample of 200 Individuals</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1\"><a href=\"#References\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">References</span></a></li>\n</ul>\n</td></tr></table><script type=\"text/javascript\"> if (window.showTocToggle) { var tocShowText = \"show\"; var tocHideText = \"hide\"; showTocToggle(); } </script>\n<a name=\"SOCR_Data_-_25.2C000_Records_of_Human_Heights_.28in.29_and_Weights_.28lbs.29\" id=\"SOCR_Data_-_25.2C000_Records_of_Human_Heights_.28in.29_and_Weights_.28lbs.29\"></a><h2> <span class=\"mw-headline\"> <a href=\"/socr/index.php/SOCR_Data\" title=\"SOCR Data\">SOCR Data</a> - 25,000 Records of Human Heights (in) and Weights (lbs)</span></h2>\n<a name=\"Summary\" id=\"Summary\"></a><h3> <span class=\"mw-headline\">Summary</span></h3>\n<div class=\"thumb tright\"><div class=\"thumbinner\" style=\"width:152px;\"><a href=\"/socr/index.php/File:SOCR_Data_Dinov_HeightWeight_062408_Fig1.jpg\" class=\"image\" title=\"Human Height and Weight\"><img alt=\"\" src=\"/socr/uploads/thumb/a/ae/SOCR_Data_Dinov_HeightWeight_062408_Fig1.jpg/150px-SOCR_Data_Dinov_HeightWeight_062408_Fig1.jpg\" width=\"150\" height=\"153\" border=\"0\" class=\"thumbimage\" /></a>  <div class=\"thumbcaption\"><div class=\"magnify\"><a href=\"/socr/index.php/File:SOCR_Data_Dinov_HeightWeight_062408_Fig1.jpg\" class=\"internal\" title=\"Enlarge\"><img src=\"/socr/skins/common/images/magnify-clip.png\" width=\"15\" height=\"11\" alt=\"\" /></a></div><a href=\"http://en.wikipedia.org/wiki/Human_height\" class=\"external text\" title=\"http://en.wikipedia.org/wiki/Human_height\" rel=\"nofollow\">Human Height and Weight</a></div></div></div>\n<p>Human <a href=\"http://en.wikipedia.org/wiki/Human_height\" class=\"external text\" title=\"http://en.wikipedia.org/wiki/Human_height\" rel=\"nofollow\">Height</a> and <a href=\"http://en.wikipedia.org/wiki/Human_weight\" class=\"external text\" title=\"http://en.wikipedia.org/wiki/Human_weight\" rel=\"nofollow\">Weight</a> are mostly hereditable, but lifestyles, diet, health and environmental factors also play a role in determining individual's physical characteristics. The dataset below contains 25,000 records of human heights and weights. These data were obtained in 1993 by a Growth Survey of 25,000 children from birth to 18 years of age recruited from Maternal and Child Health Centres (MCHC) and schools and were used to develop Hong Kong's current growth charts for weight, height, weight-for-age, weight-for-height and body mass index (BMI). See also the <a href=\"/socr/index.php/SOCR_Data_MLB_HeightsWeights\" title=\"SOCR Data MLB HeightsWeights\"> Major League Baseball Players Height and Weight dataset</a>.\n</p>\n<a name=\"Complete_Data\" id=\"Complete_Data\"></a><h3> <span class=\"mw-headline\">Complete Data</span></h3>\n<p><a href=\"http://socr.ucla.edu/docs/resources/SOCR_Data/SOCR_Data_Dinov_020108_HeightsWeights.html\" class=\"external text\" title=\"http://socr.ucla.edu/docs/resources/SOCR_Data/SOCR_Data_Dinov_020108_HeightsWeights.html\" rel=\"nofollow\">You can find the complete dataset here</a> (7MB).\n</p>\n<a name=\"Sample_of_200_Individuals\" id=\"Sample_of_200_Individuals\"></a><h3> <span class=\"mw-headline\">Sample of 200 Individuals</span></h3>\n<center>\n<table class=\"wikitable\" style=\"text-align:center; width:30%\" border=\"1\">\n\n<tr>\n<th>Index</th><th>Height(Inches)</th><th>Weight(Pounds)\n</th></tr>\n<tr>\n<td>1</td><td>65.78</td><td>112.99\n</td></tr>\n<tr>\n<td>2</td><td>71.52</td><td>136.49\n</td></tr>\n<tr>\n<td>3</td><td>69.40</td><td>153.03\n</td></tr>\n<tr>\n<td>4</td><td>68.22</td><td>142.34\n</td></tr>\n<tr>\n<td>5</td><td>67.79</td><td>144.30\n</td></tr>\n<tr>\n<td>6</td><td>68.70</td><td>123.30\n</td></tr>\n<tr>\n<td>7</td><td>69.80</td><td>141.49\n</td></tr>\n<tr>\n<td>8</td><td>70.01</td><td>136.46\n</td></tr>\n<tr>\n<td>9</td><td>67.90</td><td>112.37\n</td></tr>\n<tr>\n<td>10</td><td>66.78</td><td>120.67\n</td></tr>\n<tr>\n<td>11</td><td>66.49</td><td>127.45\n</td></tr>\n<tr>\n<td>12</td><td>67.62</td><td>114.14\n</td></tr>\n<tr>\n<td>13</td><td>68.30</td><td>125.61\n</td></tr>\n<tr>\n<td>14</td><td>67.12</td><td>122.46\n</td></tr>\n<tr>\n<td>15</td><td>68.28</td><td>116.09\n</td></tr>\n<tr>\n<td>16</td><td>71.09</td><td>140.00\n</td></tr>\n<tr>\n<td>17</td><td>66.46</td><td>129.50\n</td></tr>\n<tr>\n<td>18</td><td>68.65</td><td>142.97\n</td></tr>\n<tr>\n<td>19</td><td>71.23</td><td>137.90\n</td></tr>\n<tr>\n<td>20</td><td>67.13</td><td>124.04\n</td></tr>\n<tr>\n<td>21</td><td>67.83</td><td>141.28\n</td></tr>\n<tr>\n<td>22</td><td>68.88</td><td>143.54\n</td></tr>\n<tr>\n<td>23</td><td>63.48</td><td>97.90\n</td></tr>\n<tr>\n<td>24</td><td>68.42</td><td>129.50\n</td></tr>\n<tr>\n<td>25</td><td>67.63</td><td>141.85\n</td></tr>\n<tr>\n<td>26</td><td>67.21</td><td>129.72\n</td></tr>\n<tr>\n<td>27</td><td>70.84</td><td>142.42\n</td></tr>\n<tr>\n<td>28</td><td>67.49</td><td>131.55\n</td></tr>\n<tr>\n<td>29</td><td>66.53</td><td>108.33\n</td></tr>\n<tr>\n<td>30</td><td>65.44</td><td>113.89\n</td></tr>\n<tr>\n<td>31</td><td>69.52</td><td>103.30\n</td></tr>\n<tr>\n<td>32</td><td>65.81</td><td>120.75\n</td></tr>\n<tr>\n<td>33</td><td>67.82</td><td>125.79\n</td></tr>\n<tr>\n<td>34</td><td>70.60</td><td>136.22\n</td></tr>\n<tr>\n<td>35</td><td>71.80</td><td>140.10\n</td></tr>\n<tr>\n<td>36</td><td>69.21</td><td>128.75\n</td></tr>\n<tr>\n<td>37</td><td>66.80</td><td>141.80\n</td></tr>\n<tr>\n<td>38</td><td>67.66</td><td>121.23\n</td></tr>\n<tr>\n<td>39</td><td>67.81</td><td>131.35\n</td></tr>\n<tr>\n<td>40</td><td>64.05</td><td>106.71\n</td></tr>\n<tr>\n<td>41</td><td>68.57</td><td>124.36\n</td></tr>\n<tr>\n<td>42</td><td>65.18</td><td>124.86\n</td></tr>\n<tr>\n<td>43</td><td>69.66</td><td>139.67\n</td></tr>\n<tr>\n<td>44</td><td>67.97</td><td>137.37\n</td></tr>\n<tr>\n<td>45</td><td>65.98</td><td>106.45\n</td></tr>\n<tr>\n<td>46</td><td>68.67</td><td>128.76\n</td></tr>\n<tr>\n<td>47</td><td>66.88</td><td>145.68\n</td></tr>\n<tr>\n<td>48</td><td>67.70</td><td>116.82\n</td></tr>\n<tr>\n<td>49</td><td>69.82</td><td>143.62\n</td></tr>\n<tr>\n<td>50</td><td>69.09</td><td>134.93\n</td></tr>\n<tr>\n<td>51</td><td>69.91</td><td>147.02\n</td></tr>\n<tr>\n<td>52</td><td>67.33</td><td>126.33\n</td></tr>\n<tr>\n<td>53</td><td>70.27</td><td>125.48\n</td></tr>\n<tr>\n<td>54</td><td>69.10</td><td>115.71\n</td></tr>\n<tr>\n<td>55</td><td>65.38</td><td>123.49\n</td></tr>\n<tr>\n<td>56</td><td>70.18</td><td>147.89\n</td></tr>\n<tr>\n<td>57</td><td>70.41</td><td>155.90\n</td></tr>\n<tr>\n<td>58</td><td>66.54</td><td>128.07\n</td></tr>\n<tr>\n<td>59</td><td>66.36</td><td>119.37\n</td></tr>\n<tr>\n<td>60</td><td>67.54</td><td>133.81\n</td></tr>\n<tr>\n<td>61</td><td>66.50</td><td>128.73\n</td></tr>\n<tr>\n<td>62</td><td>69.00</td><td>137.55\n</td></tr>\n<tr>\n<td>63</td><td>68.30</td><td>129.76\n</td></tr>\n<tr>\n<td>64</td><td>67.01</td><td>128.82\n</td></tr>\n<tr>\n<td>65</td><td>70.81</td><td>135.32\n</td></tr>\n<tr>\n<td>66</td><td>68.22</td><td>109.61\n</td></tr>\n<tr>\n<td>67</td><td>69.06</td><td>142.47\n</td></tr>\n<tr>\n<td>68</td><td>67.73</td><td>132.75\n</td></tr>\n<tr>\n<td>69</td><td>67.22</td><td>103.53\n</td></tr>\n<tr>\n<td>70</td><td>67.37</td><td>124.73\n</td></tr>\n<tr>\n<td>71</td><td>65.27</td><td>129.31\n</td></tr>\n<tr>\n<td>72</td><td>70.84</td><td>134.02\n</td></tr>\n<tr>\n<td>73</td><td>69.92</td><td>140.40\n</td></tr>\n<tr>\n<td>74</td><td>64.29</td><td>102.84\n</td></tr>\n<tr>\n<td>75</td><td>68.25</td><td>128.52\n</td></tr>\n<tr>\n<td>76</td><td>66.36</td><td>120.30\n</td></tr>\n<tr>\n<td>77</td><td>68.36</td><td>138.60\n</td></tr>\n<tr>\n<td>78</td><td>65.48</td><td>132.96\n</td></tr>\n<tr>\n<td>79</td><td>69.72</td><td>115.62\n</td></tr>\n<tr>\n<td>80</td><td>67.73</td><td>122.52\n</td></tr>\n<tr>\n<td>81</td><td>68.64</td><td>134.63\n</td></tr>\n<tr>\n<td>82</td><td>66.78</td><td>121.90\n</td></tr>\n<tr>\n<td>83</td><td>70.05</td><td>155.38\n</td></tr>\n<tr>\n<td>84</td><td>66.28</td><td>128.94\n</td></tr>\n<tr>\n<td>85</td><td>69.20</td><td>129.10\n</td></tr>\n<tr>\n<td>86</td><td>69.13</td><td>139.47\n</td></tr>\n<tr>\n<td>87</td><td>67.36</td><td>140.89\n</td></tr>\n<tr>\n<td>88</td><td>70.09</td><td>131.59\n</td></tr>\n<tr>\n<td>89</td><td>70.18</td><td>121.12\n</td></tr>\n<tr>\n<td>90</td><td>68.23</td><td>131.51\n</td></tr>\n<tr>\n<td>91</td><td>68.13</td><td>136.55\n</td></tr>\n<tr>\n<td>92</td><td>70.24</td><td>141.49\n</td></tr>\n<tr>\n<td>93</td><td>71.49</td><td>140.61\n</td></tr>\n<tr>\n<td>94</td><td>69.20</td><td>112.14\n</td></tr>\n<tr>\n<td>95</td><td>70.06</td><td>133.46\n</td></tr>\n<tr>\n<td>96</td><td>70.56</td><td>131.80\n</td></tr>\n<tr>\n<td>97</td><td>66.29</td><td>120.03\n</td></tr>\n<tr>\n<td>98</td><td>63.43</td><td>123.10\n</td></tr>\n<tr>\n<td>99</td><td>66.77</td><td>128.14\n</td></tr>\n<tr>\n<td>100</td><td>68.89</td><td>115.48\n</td></tr>\n<tr>\n<td>101</td><td>64.87</td><td>102.09\n</td></tr>\n<tr>\n<td>102</td><td>67.09</td><td>130.35\n</td></tr>\n<tr>\n<td>103</td><td>68.35</td><td>134.18\n</td></tr>\n<tr>\n<td>104</td><td>65.61</td><td>98.64\n</td></tr>\n<tr>\n<td>105</td><td>67.76</td><td>114.56\n</td></tr>\n<tr>\n<td>106</td><td>68.02</td><td>123.49\n</td></tr>\n<tr>\n<td>107</td><td>67.66</td><td>123.05\n</td></tr>\n<tr>\n<td>108</td><td>66.31</td><td>126.48\n</td></tr>\n<tr>\n<td>109</td><td>69.44</td><td>128.42\n</td></tr>\n<tr>\n<td>110</td><td>63.84</td><td>127.19\n</td></tr>\n<tr>\n<td>111</td><td>67.72</td><td>122.06\n</td></tr>\n<tr>\n<td>112</td><td>70.05</td><td>127.61\n</td></tr>\n<tr>\n<td>113</td><td>70.19</td><td>131.64\n</td></tr>\n<tr>\n<td>114</td><td>65.95</td><td>111.90\n</td></tr>\n<tr>\n<td>115</td><td>70.01</td><td>122.04\n</td></tr>\n<tr>\n<td>116</td><td>68.61</td><td>128.55\n</td></tr>\n<tr>\n<td>117</td><td>68.81</td><td>132.68\n</td></tr>\n<tr>\n<td>118</td><td>69.76</td><td>136.06\n</td></tr>\n<tr>\n<td>119</td><td>65.46</td><td>115.94\n</td></tr>\n<tr>\n<td>120</td><td>68.83</td><td>136.90\n</td></tr>\n<tr>\n<td>121</td><td>65.80</td><td>119.88\n</td></tr>\n<tr>\n<td>122</td><td>67.21</td><td>109.01\n</td></tr>\n<tr>\n<td>123</td><td>69.42</td><td>128.27\n</td></tr>\n<tr>\n<td>124</td><td>68.94</td><td>135.29\n</td></tr>\n<tr>\n<td>125</td><td>67.94</td><td>106.86\n</td></tr>\n<tr>\n<td>126</td><td>65.63</td><td>123.29\n</td></tr>\n<tr>\n<td>127</td><td>66.50</td><td>109.51\n</td></tr>\n<tr>\n<td>128</td><td>67.93</td><td>119.31\n</td></tr>\n<tr>\n<td>129</td><td>68.89</td><td>140.24\n</td></tr>\n<tr>\n<td>130</td><td>70.24</td><td>133.98\n</td></tr>\n<tr>\n<td>131</td><td>68.27</td><td>132.58\n</td></tr>\n<tr>\n<td>132</td><td>71.23</td><td>130.70\n</td></tr>\n<tr>\n<td>133</td><td>69.10</td><td>115.56\n</td></tr>\n<tr>\n<td>134</td><td>64.40</td><td>123.79\n</td></tr>\n<tr>\n<td>135</td><td>71.10</td><td>128.14\n</td></tr>\n<tr>\n<td>136</td><td>68.22</td><td>135.96\n</td></tr>\n<tr>\n<td>137</td><td>65.92</td><td>116.63\n</td></tr>\n<tr>\n<td>138</td><td>67.44</td><td>126.82\n</td></tr>\n<tr>\n<td>139</td><td>73.90</td><td>151.39\n</td></tr>\n<tr>\n<td>140</td><td>69.98</td><td>130.40\n</td></tr>\n<tr>\n<td>141</td><td>69.52</td><td>136.21\n</td></tr>\n<tr>\n<td>142</td><td>65.18</td><td>113.40\n</td></tr>\n<tr>\n<td>143</td><td>68.01</td><td>125.33\n</td></tr>\n<tr>\n<td>144</td><td>68.34</td><td>127.58\n</td></tr>\n<tr>\n<td>145</td><td>65.18</td><td>107.16\n</td></tr>\n<tr>\n<td>146</td><td>68.26</td><td>116.46\n</td></tr>\n<tr>\n<td>147</td><td>68.57</td><td>133.84\n</td></tr>\n<tr>\n<td>148</td><td>64.50</td><td>112.89\n</td></tr>\n<tr>\n<td>149</td><td>68.71</td><td>130.76\n</td></tr>\n<tr>\n<td>150</td><td>68.89</td><td>137.76\n</td></tr>\n<tr>\n<td>151</td><td>69.54</td><td>125.40\n</td></tr>\n<tr>\n<td>152</td><td>67.40</td><td>138.47\n</td></tr>\n<tr>\n<td>153</td><td>66.48</td><td>120.82\n</td></tr>\n<tr>\n<td>154</td><td>66.01</td><td>140.15\n</td></tr>\n<tr>\n<td>155</td><td>72.44</td><td>136.74\n</td></tr>\n<tr>\n<td>156</td><td>64.13</td><td>106.11\n</td></tr>\n<tr>\n<td>157</td><td>70.98</td><td>158.96\n</td></tr>\n<tr>\n<td>158</td><td>67.50</td><td>108.79\n</td></tr>\n<tr>\n<td>159</td><td>72.02</td><td>138.78\n</td></tr>\n<tr>\n<td>160</td><td>65.31</td><td>115.91\n</td></tr>\n<tr>\n<td>161</td><td>67.08</td><td>146.29\n</td></tr>\n<tr>\n<td>162</td><td>64.39</td><td>109.88\n</td></tr>\n<tr>\n<td>163</td><td>69.37</td><td>139.05\n</td></tr>\n<tr>\n<td>164</td><td>68.38</td><td>119.90\n</td></tr>\n<tr>\n<td>165</td><td>65.31</td><td>128.31\n</td></tr>\n<tr>\n<td>166</td><td>67.14</td><td>127.24\n</td></tr>\n<tr>\n<td>167</td><td>68.39</td><td>115.23\n</td></tr>\n<tr>\n<td>168</td><td>66.29</td><td>124.80\n</td></tr>\n<tr>\n<td>169</td><td>67.19</td><td>126.95\n</td></tr>\n<tr>\n<td>170</td><td>65.99</td><td>111.27\n</td></tr>\n<tr>\n<td>171</td><td>69.43</td><td>122.61\n</td></tr>\n<tr>\n<td>172</td><td>67.97</td><td>124.21\n</td></tr>\n<tr>\n<td>173</td><td>67.76</td><td>124.65\n</td></tr>\n<tr>\n<td>174</td><td>65.28</td><td>119.52\n</td></tr>\n<tr>\n<td>175</td><td>73.83</td><td>139.30\n</td></tr>\n<tr>\n<td>176</td><td>66.81</td><td>104.83\n</td></tr>\n<tr>\n<td>177</td><td>66.89</td><td>123.04\n</td></tr>\n<tr>\n<td>178</td><td>65.74</td><td>118.89\n</td></tr>\n<tr>\n<td>179</td><td>65.98</td><td>121.49\n</td></tr>\n<tr>\n<td>180</td><td>66.58</td><td>119.25\n</td></tr>\n<tr>\n<td>181</td><td>67.11</td><td>135.02\n</td></tr>\n<tr>\n<td>182</td><td>65.87</td><td>116.23\n</td></tr>\n<tr>\n<td>183</td><td>66.78</td><td>109.17\n</td></tr>\n<tr>\n<td>184</td><td>68.74</td><td>124.22\n</td></tr>\n<tr>\n<td>185</td><td>66.23</td><td>141.16\n</td></tr>\n<tr>\n<td>186</td><td>65.96</td><td>129.15\n</td></tr>\n<tr>\n<td>187</td><td>68.58</td><td>127.87\n</td></tr>\n<tr>\n<td>188</td><td>66.59</td><td>120.92\n</td></tr>\n<tr>\n<td>189</td><td>66.97</td><td>127.65\n</td></tr>\n<tr>\n<td>190</td><td>68.08</td><td>101.47\n</td></tr>\n<tr>\n<td>191</td><td>70.19</td><td>144.99\n</td></tr>\n<tr>\n<td>192</td><td>65.52</td><td>110.95\n</td></tr>\n<tr>\n<td>193</td><td>67.46</td><td>132.86\n</td></tr>\n<tr>\n<td>194</td><td>67.41</td><td>146.34\n</td></tr>\n<tr>\n<td>195</td><td>69.66</td><td>145.59\n</td></tr>\n<tr>\n<td>196</td><td>65.80</td><td>120.84\n</td></tr>\n<tr>\n<td>197</td><td>66.11</td><td>115.78\n</td></tr>\n<tr>\n<td>198</td><td>68.24</td><td>128.30\n</td></tr>\n<tr>\n<td>199</td><td>68.02</td><td>127.47\n</td></tr>\n<tr>\n<td>200</td><td>71.39</td><td>127.88\n</td></tr></table></center>\n<a name=\"References\" id=\"References\"></a><h2> <span class=\"mw-headline\">References</span></h2>\n<ul><li> <a href=\"http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2572616\" class=\"external text\" title=\"http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2572616\" rel=\"nofollow\">Hung-Kwan So, Edmund AS Nelson, Albert M Li, Eric MC Wong, Joseph TF Lau, Georgia S Guldan, Kwok-Hang Mak, Youfa Wang, Tai-Fai Fok, and Rita YT Sung. (2008) Secular changes in height, weight and body mass index in Hong Kong Children. BMC Public Health. 2008; 8: 320. doi: 10.1186/1471-2458-8-320. PMCID: PMC2572616</a>\n</li><li> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/8860382\" class=\"external text\" title=\"http://www.ncbi.nlm.nih.gov/pubmed/8860382\" rel=\"nofollow\">Leung SS, Lau JT, Tse LY, Oppenheimer SJ. Weight-for-age and weight-for-height references for Hong Kong children from birth to 18 years. J Paediatr Child Health. 1996;32:103\u2013109. doi: 10.1111/j.1440-1754.1996.tb00904.x.</a>\n</li><li> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/8830917\" class=\"external text\" title=\"http://www.ncbi.nlm.nih.gov/pubmed/8830917\" rel=\"nofollow\">Leung SS, Lau JT, Xu YY, Tse LY, Huen KF, Wong GW, Law WY, Yeung VT, Yeung WK, et al. Secular changes in standing height, sitting height and sexual maturation of Chinese\u2013the Hong Kong Growth Study, 1993. Ann Hum Biol. 1996;23:297\u2013306. doi: 10.1080/03014469600004532.</a>\n</li></ul>\n<hr />\n<ul><li> SOCR Home page: <a href=\"http://www.socr.ucla.edu\" class=\"external free\" title=\"http://www.socr.ucla.edu\" rel=\"nofollow\">http://www.socr.ucla.edu</a>\n</li></ul>\n<hr />\n<hr />\n<p>Translate this page:\n</p>\n<center>\n<table style=\"text-align: left; width: 535px; height: 226px\" cellspacing=\"2\" cellpadding=\"2\">\n\n<tr>\n<td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights\" class=\"external text\" title=\"http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights\" rel=\"nofollow\"><b>(default)</b></a> <span><br /><span class=\"plainlinks\"><a href=\"/socr/index.php/File:Uk_flag.gif\" class=\"image\" title=\"Uk flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/c/c6/Uk_flag.gif/15px-Uk_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cde&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cde&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>Deutsch</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:De_flag.gif\" class=\"image\" title=\"De flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/3/38/De_flag.gif/15px-De_flag.gif\" width=\"15\" height=\"9\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Ces&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Ces&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>Espa\u00f1ol</b></a></span><br />\n<span class=\"plainlinks\"><a href=\"/socr/index.php/File:Es_flag.gif\" class=\"image\" title=\"Es flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/4/4f/Es_flag.gif/15px-Es_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cfr&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cfr&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>Fran\u00e7ais</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Fr_flag.gif\" class=\"image\" title=\"Fr flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/c/cc/Fr_flag.gif/15px-Fr_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cit&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cit&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>Italiano</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:It_flag.gif\" class=\"image\" title=\"It flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/a/a2/It_flag.gif/15px-It_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cpt&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cpt&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>Portugu\u00eas</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Pt_flag.gif\" class=\"image\" title=\"Pt flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/6/6d/Pt_flag.gif/15px-Pt_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cja&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cja&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>\u65e5\u672c\u8a9e</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Jp_flag.gif\" class=\"image\" title=\"Jp flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/d/dc/Jp_flag.gif/15px-Jp_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cbg&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cbg&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Bg_flag.gif\" class=\"image\" title=\"Bg flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/e/e1/Bg_flag.gif/15px-Bg_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Car&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Car&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>\u0627\u0644\u0627\u0645\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u062d\u062f\u0629</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Ae_flag.gif\" class=\"image\" title=\"Ae flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/6/64/Ae_flag.gif/15px-Ae_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cfi&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cfi&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>Suomi</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Fi_flag.gif\" class=\"image\" title=\"Fi flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/b/b5/Fi_flag.gif/15px-Fi_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Chi&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Chi&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>\u0907\u0938 \u092d\u093e\u0937\u093e \u092e\u0947\u0902</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:In_flag.gif\" class=\"image\" title=\"In flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/3/31/In_flag.gif/15px-In_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cno&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cno&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>Norge</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:No_flag.png\" class=\"image\" title=\"No flag.png\"><img alt=\"\" src=\"/socr/uploads/thumb/4/48/No_flag.png/15px-No_flag.png\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td></tr>\n<tr>\n<td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cko&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cko&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>\ud55c\uad6d\uc5b4</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Kr_flag.gif\" class=\"image\" title=\"Kr flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/a/a6/Kr_flag.gif/15px-Kr_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Czh-CN&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Czh-CN&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>\u4e2d\u6587</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Cn_flag.gif\" class=\"image\" title=\"Cn flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/5/58/Cn_flag.gif/15px-Cn_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=en_zt&amp;trurl=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights\" class=\"external text\" title=\"http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=en_zt&amp;trurl=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights\" rel=\"nofollow\"><b>\u7e41\u4f53\u4e2d\u6587</b></a></span><br />\n<span class=\"plainlinks\"><a href=\"/socr/index.php/File:Cn_flag.gif\" class=\"image\" title=\"Cn flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/5/58/Cn_flag.gif/15px-Cn_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=en_ru&amp;trurl=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights\" class=\"external text\" title=\"http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=en_ru&amp;trurl=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights\" rel=\"nofollow\"><b>\u0420\u0443\u0441\u0441\u043a\u0438\u0439</b></a></span><br />\n<span class=\"plainlinks\"><a href=\"/socr/index.php/File:Ru_flag.gif\" class=\"image\" title=\"Ru flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/0/0f/Ru_flag.gif/15px-Ru_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=en_nl&amp;trurl=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights\" class=\"external text\" title=\"http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=en_nl&amp;trurl=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights\" rel=\"nofollow\"><b>Nederlands</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Nl_flag.gif\" class=\"image\" title=\"Nl flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/a/aa/Nl_flag.gif/15px-Nl_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=en_el&amp;trurl=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights\" class=\"external text\" title=\"http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=en_el&amp;trurl=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights\" rel=\"nofollow\"><b>\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac</b></a></span><br />\n<span class=\"plainlinks\"><a href=\"/socr/index.php/File:Gr_flag.gif\" class=\"image\" title=\"Gr flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/6/65/Gr_flag.gif/15px-Gr_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Chr&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Chr&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>Hrvatska</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Hr_flag.gif\" class=\"image\" title=\"Hr flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/5/54/Hr_flag.gif/15px-Hr_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Ccs&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Ccs&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>\u010cesk\u00e1 republika</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Cz_flag.gif\" class=\"image\" title=\"Cz flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/7/76/Cz_flag.gif/15px-Cz_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cda&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cda&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>Danmark</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Dk_flag.gif\" class=\"image\" title=\"Dk flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/a/a3/Dk_flag.gif/15px-Dk_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cpl&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cpl&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>Polska</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Pl_flag.png\" class=\"image\" title=\"Pl flag.png\"><img alt=\"\" src=\"/socr/uploads/thumb/f/fb/Pl_flag.png/15px-Pl_flag.png\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cro&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Cro&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>Rom\u00e2nia</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Ro_flag.png\" class=\"image\" title=\"Ro flag.png\"><img alt=\"\" src=\"/socr/uploads/thumb/3/3c/Ro_flag.png/15px-Ro_flag.png\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td><td style=\"text-align: center; vertical-align: middle\">\n<p><span class=\"plainlinks\"><a href=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Csv&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" class=\"external text\" title=\"http://translate.google.com/translate?u=http://wiki.stat.ucla.edu/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;langpair=en%7Csv&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools\" rel=\"nofollow\"><b>Sverige</b></a></span><br />\n<span class=\"plainlinks\"> <a href=\"/socr/index.php/File:Se_flag.gif\" class=\"image\" title=\"Se flag.gif\"><img alt=\"\" src=\"/socr/uploads/thumb/d/d9/Se_flag.gif/15px-Se_flag.gif\" width=\"15\" height=\"10\" border=\"0\" /></a></span>\n</p>\n</td></tr></table></span>\n<p></span>\n</span>\n</p>\n</center>\n\n<!-- \nNewPP limit report\nPreprocessor node count: 83/1000000\nPost-expand include size: 8606/2097152 bytes\nTemplate argument size: 2016/2097152 bytes\nExpensive parser function count: 0/100\n-->\n\n<!-- Saved in parser cache with key socr:pcache:idhash:2818-0!1!0!!en!2!edit=0 and timestamp 20161126082834 -->\n<div class=\"printfooter\">\nRetrieved from \"<a href=\"http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_Dinov_020108_HeightsWeights\">http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_Dinov_020108_HeightsWeights</a>\"</div>\n\t\t\t\t\t\t<!-- end content -->\n\t\t\t\t\t\t<div class=\"visualClear\"></div>\n\t\t</div>\n\t</div>\n\t\t</div>\n\t\t<div id=\"column-one\">\n\t<div id=\"p-cactions\" class=\"portlet\">\n\t\t<h5>Views</h5>\n\t\t<div class=\"pBody\">\n\t\t\t<ul>\n\t\n\t\t\t\t <li id=\"ca-nstab-main\" class=\"selected\"><a href=\"/socr/index.php/SOCR_Data_Dinov_020108_HeightsWeights\" title=\"View the content page [c]\" accesskey=\"c\">Page</a></li>\n\t\t\t\t <li id=\"ca-talk\" class=\"new\"><a href=\"/socr/index.php?title=Talk:SOCR_Data_Dinov_020108_HeightsWeights&amp;action=edit&amp;redlink=1\" title=\"Discussion about the content page [t]\" accesskey=\"t\">Discussion</a></li>\n\t\t\t\t <li id=\"ca-viewsource\"><a href=\"/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;action=edit\" title=\"This page is protected.&#10;You can view its source [e]\" accesskey=\"e\">View source</a></li>\n\t\t\t\t <li id=\"ca-history\"><a href=\"/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;action=history\" title=\"Past revisions of this page [h]\" accesskey=\"h\">History</a></li>\t\t\t</ul>\n\t\t</div>\n\t</div>\n\t<div class=\"portlet\" id=\"p-personal\">\n\t\t<h5>Personal tools</h5>\n\t\t<div class=\"pBody\">\n\t\t\t<ul>\n\t\t\t\t<li id=\"pt-login\"><a href=\"/socr/index.php?title=Special:UserLogin&amp;returnto=SOCR_Data_Dinov_020108_HeightsWeights\" title=\"You are encouraged to log in; however, it is not mandatory [o]\" accesskey=\"o\">Log in</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n\t<div class=\"portlet\" id=\"p-logo\">\n\t\t<a style=\"background-image: url(/socr/local/images/SOCR_Logo.gif);\" href=\"/socr/index.php/Main_Page\" title=\"Visit the main page [z]\" accesskey=\"z\"></a>\n\t</div>\n\t<script type=\"text/javascript\"> if (window.isMSIE55) fixalpha(); </script>\n\t<div class='generated-sidebar portlet' id='p-navigation'>\n\t\t<h5>Navigation</h5>\n\t\t<div class='pBody'>\n\t\t\t<ul>\n\t\t\t\t<li id=\"n-mainpage\"><a href=\"/socr/index.php/Main_Page\" title=\"Visit the main page\">Main Page</a></li>\n\t\t\t\t<li id=\"n-portal\"><a href=\"/socr/index.php/Socr:Community_Portal\" title=\"About the project, what you can do, where to find things\">Community portal</a></li>\n\t\t\t\t<li id=\"n-currentevents\"><a href=\"/socr/index.php/Socr:Current_events\" title=\"Find background information on current events\">Current events</a></li>\n\t\t\t\t<li id=\"n-recentchanges\"><a href=\"/socr/index.php/Special:RecentChanges\" title=\"The list of recent changes in the wiki [r]\" accesskey=\"r\">Recent changes</a></li>\n\t\t\t\t<li id=\"n-randompage\"><a href=\"/socr/index.php/Special:Random\" title=\"Load a random page [x]\" accesskey=\"x\">Random page</a></li>\n\t\t\t\t<li id=\"n-help\"><a href=\"/socr/index.php/Help:Contents\" title=\"The place to find out\">Help</a></li>\n\t\t\t\t<li id=\"n-Donations\"><a href=\"/socr/index.php/Socr:Site_support\">Donations</a></li>\n\t\t\t\t<li id=\"n-Keyword-Search\"><a href=\"/socr/index.php/Socr:Searching\">Keyword Search</a></li>\n\t\t\t\t<li id=\"n-Create-Account\"><a href=\"/socr/index.php/Socr:Administrators\">Create Account</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n\t<div id=\"p-search\" class=\"portlet\">\n\t\t<h5><label for=\"searchInput\">Search</label></h5>\n\t\t<div id=\"searchBody\" class=\"pBody\">\n\t\t\t<form action=\"/socr/index.php\" id=\"searchform\"><div>\n\t\t\t\t<input type='hidden' name=\"title\" value=\"Special:Search\"/>\n\t\t\t\t<input id=\"searchInput\" name=\"search\" type=\"text\" title=\"Search Socr [f]\" accesskey=\"f\" value=\"\" />\n\t\t\t\t<input type='submit' name=\"go\" class=\"searchButton\" id=\"searchGoButton\"\tvalue=\"Go\" title=\"Go to a page with this exact name if exists\" />&nbsp;\n\t\t\t\t<input type='submit' name=\"fulltext\" class=\"searchButton\" id=\"mw-searchButton\" value=\"Search\" title=\"Search the pages for this text\" />\n\t\t\t</div></form>\n\t\t</div>\n\t</div>\n<!-- Start added by Jose, UCLA -->\n<div class='portlet' style='display: none;'>\n  <div class='pBody'>\n    <script src=\"http://www.google-analytics.com/urchin.js\" type=\"text/javascript\"> </script>\n<script type=\"text/javascript\"> _uacct = \"UA-2242216-1\"; urchinTracker(); </script>\n<script type=\"text/javascript\" src=\"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\"></script>\n  </div>\n</div>\n<!-- End added by Jose, UCLA -->\n\n\t<div class=\"portlet\" id=\"p-tb\">\n\t\t<h5>Toolbox</h5>\n\t\t<div class=\"pBody\">\n\t\t\t<ul>\n\t\t\t\t<li id=\"t-whatlinkshere\"><a href=\"/socr/index.php/Special:WhatLinksHere/SOCR_Data_Dinov_020108_HeightsWeights\" title=\"List of all wiki pages that link here [j]\" accesskey=\"j\">What links here</a></li>\n\t\t\t\t<li id=\"t-recentchangeslinked\"><a href=\"/socr/index.php/Special:RecentChangesLinked/SOCR_Data_Dinov_020108_HeightsWeights\" title=\"Recent changes in pages linked from this page [k]\" accesskey=\"k\">Related changes</a></li>\n<li id=\"t-specialpages\"><a href=\"/socr/index.php/Special:SpecialPages\" title=\"List of all special pages [q]\" accesskey=\"q\">Special pages</a></li>\n\t\t\t\t<li id=\"t-print\"><a href=\"/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;printable=yes\" rel=\"alternate\" title=\"Printable version of this page [p]\" accesskey=\"p\">Printable version</a></li>\t\t\t\t<li id=\"t-permalink\"><a href=\"/socr/index.php?title=SOCR_Data_Dinov_020108_HeightsWeights&amp;oldid=11616\" title=\"Permanent link to this revision of the page\">Permanent link</a></li>\t\t\t</ul>\n\t\t</div>\n\t</div>\n\t\t</div><!-- end of the left (by default at least) column -->\n\t\t\t<div class=\"visualClear\"></div>\n\t\t\t<div id=\"footer\">\n\t\t\t\t<div id=\"f-poweredbyico\"><a href=\"http://www.mediawiki.org/\"><img src=\"/socr/skins/common/images/poweredby_mediawiki_88x31.png\" alt=\"Powered by MediaWiki\" /></a></div>\n\t\t\t<ul id=\"f-list\">\n\t\t\t\t\t<li id=\"lastmod\"> This page was last modified on 3 May 2012, at 22:48.</li>\n\t\t\t\t\t<li id=\"viewcount\">This page has been accessed 67,328 times.</li>\n\t\t\t\t\t<li id=\"privacy\"><a href=\"/socr/index.php/Socr:Privacy_policy\" title=\"Socr:Privacy policy\">Privacy policy</a></li>\n\t\t\t\t\t<li id=\"about\"><a href=\"/socr/index.php/Socr:About\" title=\"Socr:About\">About Socr</a></li>\n\t\t\t\t\t<li id=\"disclaimer\"><a href=\"/socr/index.php/Socr:General_disclaimer\" title=\"Socr:General disclaimer\">Disclaimers</a></li>\n\t\t\t</ul>\n\t\t</div>\n</div>\n\n\t\t<script type=\"text/javascript\">if (window.runOnloadHook) runOnloadHook();</script>\n<!-- Served in 0.104 secs. --></body></html>\n\n",
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "time": "2016-11-26T12:29:59.685788",
+        "index": "3.1",
+        "tags": "('io', 'stdout')",
+        "sequence": "TextInsert",
+        "text_widget_id": 17412432
+    },
+    {
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "time": "2016-11-26T12:29:59.705789",
+        "index": "926.0",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "sequence": "TextInsert",
+        "text_widget_id": 17412432
+    },
+    {
+        "widget_id": 17798288,
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "time": "2016-11-26T12:30:02.219933"
+    },
+    {
+        "widget_id": 17918192,
+        "sequence": "<Button-1>",
+        "widget_class": "Scrollbar",
+        "time": "2016-11-26T12:30:02.220933"
+    },
+    {
+        "widget_id": 17823728,
+        "sequence": "<Button-1>",
+        "widget_class": "AutomaticPanedWindow",
+        "time": "2016-11-26T12:30:07.800252"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "time": "2016-11-26T12:30:21.214020",
+        "widget_id": 17412432,
+        "sequence": "<Button-1>",
+        "widget_class": "ShellText",
+        "text_widget_id": 17412432
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "time": "2016-11-26T12:30:22.494093",
+        "widget_id": 17412432,
+        "sequence": "<Button-1>",
+        "widget_class": "ShellText",
+        "text_widget_id": 17412432
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "time": "2016-11-26T12:30:23.171131",
+        "widget_id": 17412432,
+        "sequence": "<Button-1>",
+        "widget_class": "ShellText",
+        "text_widget_id": 17412432
+    },
+    {
+        "widget_id": 17823728,
+        "sequence": "<Button-1>",
+        "widget_class": "AutomaticPanedWindow",
+        "time": "2016-11-26T12:30:33.806740"
+    },
+    {
+        "widget_id": 17918192,
+        "sequence": "<Button-1>",
+        "widget_class": "Scrollbar",
+        "time": "2016-11-26T12:30:38.691019"
+    },
+    {
+        "widget_id": 17798288,
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "time": "2016-11-26T12:30:40.916146"
+    },
+    {
+        "widget_id": 17798288,
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "time": "2016-11-26T12:30:50.818713"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:30:50.819713",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:30:52.499809",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:30:53.898889",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index2": "None",
+        "index1": "63.0",
+        "time": "2016-11-26T12:30:54.260910",
+        "sequence": "TextDelete",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:30:54.605929",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index2": "None",
+        "index1": "62.0",
+        "time": "2016-11-26T12:30:55.636988",
+        "sequence": "TextDelete",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:30:56.363030",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index2": "None",
+        "index1": "61.0",
+        "time": "2016-11-26T12:30:56.580042",
+        "sequence": "TextDelete",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:30:57.614101",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index2": "64.21",
+        "index1": "64.0",
+        "time": "2016-11-26T12:30:59.980237",
+        "sequence": "TextDelete",
+        "text_widget_id": 81926256
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "editor_class": "Editor",
+        "time": "2016-11-26T12:31:01.186306",
+        "sequence": "Save",
+        "text_widget_id": 81926256,
+        "editor_id": 17968336
+    },
+    {
+        "time": "2016-11-26T12:31:01.189306",
+        "sequence": "Command",
+        "denied": "False",
+        "command_id": "save_file"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-11-26T12:31:01.904347",
+        "widget_id": 81926256,
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "text_widget_id": 81926256
+    }
+]

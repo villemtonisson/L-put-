@@ -1,0 +1,222 @@
+[
+    {
+        "view_id": 58412624,
+        "time": "2017-09-09T15:57:56.648688",
+        "view_class": "OutlineView",
+        "sequence": "ShowView"
+    },
+    {
+        "editor_id": 58412720,
+        "editor_class": "Editor",
+        "time": "2017-09-09T15:57:56.752694",
+        "text_widget_id": 58534320,
+        "text_widget_class": "CodeViewText",
+        "sequence": "EditorTextCreated"
+    },
+    {
+        "time": "2017-09-09T15:57:56.753694",
+        "index1": "1.0",
+        "text_widget_id": 58534320,
+        "text_widget_class": "CodeViewText",
+        "index2": "2.0",
+        "sequence": "TextDelete"
+    },
+    {
+        "tags": "()",
+        "time": "2017-09-09T15:57:56.767695",
+        "text": "from turtle import *\nimport math\n\n\nmaja_laius=int(input(\"Sisesta maja laius: \"))\nmaja_k\u00f5rgus=int(input(\"Sisesta maja k\u00f5rgus: \"))\n\npencolor(\"violet\")\n\nforward(maja_laius) \nleft(90)\nforward(maja_k\u00f5rgus)\nleft(90)\nforward(maja_laius)\nleft(90)\nforward(maja_k\u00f5rgus)\n\nkatus=math.sqrt((maja_laius**2)/2)\n\nup()\nright(180)\nforward(maja_k\u00f5rgus)\ndown()\nright(45)\nforward(katus)\nright(90)\nforward(katus)\n\n\nexitonclick()",
+        "text_widget_id": 58534320,
+        "text_widget_class": "CodeViewText",
+        "sequence": "TextInsert",
+        "index": "1.0"
+    },
+    {
+        "tags": "('toplevel', 'prompt')",
+        "time": "2017-09-09T15:57:56.935705",
+        "text": ">>> ",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "1.0"
+    },
+    {
+        "time": "2017-09-09T15:57:56.975707",
+        "widget_class": "Workbench",
+        "widget_id": 43619440,
+        "sequence": "<FocusIn>"
+    },
+    {
+        "widget_class": "CodeViewText",
+        "widget_id": 58534320,
+        "time": "2017-09-09T15:57:58.438791",
+        "text_widget_id": 58534320,
+        "text_widget_class": "CodeViewText",
+        "sequence": "<Button-1>"
+    },
+    {
+        "time": "2017-09-09T15:57:59.109829",
+        "widget_class": "Button",
+        "widget_id": 43790736,
+        "sequence": "<Button-1>"
+    },
+    {
+        "time": "2017-09-09T15:57:59.176833",
+        "text_widget_context": "shell",
+        "index1": "1.4",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "index2": "2.0",
+        "sequence": "TextDelete"
+    },
+    {
+        "tags": "('automagic', 'toplevel', 'command')",
+        "time": "2017-09-09T15:57:59.176833",
+        "text": "%cd 'C:\\Users\\Villem\\AppData\\Local\\Temp\\Rar$DIa0.595'\n%Run Saik_programmeerimine_1.py\n",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "1.4"
+    },
+    {
+        "time": "2017-09-09T15:57:59.177833",
+        "sequence": "ShellCommand",
+        "command_text": "%cd 'C:\\Users\\Villem\\AppData\\Local\\Temp\\Rar$DIa0.595'\n"
+    },
+    {
+        "tags": "('toplevel', 'prompt')",
+        "time": "2017-09-09T15:57:59.211835",
+        "text": ">>> ",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "2.0"
+    },
+    {
+        "time": "2017-09-09T15:57:59.326841",
+        "sequence": "ShellCommand",
+        "command_text": "%Run Saik_programmeerimine_1.py\n"
+    },
+    {
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "time": "2017-09-09T15:57:59.481850",
+        "text": "S",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "3.0"
+    },
+    {
+        "tags": "('io', 'stdout')",
+        "time": "2017-09-09T15:57:59.481850",
+        "text": "isesta maja laius: ",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "3.1"
+    },
+    {
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T15:58:01.499966",
+        "text": "1",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "3.20"
+    },
+    {
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T15:58:01.635974",
+        "text": "0",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "3.21"
+    },
+    {
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T15:58:01.771981",
+        "text": "0",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "3.22"
+    },
+    {
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T15:58:02.340014",
+        "text": "\n",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "3.23"
+    },
+    {
+        "input_text": "100\n",
+        "time": "2017-09-09T15:58:02.340014",
+        "sequence": "ShellInput"
+    },
+    {
+        "tags": "('io', 'stdout')",
+        "time": "2017-09-09T15:58:02.347014",
+        "text": "Sisesta maja k\u00f5rgus: ",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "4.0"
+    },
+    {
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T15:58:03.404075",
+        "text": "5",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "4.21"
+    },
+    {
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T15:58:03.492080",
+        "text": "0",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "4.22"
+    },
+    {
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T15:58:03.676090",
+        "text": "\n",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "4.23"
+    },
+    {
+        "input_text": "50\n",
+        "time": "2017-09-09T15:58:03.676090",
+        "sequence": "ShellInput"
+    },
+    {
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "time": "2017-09-09T15:58:05.107172",
+        "text": ">>> ",
+        "sequence": "TextInsert",
+        "text_widget_id": 43735632,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "index": "5.0"
+    }
+]

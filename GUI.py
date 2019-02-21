@@ -106,7 +106,7 @@ end_minute_picker.pack(anchor='c')
 #print(filename)
 #filedialog.askdirectory()
 #
-#askopenfilename(title="Select file", filetypes=(("all files", "*.*"),("RAR files", "*.rar"), ("ZIP files", "*.zip"),("7z files", "*.7z"),("TAR files", "*.tar")))
+askopenfilename(title="Select file", filetypes=(("all files", "*.*"),("RAR files", "*.rar"), ("ZIP files", "*.zip"),("7z files", "*.7z"),("TAR files", "*.tar")))
 
 #file_pick_button = tk.Button(bottomFrame, text="Pick File")
 #file_pick_button.pack(fill=tk.BOTH, expand=1)
