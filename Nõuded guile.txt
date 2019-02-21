@@ -1,0 +1,11 @@
+Failide valimine
+
+Üks logifail
+Üks pakitud fail
+kaust logifailidega
+kaust pakitud failidega
+
+
+Eralda ülesanded radiobutton
+
+

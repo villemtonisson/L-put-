@@ -43,24 +43,25 @@ def unpack(arch_loc, filenames, output='*'):
         print(i, end="")
     
 
-#Vaja programmile anda, globaalne
-loc_7z = r"C:\\Program Files\\7-Zip\\7z.exe"
-
-
-start=datetime(2016, 11, 26, hour=12, minute=20, second=0)
-end=datetime(2017, 9, 9, hour=16, minute=0, second=0)
-
-arch_loc="C:\\Users\\Villem\\Desktop\\L-put-\\pakk.7z"
-
-all_filenames=get_filenames(arch_loc)
-filenames=[]
-for name in all_filenames:
-    #Juhuks, kui mõne faili nime on muudetud
-    try:
-        date=datetime.strptime(name.rsplit("_", 1)[0], '%Y-%m-%d_%H-%M-%S')
-        if date>start and date<end:
+"""
+Avab arhiivi ja võtab sealt välja failid, mille nimi on õiges ajavahemikus
+Kui mõne logifaili nime on muudetud, võtab ka selle välja
+"""
+def unpack_between(arch_loc, start, end, output='*'):
+    all_filenames=get_filenames(arch_loc)
+    filenames=[]
+    for name in all_filenames:
+        #Juhuks, kui mõne faili nime on muudetud
+        try:
+            date=datetime.strptime(name.rsplit("_", 1)[0], '%Y-%m-%d_%H-%M-%S')
+            if date>start and date<end:
+                filenames.append(name)
+        except:
             filenames.append(name)
-    except:
-        pass
+            #pass , juhuks, kui ei taha muudetud nimega
+    unpack(arch_loc, filenames, output=output)
 
-unpack(arch_loc, filenames, output="C:\\Users\\Villem\\Desktop\\L-put-\\pakk1")
+#start=datetime(2016, 11, 26, hour=12, minute=20)
+#end=datetime(2017, 9, 9, hour=16, minute=0)
+
+#unpack(arch_loc, filenames, output="C:\\Users\\Villem\\Desktop\\L-put-\\pakk1")
