@@ -1,6 +1,10 @@
 import subprocess
 from datetime import datetime
 
+
+#TODO teha settings fail
+loc_7z = r"C:\\Program Files\\7-Zip\\7z.exe"
+
 """
 Võtab antud käsu ja käivitab selle käsurealt
 Väljastab kõik read, mida käsu täitmisel näidataks
