@@ -1,0 +1,657 @@
+[
+    {
+        "sequence": "EditorTextCreated",
+        "time": "2016-10-26T17:24:50.251344",
+        "text_widget_id": 62461328,
+        "editor_id": 43138288,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "index2": "2.0",
+        "sequence": "TextDelete",
+        "index1": "1.0",
+        "time": "2016-10-26T17:24:50.252344",
+        "text_widget_id": 62461328,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "index": "1.0",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:24:50.273346",
+        "text_widget_id": 62461328,
+        "tags": "()",
+        "text": "#  |\\      |    ____    |   /  |       |\n#  | \\     |   /    \\   |  /   |       |\n#  |  \\    |  /      \\  | /    |       |\n#  |   \\   | |        | |/     |       |\n#  |    \\  | |        | | \\    |       |\n#  |     \\ |  \\      /  |  \\    \\     /\n#  |      \\|   \\____/   |   \\    \\___/\n\n\nfrom turtle import *\n\nspeed(6)\nup()\nsetpos (-100,0)\ndown ()\nleft (90)\ncircle (-80,185)\nright (175)\nforward (180)\nleft (30)\ncircle (-50,125)\nright (90)\nforward (20)\nright (180)\nforward (20)\nright (90)\ncircle (-50,125)\nleft (40)\nforward (180)\nleft (180)\ncircle (-80,185)\nexitonclick()"
+    },
+    {
+        "index": "1.0",
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "time": "2016-10-26T17:24:50.336349",
+        "text_widget_id": 43088496,
+        "tags": "('toplevel', 'prompt')",
+        "sequence": "TextInsert"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2016-10-26T17:24:50.336349",
+        "widget_id": 42964112,
+        "sequence": "<FocusIn>"
+    },
+    {
+        "index2": "2.0",
+        "sequence": "TextDelete",
+        "index1": "1.4",
+        "text_widget_context": "shell",
+        "time": "2016-10-26T17:25:05.874238",
+        "text_widget_id": 43088496,
+        "text_widget_class": "ShellText"
+    },
+    {
+        "index": "1.4",
+        "text": "%cd 'C:\\Users\\Villem\\Downloads'\n%Run noku.py\n",
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "time": "2016-10-26T17:25:05.875238",
+        "text_widget_id": 43088496,
+        "tags": "('automagic', 'toplevel', 'command')",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-26T17:25:05.875238",
+        "command_text": "%cd 'C:\\Users\\Villem\\Downloads'\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "command_id": "run_current_script",
+        "time": "2016-10-26T17:25:05.875238",
+        "denied": "False",
+        "sequence": "Command"
+    },
+    {
+        "time": "2016-10-26T17:25:05.887239",
+        "index": "2.0",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "text": ">>> ",
+        "text_widget_id": 43088496,
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_class": "ShellText"
+    },
+    {
+        "time": "2016-10-26T17:25:06.167255",
+        "command_text": "%Run noku.py\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2016-10-26T17:25:06.315263",
+        "widget_id": 42964112,
+        "sequence": "<FocusOut>"
+    },
+    {
+        "time": "2016-10-26T17:25:09.226430",
+        "index": "3.0",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "text": ">>> ",
+        "text_widget_id": 43088496,
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_class": "ShellText"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2016-10-26T17:25:26.217402",
+        "widget_id": 42964112,
+        "sequence": "<FocusIn>"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2016-10-26T17:25:27.428471",
+        "widget_id": 42964112,
+        "sequence": "<FocusOut>"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2016-10-26T17:25:46.612568",
+        "widget_id": 42964112,
+        "sequence": "<FocusIn>"
+    },
+    {
+        "widget_id": 62461328,
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:25:46.613568",
+        "text_widget_id": 62461328,
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>"
+    },
+    {
+        "index2": "4.0",
+        "sequence": "TextDelete",
+        "index1": "3.4",
+        "text_widget_context": "shell",
+        "time": "2016-10-26T17:25:47.649627",
+        "text_widget_id": 43088496,
+        "text_widget_class": "ShellText"
+    },
+    {
+        "time": "2016-10-26T17:25:47.650627",
+        "index": "3.4",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "text": "%Run noku.py\n",
+        "text_widget_id": 43088496,
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_class": "ShellText"
+    },
+    {
+        "time": "2016-10-26T17:25:47.771634",
+        "command_text": "%Run noku.py\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "command_id": "run_current_script",
+        "time": "2016-10-26T17:25:47.771634",
+        "denied": "False",
+        "sequence": "Command"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2016-10-26T17:25:47.856639",
+        "widget_id": 42964112,
+        "sequence": "<FocusOut>"
+    },
+    {
+        "time": "2016-10-26T17:25:50.775806",
+        "index": "4.0",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "text": ">>> ",
+        "text_widget_id": 43088496,
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_class": "ShellText"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2016-10-26T17:25:52.348896",
+        "widget_id": 42964112,
+        "sequence": "<FocusIn>"
+    },
+    {
+        "widget_id": 62461328,
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:25:54.095996",
+        "text_widget_id": 62461328,
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>"
+    },
+    {
+        "index2": "32.13",
+        "sequence": "TextDelete",
+        "index1": "18.0",
+        "time": "2016-10-26T17:25:59.162286",
+        "text_widget_id": 62461328,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "index2": "5.0",
+        "sequence": "TextDelete",
+        "index1": "4.4",
+        "text_widget_context": "shell",
+        "time": "2016-10-26T17:25:59.570309",
+        "text_widget_id": 43088496,
+        "text_widget_class": "ShellText"
+    },
+    {
+        "time": "2016-10-26T17:25:59.570309",
+        "index": "4.4",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "text": "%Run noku.py\n",
+        "text_widget_id": 43088496,
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_class": "ShellText"
+    },
+    {
+        "sequence": "Save",
+        "time": "2016-10-26T17:25:59.570309",
+        "text_widget_id": 62461328,
+        "editor_id": 43138288,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-10-26T17:25:59.686316",
+        "command_text": "%Run noku.py\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "command_id": "run_current_script",
+        "time": "2016-10-26T17:25:59.686316",
+        "denied": "False",
+        "sequence": "Command"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2016-10-26T17:25:59.774321",
+        "widget_id": 42964112,
+        "sequence": "<FocusOut>"
+    },
+    {
+        "time": "2016-10-26T17:26:00.540365",
+        "index": "5.0",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "text": ">>> ",
+        "text_widget_id": 43088496,
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_class": "ShellText"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2016-10-26T17:26:02.314466",
+        "widget_id": 42964112,
+        "sequence": "<FocusIn>"
+    },
+    {
+        "widget_id": 62461328,
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:03.515535",
+        "text_widget_id": 62461328,
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>"
+    },
+    {
+        "index2": "None",
+        "sequence": "TextDelete",
+        "index1": "17.9",
+        "time": "2016-10-26T17:26:04.746605",
+        "text_widget_id": 62461328,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "index": "17.9",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:04.850611",
+        "text_widget_id": 62461328,
+        "tags": "None",
+        "text": "6"
+    },
+    {
+        "index2": "6.0",
+        "sequence": "TextDelete",
+        "index1": "5.4",
+        "text_widget_context": "shell",
+        "time": "2016-10-26T17:26:05.249634",
+        "text_widget_id": 43088496,
+        "text_widget_class": "ShellText"
+    },
+    {
+        "time": "2016-10-26T17:26:05.250634",
+        "index": "5.4",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "text": "%Run noku.py\n",
+        "text_widget_id": 43088496,
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_class": "ShellText"
+    },
+    {
+        "sequence": "Save",
+        "time": "2016-10-26T17:26:05.250634",
+        "text_widget_id": 62461328,
+        "editor_id": 43138288,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-10-26T17:26:05.364641",
+        "command_text": "%Run noku.py\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "command_id": "run_current_script",
+        "time": "2016-10-26T17:26:05.364641",
+        "denied": "False",
+        "sequence": "Command"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2016-10-26T17:26:05.449645",
+        "widget_id": 42964112,
+        "sequence": "<FocusOut>"
+    },
+    {
+        "time": "2016-10-26T17:26:06.116684",
+        "index": "6.0",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "text": ">>> ",
+        "text_widget_id": 43088496,
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_class": "ShellText"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2016-10-26T17:26:08.173801",
+        "widget_id": 42964112,
+        "sequence": "<FocusIn>"
+    },
+    {
+        "index2": "None",
+        "sequence": "TextDelete",
+        "index1": "17.9",
+        "time": "2016-10-26T17:26:10.850954",
+        "text_widget_id": 62461328,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "index": "17.9",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:10.977962",
+        "text_widget_id": 62461328,
+        "tags": "None",
+        "text": "8"
+    },
+    {
+        "index2": "None",
+        "sequence": "TextDelete",
+        "index1": "17.14",
+        "time": "2016-10-26T17:26:13.794123",
+        "text_widget_id": 62461328,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "index2": "None",
+        "sequence": "TextDelete",
+        "index1": "17.13",
+        "time": "2016-10-26T17:26:13.954132",
+        "text_widget_id": 62461328,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "index2": "None",
+        "sequence": "TextDelete",
+        "index1": "17.12",
+        "time": "2016-10-26T17:26:14.122142",
+        "text_widget_id": 62461328,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "index": "17.12",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:14.850183",
+        "text_widget_id": 62461328,
+        "tags": "None",
+        "text": "1"
+    },
+    {
+        "index": "17.13",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:15.002192",
+        "text_widget_id": 62461328,
+        "tags": "None",
+        "text": "0"
+    },
+    {
+        "index": "17.14",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:15.154201",
+        "text_widget_id": 62461328,
+        "tags": "None",
+        "text": "0"
+    },
+    {
+        "sequence": "Save",
+        "time": "2016-10-26T17:26:17.569339",
+        "text_widget_id": 62461328,
+        "editor_id": 43138288,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "command_id": "save_file",
+        "time": "2016-10-26T17:26:17.572339",
+        "denied": "False",
+        "sequence": "Command"
+    },
+    {
+        "index2": "7.0",
+        "sequence": "TextDelete",
+        "index1": "6.4",
+        "text_widget_context": "shell",
+        "time": "2016-10-26T17:26:18.082368",
+        "text_widget_id": 43088496,
+        "text_widget_class": "ShellText"
+    },
+    {
+        "time": "2016-10-26T17:26:18.082368",
+        "index": "6.4",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "text": "%Run noku.py\n",
+        "text_widget_id": 43088496,
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_class": "ShellText"
+    },
+    {
+        "time": "2016-10-26T17:26:18.193374",
+        "command_text": "%Run noku.py\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "command_id": "run_current_script",
+        "time": "2016-10-26T17:26:18.193374",
+        "denied": "False",
+        "sequence": "Command"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2016-10-26T17:26:18.278379",
+        "widget_id": 42964112,
+        "sequence": "<FocusOut>"
+    },
+    {
+        "time": "2016-10-26T17:26:18.794409",
+        "index": "7.0",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "text": ">>> ",
+        "text_widget_id": 43088496,
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_class": "ShellText"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2016-10-26T17:26:21.189546",
+        "widget_id": 42964112,
+        "sequence": "<FocusIn>"
+    },
+    {
+        "index2": "17.15",
+        "sequence": "TextDelete",
+        "index1": "17.14",
+        "time": "2016-10-26T17:26:22.098598",
+        "text_widget_id": 62461328,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "index2": "17.14",
+        "sequence": "TextDelete",
+        "index1": "17.13",
+        "time": "2016-10-26T17:26:22.099598",
+        "text_widget_id": 62461328,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "index2": "17.13",
+        "sequence": "TextDelete",
+        "index1": "17.12",
+        "time": "2016-10-26T17:26:22.100598",
+        "text_widget_id": 62461328,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "widget_id": 62461328,
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:22.100598",
+        "text_widget_id": 62461328,
+        "widget_class": "CodeViewText",
+        "sequence": "<<Undo>>"
+    },
+    {
+        "index": "17.12",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:22.394615",
+        "text_widget_id": 62461328,
+        "tags": "None",
+        "text": "1"
+    },
+    {
+        "index": "17.13",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:22.395615",
+        "text_widget_id": 62461328,
+        "tags": "None",
+        "text": "8"
+    },
+    {
+        "index": "17.14",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:22.396615",
+        "text_widget_id": 62461328,
+        "tags": "None",
+        "text": "5"
+    },
+    {
+        "widget_id": 62461328,
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:22.396615",
+        "text_widget_id": 62461328,
+        "widget_class": "CodeViewText",
+        "sequence": "<<Undo>>"
+    },
+    {
+        "index2": "17.10",
+        "sequence": "TextDelete",
+        "index1": "17.9",
+        "time": "2016-10-26T17:26:22.714633",
+        "text_widget_id": 62461328,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "widget_id": 62461328,
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:22.714633",
+        "text_widget_id": 62461328,
+        "widget_class": "CodeViewText",
+        "sequence": "<<Undo>>"
+    },
+    {
+        "index": "17.9",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:23.018650",
+        "text_widget_id": 62461328,
+        "tags": "None",
+        "text": "6"
+    },
+    {
+        "widget_id": 62461328,
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:23.018650",
+        "text_widget_id": 62461328,
+        "widget_class": "CodeViewText",
+        "sequence": "<<Undo>>"
+    },
+    {
+        "index2": "17.10",
+        "sequence": "TextDelete",
+        "index1": "17.9",
+        "time": "2016-10-26T17:26:23.322668",
+        "text_widget_id": 62461328,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "widget_id": 62461328,
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:23.322668",
+        "text_widget_id": 62461328,
+        "widget_class": "CodeViewText",
+        "sequence": "<<Undo>>"
+    },
+    {
+        "index": "17.9",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:23.634686",
+        "text_widget_id": 62461328,
+        "tags": "None",
+        "text": "8"
+    },
+    {
+        "widget_id": 62461328,
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:23.634686",
+        "text_widget_id": 62461328,
+        "widget_class": "CodeViewText",
+        "sequence": "<<Undo>>"
+    },
+    {
+        "index": "18.0",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:23.970705",
+        "text_widget_id": 62461328,
+        "tags": "None",
+        "text": "right (175)\nforward (180)\nleft (30)\ncircle (-50,125)\nright (90)\nforward (20)\nright (180)\nforward (20)\nright (90)\ncircle (-50,125)\nleft (40)\nforward (180)\nleft (180)\ncircle (-80,185)\nexitonclick()"
+    },
+    {
+        "widget_id": 62461328,
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:23.970705",
+        "text_widget_id": 62461328,
+        "widget_class": "CodeViewText",
+        "sequence": "<<Undo>>"
+    },
+    {
+        "widget_id": 62461328,
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:24.391729",
+        "text_widget_id": 62461328,
+        "widget_class": "CodeViewText",
+        "sequence": "<<Undo>>"
+    },
+    {
+        "widget_id": 62461328,
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-26T17:26:25.249778",
+        "text_widget_id": 62461328,
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>"
+    },
+    {
+        "sequence": "Save",
+        "time": "2016-10-26T17:26:27.129886",
+        "text_widget_id": 62461328,
+        "editor_id": 43138288,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "command_id": "save_file",
+        "time": "2016-10-26T17:26:27.131886",
+        "denied": "False",
+        "sequence": "Command"
+    }
+]

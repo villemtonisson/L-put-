@@ -1,0 +1,43 @@
+[
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-06T20:33:11.268373",
+        "sequence": "EditorTextCreated",
+        "editor_id": 43335024,
+        "text_widget_id": 51316432,
+        "editor_class": "Editor"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index2": "2.0",
+        "sequence": "TextDelete",
+        "time": "2016-10-06T20:33:11.279374",
+        "text_widget_id": 51316432,
+        "index1": "1.0"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-06T20:33:11.285374",
+        "sequence": "TextInsert",
+        "index": "1.0",
+        "text_widget_id": 51316432,
+        "text": "tugevuslist=[\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"91\",\"92\",\"93\",\"94\",\"95\"]#10=91, J=92\n\ndef kaardinumber(kaart):\n    x=kaart[:-1]\n    return x\n        \ndef kaardimast(kaart):\n    x=kaart[-1]\n    return x\n   \ndef kaardid_listi(kaart1, kaart2, kaart3, kaart4, kaart5):\n    kaardid=[kaart1, kaart2, kaart3, kaart4, kaart5]\n\n    kaardinumbrid=[]\n    for i in range(5):\n        temp=kaardinumber(kaardid[i])\n        kaardinumbrid.append(temp)\n\n    kaardimastid=[]\n    for i in range(5):\n        b=kaardid[i]\n        kaardimastid+=(kaardimast(b))\n    \n    print(kaardimastid)\n    print(kaardinumbrid)\n\nkaardid_listi('2\u2663', '10\u2666', '10\u2665', 'K\u2665', 'K\u2666')\n",
+        "tags": "()"
+    },
+    {
+        "text_widget_context": "shell",
+        "text_widget_class": "ShellText",
+        "time": "2016-10-06T20:33:11.374379",
+        "index": "1.0",
+        "sequence": "TextInsert",
+        "text_widget_id": 43284720,
+        "text": ">>> ",
+        "tags": "('toplevel', 'prompt')"
+    },
+    {
+        "time": "2016-10-06T20:33:11.375379",
+        "widget_id": 43160592,
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench"
+    }
+]

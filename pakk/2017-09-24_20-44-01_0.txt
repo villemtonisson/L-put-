@@ -1,0 +1,2093 @@
+[
+    {
+        "view_class": "OutlineView",
+        "sequence": "ShowView",
+        "view_id": "OutlineView",
+        "time": "2017-09-24T20:44:02.120828"
+    },
+    {
+        "sequence": "EditorTextCreated",
+        "editor_class": "Editor",
+        "time": "2017-09-24T20:44:02.130828",
+        "text_widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "editor_id": 81092432
+    },
+    {
+        "sequence": "NewFile",
+        "editor_class": "Editor",
+        "time": "2017-09-24T20:44:02.130828",
+        "text_widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "editor_id": 81092432
+    },
+    {
+        "text": ">>> ",
+        "sequence": "TextInsert",
+        "index": "1.0",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:44:02.162830",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:44:02.212833"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:44:03.498906"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:44:15.468591"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:15.901616"
+    },
+    {
+        "text": "#\u00fclevaatuseks valmis\n\nisa = float(input(\"Palun sisesta isa brutopalk: \"))\nema = float(input(\"Palun sisesta ema brutopalk: \"))\nlapsed = float(input(\"Palun sisesta laste arv: \"))\n\nif isa <= 500.0 and ema > 500.0:\n    print(\"Pere kuusissetulek on \",round((((ema - 170.0) * 0.79 + 170.0) + isa + 50.0 * lapsed), 2))\n\nelif isa > 500.0 and ema > 500.0:\n    print(\"Pere kuusissetulek on \", round((((ema - 170.0) * 0.79 + 170.0) + ((isa - 170.0) * 0.79 + 170.0) + 50.0 * lapsed), 2))\n\nelif isa > 500.0 and ema <= 500.0:\n    print(\"Pere kuusissetulek on \", round((ema + ((isa - 170.0) * 0.79 + 170.0) + 50.0 * lapsed), 2))\n\nelse:\n    print(\"Pere kuusissetulek on \", round((ema + isa + 50.0 * lapsed), 2))",
+        "sequence": "TextInsert",
+        "index": "1.0",
+        "tags": "None",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:16.161631"
+    },
+    {
+        "sequence": "<<Paste>>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:16.162631"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:16.943675"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:17.684718"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "1.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:18.838784",
+        "index2": "1.20"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "1.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:18.917788",
+        "index2": "None"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "1.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:19.374814",
+        "index2": "None"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:24.062083"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "6.35",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:26.726235",
+        "index2": "6.40"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:27.404274"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "9.36",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:28.230321",
+        "index2": "9.41"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:28.693347"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "12.36",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:29.662403",
+        "index2": "12.41"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:31.445505"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "15.36",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:44:32.494565",
+        "index2": "15.41"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 42410192,
+        "time": "2017-09-24T20:44:48.349472"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:44:48.449477"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:44:58.445049"
+    },
+    {
+        "filename": "C:/Users/Villem/.thonny/Juhendaja kraam/Straus 3. 2..py",
+        "sequence": "SaveAs",
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-24T20:44:58.466050",
+        "text_widget_id": 81196976,
+        "editor_class": "Editor",
+        "editor_id": 81092432
+    },
+    {
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "index1": "1.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:44:58.469051",
+        "index2": "2.0"
+    },
+    {
+        "text": "%Run 'Straus 3. 2..py'\n",
+        "sequence": "TextInsert",
+        "index": "1.4",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:44:58.470051",
+        "text_widget_context": "shell"
+    },
+    {
+        "command_text": "%Run 'Straus 3. 2..py'\n",
+        "sequence": "ShellCommand",
+        "time": "2017-09-24T20:44:58.586057"
+    },
+    {
+        "text": "P",
+        "sequence": "TextInsert",
+        "index": "2.0",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:44:58.587057",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "alun sisesta isa brutopalk: ",
+        "sequence": "TextInsert",
+        "index": "2.1",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:44:58.588057",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "1",
+        "sequence": "TextInsert",
+        "index": "2.29",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:01.885246",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "7",
+        "sequence": "TextInsert",
+        "index": "2.30",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:01.973251",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "1",
+        "sequence": "TextInsert",
+        "index": "2.31",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:02.101258",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "2.32",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:03.341329",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:45:03.341329",
+        "input_text": "171\n"
+    },
+    {
+        "text": "Palun sisesta ema brutopalk: ",
+        "sequence": "TextInsert",
+        "index": "3.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:03.363330",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "8",
+        "sequence": "TextInsert",
+        "index": "3.29",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:03.773354",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "3.30",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:03.997367",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "3.31",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:04.133375",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "3.32",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:06.093487",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:45:06.093487",
+        "input_text": "800\n"
+    },
+    {
+        "text": "Palun sisesta laste arv: ",
+        "sequence": "TextInsert",
+        "index": "4.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:06.124488",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "4.25",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:06.580514",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "4.26",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:06.852530",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:45:06.853530",
+        "input_text": "0\n"
+    },
+    {
+        "text": "Pere kuusissetulek on  (838.7, 2)\n",
+        "sequence": "TextInsert",
+        "index": "5.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:06.882532",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": ">>> ",
+        "sequence": "TextInsert",
+        "index": "6.0",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:06.887532",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:45:23.549485"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Scrollbar",
+        "widget_id": 81198320,
+        "time": "2017-09-24T20:45:25.228581"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "12.34",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:45:31.701951",
+        "index2": "None"
+    },
+    {
+        "text": "+",
+        "sequence": "TextInsert",
+        "index": "12.34",
+        "tags": "None",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:45:31.829959"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "15.34",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:45:33.238039",
+        "index2": "None"
+    },
+    {
+        "text": "+",
+        "sequence": "TextInsert",
+        "index": "15.34",
+        "tags": "None",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:45:33.358046"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "9.34",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:45:35.830187",
+        "index2": "None"
+    },
+    {
+        "text": "+",
+        "sequence": "TextInsert",
+        "index": "9.34",
+        "tags": "None",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:45:35.966195"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "6.34",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:45:38.014312",
+        "index2": "None"
+    },
+    {
+        "text": "+",
+        "sequence": "TextInsert",
+        "index": "6.34",
+        "tags": "None",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:45:38.414335"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 42410192,
+        "time": "2017-09-24T20:45:40.226439"
+    },
+    {
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "index1": "6.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:40.304443",
+        "index2": "7.0"
+    },
+    {
+        "text": "%Run 'Straus 3. 2..py'\n",
+        "sequence": "TextInsert",
+        "index": "6.4",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:40.305443",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "Save",
+        "editor_class": "Editor",
+        "time": "2017-09-24T20:45:40.305443",
+        "text_widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "editor_id": 81092432
+    },
+    {
+        "command_text": "%Run 'Straus 3. 2..py'\n",
+        "sequence": "ShellCommand",
+        "time": "2017-09-24T20:45:40.430451"
+    },
+    {
+        "text": "P",
+        "sequence": "TextInsert",
+        "index": "7.0",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:40.480453",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "alun sisesta isa brutopalk: ",
+        "sequence": "TextInsert",
+        "index": "7.1",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:40.481454",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "1",
+        "sequence": "TextInsert",
+        "index": "7.29",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:42.028542",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "7",
+        "sequence": "TextInsert",
+        "index": "7.30",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:42.108547",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "1",
+        "sequence": "TextInsert",
+        "index": "7.31",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:42.228553",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "7.32",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:42.652578",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:45:42.653578",
+        "input_text": "171\n"
+    },
+    {
+        "text": "Palun sisesta ema brutopalk: ",
+        "sequence": "TextInsert",
+        "index": "8.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:42.695580",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "8",
+        "sequence": "TextInsert",
+        "index": "8.29",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:43.076602",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "8.30",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:43.396620",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "8.31",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:43.548629",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "8.32",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:44.148663",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:45:44.149663",
+        "input_text": "800\n"
+    },
+    {
+        "text": "Palun sisesta laste arv: ",
+        "sequence": "TextInsert",
+        "index": "9.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:44.156664",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "9.25",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:44.396677",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "9.26",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:44.580688",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:45:44.581688",
+        "input_text": "0\n"
+    },
+    {
+        "text": "Traceback (most recent call last):\n",
+        "sequence": "TextInsert",
+        "index": "10.0",
+        "tags": "('io', 'stderr')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:44.617690",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "  ",
+        "sequence": "TextInsert",
+        "index": "11.0",
+        "tags": "('io', 'stderr')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:44.617690",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "File \"C:\\Users\\Villem\\.thonny\\Juhendaja kraam\\Straus 3. 2..py\", line 6, in <module>",
+        "sequence": "TextInsert",
+        "index": "11.2",
+        "tags": "('io', 'stderr', 'hyperlink')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:44.618690",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "11.85",
+        "tags": "('io', 'stderr')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:44.618690",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "    print(\"Pere kuusissetulek on \"+((((ema - 170.0) * 0.79 + 170.0) + isa + 50.0 * lapsed), 2))\n",
+        "sequence": "TextInsert",
+        "index": "12.0",
+        "tags": "('io', 'stderr')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:44.618690",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "TypeError: Can't convert 'tuple' object to str implicitly\n",
+        "sequence": "TextInsert",
+        "index": "13.0",
+        "tags": "('io', 'stderr')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:44.618690",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": ">>> ",
+        "sequence": "TextInsert",
+        "index": "14.0",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:45:44.627691",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:45:56.551373"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:45:57.668437"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Scrollbar",
+        "widget_id": 81198320,
+        "time": "2017-09-24T20:45:58.401478"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:02.059688"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "9.120",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:02.549716",
+        "index2": "None"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "9.119",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:02.925737",
+        "index2": "9.120"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "9.118",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:03.493770",
+        "index2": "None"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:04.467825"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "6.92",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:04.717840",
+        "index2": "None"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "6.91",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:04.893850",
+        "index2": "6.92"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "6.90",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:05.068860",
+        "index2": "None"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:05.864905"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "12.93",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:06.173923",
+        "index2": "None"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "12.92",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:06.357934",
+        "index2": "12.93"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "12.91",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:06.525943",
+        "index2": "None"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:07.523000"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "15.66",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:07.766014",
+        "index2": "None"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "15.65",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:07.934024",
+        "index2": "15.66"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "15.64",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:08.104033",
+        "index2": "None"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Scrollbar",
+        "widget_id": 81198320,
+        "time": "2017-09-24T20:46:08.844076"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 42410192,
+        "time": "2017-09-24T20:46:10.468169"
+    },
+    {
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "index1": "14.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:10.550173",
+        "index2": "15.0"
+    },
+    {
+        "text": "%Run 'Straus 3. 2..py'\n",
+        "sequence": "TextInsert",
+        "index": "14.4",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:10.551173",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "Save",
+        "editor_class": "Editor",
+        "time": "2017-09-24T20:46:10.551173",
+        "text_widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "editor_id": 81092432
+    },
+    {
+        "command_text": "%Run 'Straus 3. 2..py'\n",
+        "sequence": "ShellCommand",
+        "time": "2017-09-24T20:46:10.674180"
+    },
+    {
+        "text": "P",
+        "sequence": "TextInsert",
+        "index": "15.0",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:10.675180",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "alun sisesta isa brutopalk: ",
+        "sequence": "TextInsert",
+        "index": "15.1",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:10.675180",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "1",
+        "sequence": "TextInsert",
+        "index": "15.29",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:12.468283",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "7",
+        "sequence": "TextInsert",
+        "index": "15.30",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:12.589290",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "1",
+        "sequence": "TextInsert",
+        "index": "15.31",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:12.684295",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "15.32",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:13.004314",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:46:13.005314",
+        "input_text": "171\n"
+    },
+    {
+        "text": "Palun sisesta ema brutopalk: ",
+        "sequence": "TextInsert",
+        "index": "16.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:13.052316",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "8",
+        "sequence": "TextInsert",
+        "index": "16.29",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:13.468340",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "16.30",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:13.668352",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "16.31",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:13.804359",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "16.32",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:14.444396",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:46:14.445396",
+        "input_text": "800\n"
+    },
+    {
+        "text": "Palun sisesta laste arv: ",
+        "sequence": "TextInsert",
+        "index": "17.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:14.466397",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "17.25",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:14.724412",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "17.26",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:14.932424",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:46:14.932424",
+        "input_text": "0\n"
+    },
+    {
+        "text": "Traceback (most recent call last):\n",
+        "sequence": "TextInsert",
+        "index": "18.0",
+        "tags": "('io', 'stderr')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:14.979427",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "  ",
+        "sequence": "TextInsert",
+        "index": "19.0",
+        "tags": "('io', 'stderr')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:14.980427",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "File \"C:\\Users\\Villem\\.thonny\\Juhendaja kraam\\Straus 3. 2..py\", line 6, in <module>",
+        "sequence": "TextInsert",
+        "index": "19.2",
+        "tags": "('io', 'stderr', 'hyperlink')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:14.980427",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "19.85",
+        "tags": "('io', 'stderr')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:14.980427",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "    print(\"Pere kuusissetulek on \"+((((ema - 170.0) * 0.79 + 170.0) + isa + 50.0 * lapsed)))\n",
+        "sequence": "TextInsert",
+        "index": "20.0",
+        "tags": "('io', 'stderr')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:14.981427",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "TypeError: Can't convert 'float' object to str implicitly\n",
+        "sequence": "TextInsert",
+        "index": "21.0",
+        "tags": "('io', 'stderr')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:14.981427",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": ">>> ",
+        "sequence": "TextInsert",
+        "index": "22.0",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:14.989427",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText",
+        "widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:18.467626"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "12.34",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:19.741699",
+        "index2": "None"
+    },
+    {
+        "text": ",",
+        "sequence": "TextInsert",
+        "index": "12.34",
+        "tags": "None",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:19.861706"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "15.34",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:21.421795",
+        "index2": "None"
+    },
+    {
+        "text": ",",
+        "sequence": "TextInsert",
+        "index": "15.34",
+        "tags": "None",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:21.541802"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "9.34",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:23.517915",
+        "index2": "None"
+    },
+    {
+        "text": ",",
+        "sequence": "TextInsert",
+        "index": "9.34",
+        "tags": "None",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:23.637922"
+    },
+    {
+        "sequence": "TextDelete",
+        "index1": "6.34",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:24.917995",
+        "index2": "None"
+    },
+    {
+        "text": ",",
+        "sequence": "TextInsert",
+        "index": "6.34",
+        "tags": "None",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 81196976,
+        "time": "2017-09-24T20:46:25.062003"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 42410192,
+        "time": "2017-09-24T20:46:26.136046"
+    },
+    {
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "index1": "22.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:26.196046",
+        "index2": "23.0"
+    },
+    {
+        "text": "%Run 'Straus 3. 2..py'\n",
+        "sequence": "TextInsert",
+        "index": "22.4",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:26.196046",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "Save",
+        "editor_class": "Editor",
+        "time": "2017-09-24T20:46:26.196046",
+        "text_widget_id": 81196976,
+        "text_widget_class": "CodeViewText",
+        "editor_id": 81092432
+    },
+    {
+        "command_text": "%Run 'Straus 3. 2..py'\n",
+        "sequence": "ShellCommand",
+        "time": "2017-09-24T20:46:26.326047"
+    },
+    {
+        "text": "P",
+        "sequence": "TextInsert",
+        "index": "23.0",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:26.326047",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "alun sisesta isa brutopalk: ",
+        "sequence": "TextInsert",
+        "index": "23.1",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:26.326047",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "1",
+        "sequence": "TextInsert",
+        "index": "23.29",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:27.946054",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "7",
+        "sequence": "TextInsert",
+        "index": "23.30",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:28.036054",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "1",
+        "sequence": "TextInsert",
+        "index": "23.31",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:28.116055",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "23.32",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:28.509056",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:46:28.509056",
+        "input_text": "171\n"
+    },
+    {
+        "text": "Palun sisesta ema brutopalk: ",
+        "sequence": "TextInsert",
+        "index": "24.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:28.540056",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "8",
+        "sequence": "TextInsert",
+        "index": "24.29",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:28.838058",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "24.30",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:29.028058",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "24.31",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:29.156060",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "24.32",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:29.526061",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:46:29.526061",
+        "input_text": "800\n"
+    },
+    {
+        "text": "Palun sisesta laste arv: ",
+        "sequence": "TextInsert",
+        "index": "25.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:29.576062",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "25.25",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:30.347065",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "25.26",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:30.507065",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:46:30.507065",
+        "input_text": "0\n"
+    },
+    {
+        "text": "Pere kuusissetulek on  838.7\n",
+        "sequence": "TextInsert",
+        "index": "26.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:30.548066",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": ">>> ",
+        "sequence": "TextInsert",
+        "index": "27.0",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:46:30.552066",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:46:36.890127"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:46:43.086385"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:46:45.978531"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:47:04.503590"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Scrollbar",
+        "widget_id": 81198320,
+        "time": "2017-09-24T20:47:04.503590"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73514224,
+        "time": "2017-09-24T20:47:09.990904"
+    },
+    {
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "index1": "27.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:10.083909",
+        "index2": "28.0"
+    },
+    {
+        "text": "%Debug 'Straus 3. 2..py'\n",
+        "sequence": "TextInsert",
+        "index": "27.4",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:10.084910",
+        "text_widget_context": "shell"
+    },
+    {
+        "command_text": "%Debug 'Straus 3. 2..py'\n",
+        "sequence": "ShellCommand",
+        "time": "2017-09-24T20:47:10.212917"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73514736,
+        "time": "2017-09-24T20:47:16.092253"
+    },
+    {
+        "text": "P",
+        "sequence": "TextInsert",
+        "index": "28.0",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:16.229261",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "alun sisesta isa brutopalk: ",
+        "sequence": "TextInsert",
+        "index": "28.1",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:16.229261",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "1",
+        "sequence": "TextInsert",
+        "index": "28.29",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:18.916415",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "7",
+        "sequence": "TextInsert",
+        "index": "28.30",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:18.988419",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "1",
+        "sequence": "TextInsert",
+        "index": "28.31",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:19.092425",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "28.32",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:19.308437",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:47:19.308437",
+        "input_text": "171\n"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73514736,
+        "time": "2017-09-24T20:47:21.087539"
+    },
+    {
+        "text": "Palun sisesta ema brutopalk: ",
+        "sequence": "TextInsert",
+        "index": "29.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:21.212546",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "8",
+        "sequence": "TextInsert",
+        "index": "29.29",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:22.627627",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "29.30",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:22.731633",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "29.31",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:22.883642",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "29.32",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:23.227661",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:47:23.228661",
+        "input_text": "800\n"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73514736,
+        "time": "2017-09-24T20:47:24.021707"
+    },
+    {
+        "text": "Palun sisesta laste arv: ",
+        "sequence": "TextInsert",
+        "index": "30.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:24.084710",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "0",
+        "sequence": "TextInsert",
+        "index": "30.25",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:25.683802",
+        "text_widget_context": "shell"
+    },
+    {
+        "text": "\n",
+        "sequence": "TextInsert",
+        "index": "30.26",
+        "tags": "('io', 'stdin')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:47:27.723918",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "ShellInput",
+        "time": "2017-09-24T20:47:27.724918",
+        "input_text": "0\n"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:30.825096"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:31.822153"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:32.290180"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:32.728205"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:33.846269"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:34.485305"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:34.934331"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:35.339354"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:35.987391"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:36.292409"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:36.619427"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:38.406529"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:38.964561"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:39.438588"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:39.861613"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:40.276636"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:40.634657"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:41.080682"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:41.501706"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:42.241749"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:43.431817"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:44.564882"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:45.281923"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:46.174974"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:47.329040"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:47.930074"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:48.429103"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:49.252150"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:49.731177"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:50.306210"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:50.808239"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:51.317268"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:51.830297"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:52.728349"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:53.158373"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:53.563396"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:54.072425"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:56.167545"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:57.403616"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:57.824640"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:47:58.295667"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:02.492907"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:03.595970"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:05.794096"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:06.391130"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:08.255237"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:11.720435"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:12.261466"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:12.756494"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:13.261523"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:15.942676"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:16.393702"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:16.853728"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:17.211749"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:17.498765"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:17.760780"
+    },
+    {
+        "text": "Pere kuusissetulek on  838.7\n",
+        "sequence": "TextInsert",
+        "index": "31.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:48:17.866786",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:17.975793"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 73540368,
+        "time": "2017-09-24T20:48:20.579942"
+    },
+    {
+        "text": ">>> ",
+        "sequence": "TextInsert",
+        "index": "32.0",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 42359632,
+        "time": "2017-09-24T20:48:20.735951",
+        "text_widget_context": "shell"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:48:29.297440"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:51:21.567595"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:51:21.568595"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:51:21.568595"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T20:51:24.980790"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 42243152,
+        "time": "2017-09-24T21:02:20.252782"
+    }
+]

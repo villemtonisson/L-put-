@@ -1,0 +1,287 @@
+[
+    {
+        "sequence": "ShowView",
+        "time": "2017-09-09T16:15:44.804148",
+        "view_class": "OutlineView",
+        "view_id": 80039824
+    },
+    {
+        "text_widget_id": 80160400,
+        "text_widget_class": "CodeViewText",
+        "editor_id": 43200240,
+        "time": "2017-09-09T16:15:44.815148",
+        "editor_class": "Editor",
+        "sequence": "EditorTextCreated"
+    },
+    {
+        "index2": "2.0",
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-09T16:15:44.826149",
+        "index1": "1.0",
+        "text_widget_id": 80160400,
+        "sequence": "TextDelete"
+    },
+    {
+        "index": "1.0",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "tags": "()",
+        "time": "2017-09-09T16:15:44.829149",
+        "text_widget_id": 80160400,
+        "text": "from turtle import *\n\n\nclass HouseDrawer():\n    def __init__(self, h, w, rh):\n        super(HouseDrawer, self).__init__()\n        self.h = h\n        self.w = w\n        self.rh = rh\n        self.draw()\n\n    def draw(self):\n        self.drawBase()\n        self.drawRoof()\n        self.drawDoor()\n        pass\n\n    def drawBase(self):\n        drawer = Turtle()\n        drawer.speed(10)\n        drawer.forward(self.w)\n        drawer.left(90)\n        drawer.forward(self.h)\n        drawer.left(90)\n        drawer.forward(self.w)\n        drawer.left(90)\n        drawer.forward(self.h)\n        drawer.left(90)\n\n    def drawRoof(self):\n        drawer = Turtle()\n        drawer.speed(10)\n        drawer.penup()\n        drawer.setpos(0, self.h)\n        drawer.pendown()\n        drawer.setpos(self.w / 2, self.h + self.rh)\n        drawer.setpos(self.w, self.h)\n\n    def drawDoor(self):\n        dw = self.w / 10\n        dh = self.h * .3\n\n        drawer = Turtle()\n        drawer.speed(10)\n        drawer.penup()\n        drawer.setpos((self.w / 2) - (dw / 2), 0)\n        drawer.pendown()\n        drawer.sety(dh)\n        drawer.setx((self.w / 2) + (dw / 2))\n        drawer.sety(0)\n\n\n\nHouseDrawer(\n    int(input('Maja k\u00f5rgus?')),\n    int(input('Maja laius?')),\n    int(input('Katuse k\u00f5rgus?'))\n    )\n\n# HouseDrawer(100, 100, 200)\n\nturtle = Turtle()\nturtle.getscreen()._root.mainloop()\n"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "1.0",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('toplevel', 'prompt')",
+        "time": "2017-09-09T16:15:44.891153",
+        "text_widget_id": 43145712,
+        "text": ">>> "
+    },
+    {
+        "widget_class": "Workbench",
+        "widget_id": 43033744,
+        "time": "2017-09-09T16:15:44.936155",
+        "sequence": "<FocusIn>"
+    },
+    {
+        "widget_class": "Button",
+        "widget_id": 43196464,
+        "time": "2017-09-09T16:15:49.444413",
+        "sequence": "<Button-1>"
+    },
+    {
+        "text_widget_context": "shell",
+        "index2": "2.0",
+        "text_widget_class": "ShellText",
+        "time": "2017-09-09T16:15:49.514417",
+        "index1": "1.4",
+        "text_widget_id": 43145712,
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "1.4",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "time": "2017-09-09T16:15:49.515417",
+        "text_widget_id": 43145712,
+        "text": "%cd 'C:\\Users\\Villem\\AppData\\Local\\Temp\\Rar$DIa0.822'\n%Run house.py\n"
+    },
+    {
+        "time": "2017-09-09T16:15:49.516417",
+        "command_text": "%cd 'C:\\Users\\Villem\\AppData\\Local\\Temp\\Rar$DIa0.822'\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "2.0",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('toplevel', 'prompt')",
+        "time": "2017-09-09T16:15:49.532418",
+        "text_widget_id": 43145712,
+        "text": ">>> "
+    },
+    {
+        "time": "2017-09-09T16:15:49.679426",
+        "command_text": "%Run house.py\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "3.0",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "time": "2017-09-09T16:15:49.736430",
+        "text_widget_id": 43145712,
+        "text": "M"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "3.1",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout')",
+        "time": "2017-09-09T16:15:49.737430",
+        "text_widget_id": 43145712,
+        "text": "aja k\u00f5rgus?"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "3.12",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T16:15:52.308577",
+        "text_widget_id": 43145712,
+        "text": "1"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "3.13",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T16:15:52.444585",
+        "text_widget_id": 43145712,
+        "text": "0"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "3.14",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T16:15:52.580592",
+        "text_widget_id": 43145712,
+        "text": "0"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "3.15",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T16:15:53.140624",
+        "text_widget_id": 43145712,
+        "text": "\n"
+    },
+    {
+        "input_text": "100\n",
+        "time": "2017-09-09T16:15:53.141624",
+        "sequence": "ShellInput"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "4.0",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout')",
+        "time": "2017-09-09T16:15:53.153625",
+        "text_widget_id": 43145712,
+        "text": "Maja laius?"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "4.11",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T16:15:53.924669",
+        "text_widget_id": 43145712,
+        "text": "2"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "4.12",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T16:15:54.004674",
+        "text_widget_id": 43145712,
+        "text": "0"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "4.13",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T16:15:54.140682",
+        "text_widget_id": 43145712,
+        "text": "0"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "4.14",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T16:15:54.428698",
+        "text_widget_id": 43145712,
+        "text": "\n"
+    },
+    {
+        "input_text": "200\n",
+        "time": "2017-09-09T16:15:54.428698",
+        "sequence": "ShellInput"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "5.0",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout')",
+        "time": "2017-09-09T16:15:54.462700",
+        "text_widget_id": 43145712,
+        "text": "Katuse k\u00f5rgus?"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "5.14",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T16:15:58.164912",
+        "text_widget_id": 43145712,
+        "text": "7"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "5.15",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T16:15:58.260917",
+        "text_widget_id": 43145712,
+        "text": "0"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "5.16",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdin')",
+        "time": "2017-09-09T16:15:58.500931",
+        "text_widget_id": 43145712,
+        "text": "\n"
+    },
+    {
+        "input_text": "70\n",
+        "time": "2017-09-09T16:15:58.500931",
+        "sequence": "ShellInput"
+    },
+    {
+        "widget_class": "Workbench",
+        "widget_id": 43033744,
+        "time": "2017-09-09T16:15:59.609994",
+        "sequence": "<FocusOut>"
+    },
+    {
+        "widget_class": "Workbench",
+        "widget_id": 43033744,
+        "time": "2017-09-09T16:16:10.789634",
+        "sequence": "<FocusIn>"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index": "6.0",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "time": "2017-09-09T16:16:10.804635",
+        "text_widget_id": 43145712,
+        "text": ">>> "
+    },
+    {
+        "widget_class": "Scrollbar",
+        "widget_id": 80161808,
+        "time": "2017-09-09T16:16:12.231716",
+        "sequence": "<Button-1>"
+    }
+]

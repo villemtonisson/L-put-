@@ -8,4 +8,12 @@ kaust pakitud failidega
 
 Eralda ülesanded radiobutton
 
+Outputi määramine, vaikimisi sama, mis arhiivil
+
+Nurka küsimärk kirjeldusega, kasutamisjuhisega
+
+
+Peale nupu klõpsamist, kas õnnestus või mitte
+
+
 

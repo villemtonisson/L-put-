@@ -1,0 +1,49 @@
+[
+    {
+        "view_class": "OutlineView",
+        "time": "2016-12-21T21:59:37.721295",
+        "view_id": 52653552,
+        "sequence": "ShowView"
+    },
+    {
+        "editor_id": 43133008,
+        "time": "2016-12-21T21:59:37.730295",
+        "text_widget_id": 52746352,
+        "sequence": "EditorTextCreated",
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-12-21T21:59:37.744296",
+        "text_widget_class": "CodeViewText",
+        "index1": "1.0",
+        "text_widget_id": 52746352,
+        "sequence": "TextDelete",
+        "index2": "2.0"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 52746352,
+        "sequence": "TextInsert",
+        "index": "1.0",
+        "tags": "()",
+        "text": "def on_eellane(vanem, laps, s\u00f5nastik):\n    if laps not in s\u00f5nastik:\n        return False\n    elif vanem in s\u00f5nastik[laps]:\n        return True\n    else:\n        if on_eellane(vanem, s\u00f5nastik[laps][0] , s\u00f5nastik) or on_eellane(vanem , s\u00f5nastik[laps][1] , s\u00f5nastik):\n            return True\n        else:\n            return False\n\n##Nimi1- vanem\n##Nimi2- laps\n\n\nf=open(\"sugupuu.txt\")\nvanemad={}\nfor rida in f:\n    a=(rida.split())\n    vanemad[a[0][:-1]]=a[1][:-1],a[2]\nf.close()\n\nprint(on_eellane(\"Joosep\",\"Siim\", vanemad))",
+        "time": "2016-12-21T21:59:37.749296"
+    },
+    {
+        "index": "1.0",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43084112,
+        "sequence": "TextInsert",
+        "text": ">>> ",
+        "tags": "('toplevel', 'prompt')",
+        "time": "2016-12-21T21:59:37.796299",
+        "text_widget_context": "shell"
+    },
+    {
+        "widget_id": 42964144,
+        "time": "2016-12-21T21:59:37.797299",
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench"
+    }
+]

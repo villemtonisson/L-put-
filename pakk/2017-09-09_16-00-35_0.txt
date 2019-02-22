@@ -1,0 +1,116 @@
+[
+    {
+        "sequence": "ShowView",
+        "view_id": 82136336,
+        "time": "2017-09-09T16:00:35.360766",
+        "view_class": "OutlineView"
+    },
+    {
+        "editor_id": 18164816,
+        "time": "2017-09-09T16:00:35.369767",
+        "sequence": "EditorTextCreated",
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 82258160
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "2.0",
+        "time": "2017-09-09T16:00:35.369767",
+        "index1": "1.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 82258160
+    },
+    {
+        "sequence": "TextInsert",
+        "index": "1.0",
+        "text": "from turtle import *\nfrom math import sqrt\n\nup()\nleft(180)\nforward(75)\nleft(180)\ndown()\nforward(150)\nleft(90)\nforward(150)\nleft(90)\nforward(150)\nleft(90)\nforward(150)\nleft(180)\nforward(150)\nright(45)\nforward(75*sqrt(2))\nright(90)\nforward(75*sqrt(2))\nleft(180)\nforward(40*sqrt(2))\nright(45)\nforward(30)\nleft(90)\nforward(20)\nleft(90)\nforward(30-28/sqrt(2))\nleft(45)\nforward(60*sqrt(2))\nright(45)\nforward(150)\nright(90)\nforward(30)\nright(90)\nforward(65)\nleft(90)\nforward(30)\nleft(90)\nforward(65)\nright(90)\nup()\nforward(30)\nright(90)\nforward(40)\ndown()\nforward(20)\nleft(90)\nforward(20)\nleft(90)\nforward(20)\nleft(90)\nforward(20)\nleft(90)\nforward(8)\nleft(90)\nforward(8)\nup()\nforward(4)\ndown()\nforward(8)\nright(90)\nforward(4)\nright(90)\nforward(8)\nup()\nforward(4)\ndown()\nforward(8)\nleft(90)\nforward(8)\nleft(90)\nforward(8)\nleft(90)\nforward(8)\nup()\nforward(4)\ndown()\nforward(8)\nright(90)\nforward(4)\nright(90)\nforward(8)\nup()\nforward(4)\ndown()\nforward(8)\nright(90)\nup()\nforward(500)\n\nexitonclick()",
+        "tags": "()",
+        "time": "2017-09-09T16:00:35.385768",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 82258160
+    },
+    {
+        "sequence": "TextInsert",
+        "index": "1.0",
+        "text": ">>> ",
+        "tags": "('toplevel', 'prompt')",
+        "time": "2017-09-09T16:00:35.468772",
+        "text_widget_context": "shell",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 18115280
+    },
+    {
+        "widget_class": "Workbench",
+        "widget_id": 17998928,
+        "time": "2017-09-09T16:00:35.503774",
+        "sequence": "<FocusIn>"
+    },
+    {
+        "widget_class": "Button",
+        "widget_id": 18161712,
+        "time": "2017-09-09T16:00:38.086922",
+        "sequence": "<Button-1>"
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "2.0",
+        "time": "2017-09-09T16:00:38.171927",
+        "index1": "1.4",
+        "text_widget_context": "shell",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 18115280
+    },
+    {
+        "sequence": "TextInsert",
+        "index": "1.4",
+        "text": "%cd 'C:\\Users\\Villem\\AppData\\Local\\Temp\\Rar$DIa0.114'\n%Run 'J_\u010crgen Sinka 1. kodune __lesanne.py'\n",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "time": "2017-09-09T16:00:38.171927",
+        "text_widget_context": "shell",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 18115280
+    },
+    {
+        "sequence": "ShellCommand",
+        "command_text": "%cd 'C:\\Users\\Villem\\AppData\\Local\\Temp\\Rar$DIa0.114'\n",
+        "time": "2017-09-09T16:00:38.171927"
+    },
+    {
+        "sequence": "TextInsert",
+        "index": "2.0",
+        "text": ">>> ",
+        "tags": "('toplevel', 'prompt')",
+        "time": "2017-09-09T16:00:38.206929",
+        "text_widget_context": "shell",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 18115280
+    },
+    {
+        "sequence": "ShellCommand",
+        "command_text": "%Run 'J_\u010crgen Sinka 1. kodune __lesanne.py'\n",
+        "time": "2017-09-09T16:00:38.328936"
+    },
+    {
+        "widget_class": "Workbench",
+        "widget_id": 17998928,
+        "time": "2017-09-09T16:00:38.416941",
+        "sequence": "<FocusOut>"
+    },
+    {
+        "sequence": "TextInsert",
+        "index": "3.0",
+        "text": ">>> ",
+        "tags": "('toplevel', 'prompt')",
+        "time": "2017-09-09T16:00:45.239331",
+        "text_widget_context": "shell",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 18115280
+    },
+    {
+        "widget_class": "Workbench",
+        "widget_id": 17998928,
+        "time": "2017-09-09T16:01:08.238647",
+        "sequence": "<FocusIn>"
+    }
+]

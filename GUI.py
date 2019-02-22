@@ -141,6 +141,7 @@ chosen_file_var = tk.StringVar()
 chosen_file_field = tk.Entry(bottomFrame, width=150, textvariable=chosen_file_var, state='disabled')
 chosen_file_field.pack(anchor='c')
 
+
 unpack_button = tk.Button(bottomFrame, text="Unpack", command=unpack)
 unpack_button.pack(anchor='c')
 

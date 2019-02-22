@@ -1,0 +1,2229 @@
+[
+    {
+        "editor_id": 17972720,
+        "text_widget_id": 58403120,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-12T10:26:06.964903",
+        "sequence": "EditorTextCreated"
+    },
+    {
+        "editor_id": 17972720,
+        "text_widget_id": 58403120,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-12T10:26:06.964903",
+        "sequence": "NewFile"
+    },
+    {
+        "time": "2016-10-12T10:26:06.985903",
+        "text_widget_id": 17918160,
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "tags": "('toplevel', 'prompt')",
+        "index": "1.0",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:06.985903",
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 17843248
+    },
+    {
+        "time": "2016-10-12T10:26:08.455923",
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 17843248
+    },
+    {
+        "time": "2016-10-12T10:26:13.172026",
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 17843248
+    },
+    {
+        "time": "2016-10-12T10:26:15.504059",
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 17916752
+    },
+    {
+        "time": "2016-10-12T10:26:15.564059",
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 17843248
+    },
+    {
+        "time": "2016-10-12T10:26:17.955070",
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 17843248
+    },
+    {
+        "editor_id": 58290064,
+        "text_widget_id": 58441872,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-12T10:26:17.985070",
+        "sequence": "EditorTextCreated"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "2.0",
+        "time": "2016-10-12T10:26:17.985070",
+        "text_widget_class": "CodeViewText",
+        "index1": "1.0",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:26:17.985070",
+        "text_widget_id": 58441872,
+        "text": "for i in range(10):\n    a=i+1\n\n    b=2**a\n\n    c=2*a+3\n    \n    print(str(c)+\"/\"+str(b))",
+        "text_widget_class": "CodeViewText",
+        "tags": "()",
+        "index": "1.0",
+        "sequence": "TextInsert"
+    },
+    {
+        "widget_id": 58441872,
+        "text_widget_id": 58441872,
+        "time": "2016-10-12T10:26:20.412089",
+        "text_widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText"
+    },
+    {
+        "widget_id": 58441872,
+        "text_widget_id": 58441872,
+        "time": "2016-10-12T10:26:22.330100",
+        "text_widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-10-12T10:26:23.318104",
+        "text_widget_id": 58441872,
+        "text": "\n",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "1.0",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:24.129108",
+        "text_widget_id": 58441872,
+        "text": "a",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "1.0",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:24.966114",
+        "text_widget_id": 58441872,
+        "text": "=",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "1.1",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:25.354116",
+        "text_widget_id": 58441872,
+        "text": "0",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "1.2",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:26.465120",
+        "text_widget_id": 58441872,
+        "text": "\n",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "1.3",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:26.465120",
+        "text_widget_id": 58441872,
+        "text": "",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "2.0",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:29.078140",
+        "text_widget_id": 58441872,
+        "text": "b",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "2.0",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:29.445142",
+        "text_widget_id": 58441872,
+        "text": "=",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "2.1",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:29.963145",
+        "text_widget_id": 58441872,
+        "text": "1",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "2.2",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:26:35.330181",
+        "text_widget_class": "CodeViewText",
+        "index1": "4.8",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:26:35.483181",
+        "text_widget_class": "CodeViewText",
+        "index1": "4.7",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:26:35.663182",
+        "text_widget_class": "CodeViewText",
+        "index1": "4.6",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:26:35.837184",
+        "text_widget_class": "CodeViewText",
+        "index1": "4.5",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:26:36.062186",
+        "text_widget_class": "CodeViewText",
+        "index1": "4.4",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:26:36.968198",
+        "text_widget_id": 58441872,
+        "text": "p",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.4",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:37.290199",
+        "text_widget_id": 58441872,
+        "text": "r",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.5",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:37.615201",
+        "text_widget_id": 58441872,
+        "text": "i",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.6",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:37.695201",
+        "text_widget_id": 58441872,
+        "text": "n",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.7",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:37.825203",
+        "text_widget_id": 58441872,
+        "text": "t",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.8",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:41.333222",
+        "text_widget_id": 58441872,
+        "text": " ",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.9",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:41.951224",
+        "text_widget_id": 58441872,
+        "text": "(",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.10",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:42.004224",
+        "text_widget_id": 58441872,
+        "text": ")",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.11",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:48.336266",
+        "text_widget_id": 58441872,
+        "text": "i",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.11",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:50.922291",
+        "text_widget_id": 58441872,
+        "text": "s",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.11",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:51.110292",
+        "text_widget_id": 58441872,
+        "text": "t",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.12",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:51.366294",
+        "text_widget_id": 58441872,
+        "text": "r",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.13",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:52.550302",
+        "text_widget_id": 58441872,
+        "text": "(",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.14",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:53.865314",
+        "text_widget_id": 58441872,
+        "text": ")",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.16",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:56.199348",
+        "text_widget_id": 58441872,
+        "text": "+",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.17",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:56.854352",
+        "text_widget_id": 58441872,
+        "text": "\"",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.18",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:26:57.064353",
+        "text_widget_id": 58441872,
+        "text": "\"",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.19",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:03.038400",
+        "text_widget_id": 58441872,
+        "text": "\"",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.11",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:03.291403",
+        "text_widget_id": 58441872,
+        "text": "\"",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.12",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:05.076419",
+        "text_widget_id": 58441872,
+        "text": "+",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.13",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:09.639450",
+        "text_widget_id": 58441872,
+        "text": "J",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.12",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:27:11.959468",
+        "text_widget_class": "CodeViewText",
+        "index1": "4.12",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:27:12.578472",
+        "text_widget_id": 58441872,
+        "text": "L",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.12",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:12.861474",
+        "text_widget_id": 58441872,
+        "text": "i",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.13",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:13.031474",
+        "text_widget_id": 58441872,
+        "text": "i",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.14",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:13.835479",
+        "text_widget_id": 58441872,
+        "text": "g",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.15",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:13.926480",
+        "text_widget_id": 58441872,
+        "text": "e",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.16",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:18.626501",
+        "text_widget_id": 58441872,
+        "text": "=",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.27",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:23.438531",
+        "text_widget_id": 58441872,
+        "text": " ",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.29",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:27.517554",
+        "text_widget_id": 58441872,
+        "text": "a",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.30",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:27:29.822568",
+        "text_widget_class": "CodeViewText",
+        "index1": "4.30",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "4.30",
+        "time": "2016-10-12T10:27:30.888573",
+        "text_widget_class": "CodeViewText",
+        "index1": "4.29",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:27:31.292576",
+        "text_widget_id": 58441872,
+        "text": "+",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.29",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:32.178584",
+        "text_widget_id": 58441872,
+        "text": "s",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.30",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:32.406585",
+        "text_widget_id": 58441872,
+        "text": "t",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.31",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:32.597586",
+        "text_widget_id": 58441872,
+        "text": "r",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.32",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:33.013593",
+        "text_widget_id": 58441872,
+        "text": "(",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.33",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:33.102593",
+        "text_widget_id": 58441872,
+        "text": ")",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.34",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:34.042603",
+        "text_widget_id": 58441872,
+        "text": "a",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "4.34",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:27:39.564665",
+        "text_widget_class": "CodeViewText",
+        "index1": "6.9",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:27:39.962668",
+        "text_widget_class": "CodeViewText",
+        "index1": "6.8",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:27:41.577676",
+        "text_widget_class": "CodeViewText",
+        "index1": "6.7",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:27:41.734676",
+        "text_widget_class": "CodeViewText",
+        "index1": "6.6",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:27:41.886677",
+        "text_widget_class": "CodeViewText",
+        "index1": "6.5",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:27:43.540687",
+        "text_widget_class": "CodeViewText",
+        "index1": "6.4",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "6.4",
+        "time": "2016-10-12T10:27:43.950688",
+        "text_widget_class": "CodeViewText",
+        "index1": "6.0",
+        "sequence": "TextDelete"
+    },
+    {
+        "widget_id": 58441872,
+        "text_widget_id": 58441872,
+        "time": "2016-10-12T10:27:44.783691",
+        "text_widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText"
+    },
+    {
+        "widget_id": 58441872,
+        "text_widget_id": 58441872,
+        "time": "2016-10-12T10:27:46.477706",
+        "text_widget_class": "CodeViewText",
+        "sequence": "<<Copy>>",
+        "widget_class": "CodeViewText"
+    },
+    {
+        "widget_id": 58441872,
+        "text_widget_id": 58441872,
+        "time": "2016-10-12T10:27:46.971720",
+        "text_widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-10-12T10:27:47.685752",
+        "text_widget_id": 58441872,
+        "text": "    ",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "6.0",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:48.304777",
+        "text_widget_id": 58441872,
+        "text": "print (\"Liige\"+str(i)+\"=\"+str(a))",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "6.4",
+        "sequence": "TextInsert"
+    },
+    {
+        "widget_id": 58441872,
+        "text_widget_id": 58441872,
+        "time": "2016-10-12T10:27:48.304777",
+        "text_widget_class": "CodeViewText",
+        "sequence": "<<Paste>>",
+        "widget_class": "CodeViewText"
+    },
+    {
+        "widget_id": 58441872,
+        "text_widget_id": 58441872,
+        "time": "2016-10-12T10:27:49.911816",
+        "text_widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-10-12T10:27:51.518836",
+        "text_widget_id": 58441872,
+        "text": "+",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "6.24",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:27:51.601837",
+        "text_widget_id": 58441872,
+        "text": "1",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "6.25",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:27:53.950897",
+        "text_widget_class": "CodeViewText",
+        "index1": "6.36",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:27:54.082902",
+        "text_widget_id": 58441872,
+        "text": "b",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "6.36",
+        "sequence": "TextInsert"
+    },
+    {
+        "widget_id": 58441872,
+        "text_widget_id": 58441872,
+        "time": "2016-10-12T10:27:55.576912",
+        "text_widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "8.11",
+        "time": "2016-10-12T10:27:58.302953",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.4",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:27:59.188957",
+        "text_widget_id": 58441872,
+        "text": "a",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "8.4",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:00.510965",
+        "text_widget_id": 58441872,
+        "text": "=",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "8.5",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:01.612476",
+        "text_widget_id": 58441872,
+        "text": "a",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "8.6",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:01.762479",
+        "text_widget_id": 58441872,
+        "text": "+",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "8.7",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:01.915479",
+        "text_widget_id": 58441872,
+        "text": "b",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "8.8",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:02.822483",
+        "text_widget_id": 58441872,
+        "text": "\n",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "8.9",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:02.824483",
+        "text_widget_id": 58441872,
+        "text": "    ",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "9.0",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:04.006531",
+        "text_widget_id": 58441872,
+        "text": "b",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "9.4",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:04.456539",
+        "text_widget_id": 58441872,
+        "text": "=",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "9.5",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:06.599558",
+        "text_widget_id": 58441872,
+        "text": "a",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "9.6",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:06.758560",
+        "text_widget_id": 58441872,
+        "text": "+",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "9.7",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:07.018562",
+        "text_widget_id": 58441872,
+        "text": "b",
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "index": "9.8",
+        "sequence": "TextInsert"
+    },
+    {
+        "widget_id": 58441872,
+        "text_widget_id": 58441872,
+        "time": "2016-10-12T10:28:09.065571",
+        "text_widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "11.28",
+        "time": "2016-10-12T10:28:10.452580",
+        "text_widget_class": "CodeViewText",
+        "index1": "11.4",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "11.4",
+        "time": "2016-10-12T10:28:10.957584",
+        "text_widget_class": "CodeViewText",
+        "index1": "11.0",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:28:11.286588",
+        "text_widget_class": "CodeViewText",
+        "index1": "10.4",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 17918160,
+        "index2": "2.0",
+        "time": "2016-10-12T10:28:13.505612",
+        "text_widget_class": "ShellText",
+        "index1": "1.4",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:28:13.505612",
+        "text_widget_id": 17918160,
+        "text_widget_class": "ShellText",
+        "text": "%Run Maailmapilt.py\n",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "index": "1.4",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "editor_id": 58290064,
+        "text_widget_id": 58441872,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-12T10:28:13.505612",
+        "sequence": "Save"
+    },
+    {
+        "command_text": "%Run Maailmapilt.py\n",
+        "time": "2016-10-12T10:28:13.641614",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2016-10-12T10:28:13.641614",
+        "denied": "False",
+        "command_id": "run_current_script",
+        "sequence": "Command"
+    },
+    {
+        "time": "2016-10-12T10:28:13.641614",
+        "text_widget_id": 17918160,
+        "text": "L",
+        "text_widget_class": "ShellText",
+        "index": "2.0",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:13.641614",
+        "text_widget_id": 17918160,
+        "text": "iige0=0\nLiige1=1\nLiige1=1\nLiige2=2\nLiige2=3\nLiige3=5\nLiige3=8\nLiige4=13\nLiige4=21\nLiige5=34\nLiige5=55\nLiige6=89\nLiige6=144\nLiige7=233\nLiige7=377\nLiige8=610\nLiige8=987\nLiige9=1597\nLiige9=2584\nLiige10=4181\n",
+        "text_widget_class": "ShellText",
+        "index": "2.1",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:13.671614",
+        "text_widget_id": 17918160,
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "index": "22.0",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "widget_id": 58441872,
+        "text_widget_id": 58441872,
+        "time": "2016-10-12T10:28:27.337741",
+        "text_widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-10-12T10:28:31.710803",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "2",
+        "tags": "None",
+        "index": "4.23",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:32.074804",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "*",
+        "tags": "None",
+        "index": "4.24",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:34.287826",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "2",
+        "tags": "None",
+        "index": "6.23",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:34.718827",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "*",
+        "tags": "None",
+        "index": "6.24",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 17918160,
+        "index2": "23.0",
+        "time": "2016-10-12T10:28:35.486830",
+        "text_widget_class": "ShellText",
+        "index1": "22.4",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:28:35.486830",
+        "text_widget_id": 17918160,
+        "text": "%Run Maailmapilt.py\n",
+        "text_widget_class": "ShellText",
+        "index": "22.4",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "editor_id": 58290064,
+        "text_widget_id": 58441872,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-12T10:28:35.486830",
+        "sequence": "Save"
+    },
+    {
+        "command_text": "%Run Maailmapilt.py\n",
+        "time": "2016-10-12T10:28:35.610831",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2016-10-12T10:28:35.610831",
+        "denied": "False",
+        "command_id": "run_current_script",
+        "sequence": "Command"
+    },
+    {
+        "time": "2016-10-12T10:28:35.610831",
+        "text_widget_id": 17918160,
+        "text": "L",
+        "text_widget_class": "ShellText",
+        "index": "23.0",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:35.610831",
+        "text_widget_id": 17918160,
+        "text": "iige0=0\nLiige1=1\nLiige2=1\nLiige3=2\nLiige4=3\nLiige5=5\nLiige6=8\nLiige7=13\nLiige8=21\nLiige9=34\nLiige10=55\nLiige11=89\nLiige12=144\nLiige13=233\nLiige14=377\nLiige15=610\nLiige16=987\nLiige17=1597\nLiige18=2584\nLiige19=4181\n",
+        "text_widget_class": "ShellText",
+        "index": "23.1",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:28:35.640831",
+        "text_widget_id": 17918160,
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "index": "43.0",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:31:16.291558",
+        "text_widget_class": "CodeViewText",
+        "index1": "3.16",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:31:16.478559",
+        "text_widget_class": "CodeViewText",
+        "index1": "3.15",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:31:16.671560",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "5",
+        "tags": "None",
+        "index": "3.15",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:19.784587",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "\n",
+        "tags": "None",
+        "index": "7.0",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:20.688612",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "    ",
+        "tags": "None",
+        "index": "8.0",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:23.076637",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "p",
+        "tags": "None",
+        "index": "8.4",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:23.528641",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "tags": "None",
+        "index": "8.5",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:23.678641",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "tags": "None",
+        "index": "8.6",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:23.760643",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "n",
+        "tags": "None",
+        "index": "8.7",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:23.852645",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "tags": "None",
+        "index": "8.8",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:25.120656",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "tags": "None",
+        "index": "8.9",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:25.413657",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "(",
+        "tags": "None",
+        "index": "8.10",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:25.501658",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": ")",
+        "tags": "None",
+        "index": "8.11",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:27.737669",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "\"",
+        "tags": "None",
+        "index": "8.11",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:30.750688",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "2",
+        "tags": "None",
+        "index": "8.12",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:31.180691",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "*",
+        "tags": "None",
+        "index": "8.13",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:31.404694",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "*",
+        "tags": "None",
+        "index": "8.14",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:34.037788",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "\"",
+        "tags": "None",
+        "index": "8.15",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:35.994821",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "+",
+        "tags": "None",
+        "index": "8.16",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:36.977840",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "tags": "None",
+        "index": "8.17",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:37.440843",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "tags": "None",
+        "index": "8.18",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:37.665844",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "tags": "None",
+        "index": "8.19",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:37.820848",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "tags": "None",
+        "index": "8.20",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:31:38.947865",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.20",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:31:39.393867",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "(",
+        "tags": "None",
+        "index": "8.20",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:39.413867",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": ")",
+        "tags": "None",
+        "index": "8.21",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:40.378891",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "tags": "None",
+        "index": "8.21",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:42.097915",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "\"",
+        "tags": "None",
+        "index": "8.23",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:42.290916",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "\"",
+        "tags": "None",
+        "index": "8.24",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:44.559934",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "+",
+        "tags": "None",
+        "index": "8.23",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:46.118944",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "=",
+        "tags": "None",
+        "index": "8.25",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:52.141009",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "2",
+        "tags": "None",
+        "index": "8.27",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:53.478020",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "*",
+        "tags": "None",
+        "index": "8.28",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:53.671020",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "*",
+        "tags": "None",
+        "index": "8.29",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:54.144022",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "tags": "None",
+        "index": "8.30",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 17918160,
+        "index2": "44.0",
+        "time": "2016-10-12T10:31:54.899028",
+        "text_widget_class": "ShellText",
+        "index1": "43.4",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:31:54.899028",
+        "text_widget_id": 17918160,
+        "text": "%Run Maailmapilt.py\n",
+        "text_widget_class": "ShellText",
+        "index": "43.4",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "editor_id": 58290064,
+        "text_widget_id": 58441872,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-12T10:31:54.899028",
+        "sequence": "Save"
+    },
+    {
+        "command_text": "%Run Maailmapilt.py\n",
+        "time": "2016-10-12T10:31:55.029028",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2016-10-12T10:31:55.029028",
+        "denied": "False",
+        "command_id": "run_current_script",
+        "sequence": "Command"
+    },
+    {
+        "time": "2016-10-12T10:31:55.029028",
+        "text_widget_id": 17918160,
+        "text": "  ",
+        "text_widget_class": "ShellText",
+        "index": "44.0",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:55.029028",
+        "text_widget_id": 17918160,
+        "text": "File \"C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\Maailmapilt.py\", line 8",
+        "text_widget_class": "ShellText",
+        "index": "44.2",
+        "tags": "('toplevel', 'error', 'hyperlink')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:55.029028",
+        "text_widget_id": 17918160,
+        "text": "\n",
+        "text_widget_class": "ShellText",
+        "index": "44.73",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:55.029028",
+        "text_widget_id": 17918160,
+        "text": "    print (\"2**\"+str(i)+\"=\"2**i)\n",
+        "text_widget_class": "ShellText",
+        "index": "45.0",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:55.029028",
+        "text_widget_id": 17918160,
+        "text": "                           ^\n",
+        "text_widget_class": "ShellText",
+        "index": "46.0",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:55.029028",
+        "text_widget_id": 17918160,
+        "text": "SyntaxError: invalid syntax\n",
+        "text_widget_class": "ShellText",
+        "index": "47.0",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:55.029028",
+        "text_widget_id": 17918160,
+        "text": "\n",
+        "text_widget_class": "ShellText",
+        "index": "48.0",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:31:55.029028",
+        "text_widget_id": 17918160,
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "index": "49.0",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "widget_id": 58441872,
+        "text_widget_id": 58441872,
+        "time": "2016-10-12T10:32:00.869095",
+        "text_widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-10-12T10:32:05.115146",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "+",
+        "tags": "None",
+        "index": "8.27",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:05.813148",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "tags": "None",
+        "index": "8.28",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:06.090149",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "tags": "None",
+        "index": "8.29",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:06.293150",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "tags": "None",
+        "index": "8.30",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:07.411156",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "(",
+        "tags": "None",
+        "index": "8.31",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:09.805180",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": ")",
+        "tags": "None",
+        "index": "8.36",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 17918160,
+        "index2": "50.0",
+        "time": "2016-10-12T10:32:10.663183",
+        "text_widget_class": "ShellText",
+        "index1": "49.4",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:32:10.663183",
+        "text_widget_id": 17918160,
+        "text": "%Run Maailmapilt.py\n",
+        "text_widget_class": "ShellText",
+        "index": "49.4",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "editor_id": 58290064,
+        "text_widget_id": 58441872,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-12T10:32:10.663183",
+        "sequence": "Save"
+    },
+    {
+        "command_text": "%Run Maailmapilt.py\n",
+        "time": "2016-10-12T10:32:10.776184",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2016-10-12T10:32:10.786184",
+        "denied": "False",
+        "command_id": "run_current_script",
+        "sequence": "Command"
+    },
+    {
+        "time": "2016-10-12T10:32:10.786184",
+        "text_widget_id": 17918160,
+        "text": "L",
+        "text_widget_class": "ShellText",
+        "index": "50.0",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:10.786184",
+        "text_widget_id": 17918160,
+        "text": "iige0=0\nLiige1=1\n2**0=1\nLiige2=1\nLiige3=2\n2**1=2\nLiige4=3\nLiige5=5\n2**2=4\nLiige6=8\nLiige7=13\n2**3=8\nLiige8=21\nLiige9=34\n2**4=16\n",
+        "text_widget_class": "ShellText",
+        "index": "50.1",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:10.806184",
+        "text_widget_id": 17918160,
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "index": "65.0",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:21.940314",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "2",
+        "tags": "None",
+        "index": "8.35",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 17918160,
+        "index2": "66.0",
+        "time": "2016-10-12T10:32:22.882346",
+        "text_widget_class": "ShellText",
+        "index1": "65.4",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:32:22.882346",
+        "text_widget_id": 17918160,
+        "text": "%Run Maailmapilt.py\n",
+        "text_widget_class": "ShellText",
+        "index": "65.4",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "editor_id": 58290064,
+        "text_widget_id": 58441872,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-12T10:32:22.882346",
+        "sequence": "Save"
+    },
+    {
+        "command_text": "%Run Maailmapilt.py\n",
+        "time": "2016-10-12T10:32:22.995346",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2016-10-12T10:32:22.995346",
+        "denied": "False",
+        "command_id": "run_current_script",
+        "sequence": "Command"
+    },
+    {
+        "time": "2016-10-12T10:32:22.995346",
+        "text_widget_id": 17918160,
+        "text": "  ",
+        "text_widget_class": "ShellText",
+        "index": "66.0",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:22.995346",
+        "text_widget_id": 17918160,
+        "text": "File \"C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\Maailmapilt.py\", line 8",
+        "text_widget_class": "ShellText",
+        "index": "66.2",
+        "tags": "('toplevel', 'error', 'hyperlink')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:22.995346",
+        "text_widget_id": 17918160,
+        "text": "\n",
+        "text_widget_class": "ShellText",
+        "index": "66.73",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:22.995346",
+        "text_widget_id": 17918160,
+        "text": "    print (\"2**\"+str(i)+\"=\"+str(2**2i))\n",
+        "text_widget_class": "ShellText",
+        "index": "67.0",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:22.995346",
+        "text_widget_id": 17918160,
+        "text": "                                    ^\n",
+        "text_widget_class": "ShellText",
+        "index": "68.0",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:22.995346",
+        "text_widget_id": 17918160,
+        "text": "SyntaxError: invalid syntax\n",
+        "text_widget_class": "ShellText",
+        "index": "69.0",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:22.995346",
+        "text_widget_id": 17918160,
+        "text": "\n",
+        "text_widget_class": "ShellText",
+        "index": "70.0",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:22.995346",
+        "text_widget_id": 17918160,
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "index": "71.0",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:25.228359",
+        "text_widget_id": 58441872,
+        "text_widget_class": "CodeViewText",
+        "text": "*",
+        "tags": "None",
+        "index": "8.36",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 17918160,
+        "index2": "72.0",
+        "time": "2016-10-12T10:32:25.740362",
+        "text_widget_class": "ShellText",
+        "index1": "71.4",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:32:25.740362",
+        "text_widget_id": 17918160,
+        "text": "%Run Maailmapilt.py\n",
+        "text_widget_class": "ShellText",
+        "index": "71.4",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "editor_id": 58290064,
+        "text_widget_id": 58441872,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-12T10:32:25.741362",
+        "sequence": "Save"
+    },
+    {
+        "command_text": "%Run Maailmapilt.py\n",
+        "time": "2016-10-12T10:32:25.857362",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2016-10-12T10:32:25.857362",
+        "denied": "False",
+        "command_id": "run_current_script",
+        "sequence": "Command"
+    },
+    {
+        "time": "2016-10-12T10:32:25.857362",
+        "text_widget_id": 17918160,
+        "text": "L",
+        "text_widget_class": "ShellText",
+        "index": "72.0",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:25.857362",
+        "text_widget_id": 17918160,
+        "text": "iige0=0\nLiige1=1\n2**0=0\nLiige2=1\nLiige3=2\n2**1=4\nLiige4=3\nLiige5=5\n2**2=8\nLiige6=8\nLiige7=13\n",
+        "text_widget_class": "ShellText",
+        "index": "72.1",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:25.887362",
+        "text_widget_id": 17918160,
+        "text": "2**3=12\nLiige8=21\nLiige9=34\n2**4=16\n",
+        "text_widget_class": "ShellText",
+        "index": "83.0",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:32:25.897362",
+        "text_widget_id": 17918160,
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "index": "87.0",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:34.061435",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.37",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:34.101435",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.36",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:34.428437",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.36",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:34.489437",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.35",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:34.812439",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.35",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:34.836440",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.34",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:35.109441",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.33",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:35.612443",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.32",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:35.642443",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.31",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:35.684443",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.30",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:35.715443",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.29",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:35.745443",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.28",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:35.779444",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.27",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:35.811444",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.26",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:35.841444",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.25",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:35.881445",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.24",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:35.911445",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.23",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:35.941445",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.22",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:35.981445",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.21",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.011445",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.20",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.041445",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.19",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.072445",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.18",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.104445",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.17",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.144445",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.16",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.174445",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.15",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.204445",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.14",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.245445",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.13",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.271447",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.12",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.307447",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.11",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.337447",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.10",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "8.10",
+        "time": "2016-10-12T10:32:36.377447",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.9",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.408447",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.8",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.438447",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.7",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.468447",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.6",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.501448",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.5",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:36.541448",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.4",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "8.4",
+        "time": "2016-10-12T10:32:37.292467",
+        "text_widget_class": "CodeViewText",
+        "index1": "8.0",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 58441872,
+        "index2": "None",
+        "time": "2016-10-12T10:32:38.700503",
+        "text_widget_class": "CodeViewText",
+        "index1": "7.0",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:32:48.650592",
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 17843248
+    },
+    {
+        "time": "2016-10-12T10:54:52.321253",
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 17843248
+    },
+    {
+        "text_widget_id": 17918160,
+        "index2": "88.0",
+        "time": "2016-10-12T10:56:05.210817",
+        "text_widget_class": "ShellText",
+        "index1": "87.4",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete"
+    },
+    {
+        "time": "2016-10-12T10:56:05.210817",
+        "text_widget_id": 17918160,
+        "text": "%Run Maailmapilt.py\n",
+        "text_widget_class": "ShellText",
+        "index": "87.4",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "editor_id": 58290064,
+        "text_widget_id": 58441872,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-12T10:56:05.210817",
+        "sequence": "Save"
+    },
+    {
+        "command_text": "%Run Maailmapilt.py\n",
+        "time": "2016-10-12T10:56:05.355818",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2016-10-12T10:56:05.355818",
+        "denied": "False",
+        "command_id": "run_current_script",
+        "sequence": "Command"
+    },
+    {
+        "time": "2016-10-12T10:56:05.355818",
+        "text_widget_id": 17918160,
+        "text": "L",
+        "text_widget_class": "ShellText",
+        "index": "88.0",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:56:05.355818",
+        "text_widget_id": 17918160,
+        "text": "iige0=0\nLiige1=1\nLiige2=1\nLiige3=2\nLiige4=3\nLiige5=5\nLiige6=8\nLiige7=13\nLiige8=21\nLiige9=34\n",
+        "text_widget_class": "ShellText",
+        "index": "88.1",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:56:05.385818",
+        "text_widget_id": 17918160,
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "index": "98.0",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-12T10:58:19.426248",
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 17843248
+    },
+    {
+        "time": "2016-10-12T11:26:39.681015",
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 17843248
+    }
+]
