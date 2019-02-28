@@ -3,7 +3,7 @@ import tkinter.ttk as ttk
 from tkinter.filedialog import askopenfilename, askdirectory
 from pathlib import Path
 from datepicker import Datepicker
-from unpacker import unpack_between
+from unpacker import unpack_between_filenames, unpack_between_infile
 from datetime import datetime
 
 
@@ -39,7 +39,7 @@ def unpack():
     
     print(start_date, end_date)
     
-    unpack_between(chosen_file_field.get(), start_date, end_date)
+    unpack_between_infile(chosen_file_field.get(), start_date, end_date)
     
     return
 
@@ -54,7 +54,10 @@ titleFrame = tk.Frame(window, width=800, height=100, background='blue')
 middleFrame = tk.Frame(window, width=800, height=300, background='cyan')
 leftFrame = tk.Frame(middleFrame, width=400, height=300, background='red')
 rightFrame = tk.Frame(middleFrame, width=400, height=300, background='green')
-bottomFrame= tk.Frame(window, width=800, height=200, background='yellow')
+bottomFrame= tk.Frame(window, width=800, height=200, background='gray')
+leftBottomFrame= tk.Frame(bottomFrame, width=400, height=200, background='yellow')
+rightBottomFrame= tk.Frame(bottomFrame, width=400, height=200, background='cyan')
+
 
 #No resizing frames
 titleFrame.pack_propagate(0)
@@ -62,6 +65,8 @@ middleFrame.pack_propagate(0)
 leftFrame.pack_propagate(0)
 rightFrame.pack_propagate(0)
 bottomFrame.pack_propagate(0)
+leftBottomFrame.pack_propagate(0)
+rightBottomFrame.pack_propagate(0)
 
 # Frame placement
 titleFrame.pack(anchor='n', side=tk.TOP)
@@ -69,13 +74,16 @@ middleFrame.pack(anchor='n', side=tk.TOP)
 leftFrame.pack(anchor="n", side=tk.LEFT)
 rightFrame.pack(anchor="n", side=tk.RIGHT)
 bottomFrame.pack(anchor="s", side=tk.BOTTOM)
+leftBottomFrame.pack(anchor="n", side=tk.LEFT)
+rightBottomFrame.pack(anchor="n", side=tk.RIGHT)
 
-
+## TOP
 #Title
 title_label = tk.Label(titleFrame, text="Log File Editor", bg="white", font=("Arial Bold", 30), pady=15)
 title_label.pack()
 
-
+### MIDDLE
+## LEFT
 #Elements on the left
 start_label = tk.Label(leftFrame, text="Start", bg="white", font=("Arial Bold", 14))
 start_label.pack(anchor='c')
@@ -104,7 +112,7 @@ start_minute_picker['values']= list(range(60))
 start_minute_picker.current(0) #set the selected item
 start_minute_picker.pack(anchor='c')
 
-
+## RIGHT
 #Elements on the right
 end_label = tk.Label(rightFrame, text="End", bg="white", font=("Arial Bold", 12))
 end_label.pack(anchor='c')
@@ -133,16 +141,50 @@ end_minute_picker['values']= list(range(60))
 end_minute_picker.current(0) #set the selected item
 end_minute_picker.pack(anchor='c')
 
+
+### BOTTOM
+## RIGHTBOTTOM
 # File Picker
-file_pick_button = tk.Button(bottomFrame, text="Pick File", command=pick_file)
+file_pick_button = tk.Button(rightBottomFrame, text="Pick File", command=pick_file)
 file_pick_button.pack(anchor='c')
 
 chosen_file_var = tk.StringVar()
-chosen_file_field = tk.Entry(bottomFrame, width=150, textvariable=chosen_file_var, state='disabled')
+chosen_file_field = tk.Entry(rightBottomFrame, width=150, textvariable=chosen_file_var, state='disabled')
 chosen_file_field.pack(anchor='c')
 
-
-unpack_button = tk.Button(bottomFrame, text="Unpack", command=unpack)
+unpack_button = tk.Button(rightBottomFrame, text="Unpack", command=unpack)
 unpack_button.pack(anchor='c')
 
+## LEFTBOTTOM
+# Select mode label
+select_mode_label = tk.Label(leftBottomFrame, text="Select mode", bg="white", font=("Arial", 11))
+select_mode_label.pack(anchor='c')
+
+# Creating radiobuttons for selecting mode
+MODES = [
+        ("One Logfile", "1log"),
+        ("One archive", "1arch"),
+        ("Multiple Logfiles", "2log"),
+        ("Multiple archives", "2arch"),
+    ]
+
+chosen_mode_var = tk.StringVar()
+chosen_mode_var.set("1arch") # initialize
+
+for text, mode in MODES:
+    b = tk.Radiobutton(leftBottomFrame, text=text,
+                    variable=chosen_mode_var, value=mode)
+    b.pack(anchor='c')
+
+# Checkbutton for using date system
+use_dates_var = tk.IntVar()
+use_dates_button = tk.Checkbutton(leftBottomFrame, text="Unpack using dates", variable=use_dates_var)
+use_dates_button.pack(anchor='c', pady="8")
+
+# Checkbutton for separating exercises from logs 
+separate_exercises_var = tk.IntVar()
+separate_exercises_button = tk.Checkbutton(leftBottomFrame, text="Separate by exercises", variable=separate_exercises_var)
+separate_exercises_button.pack(anchor='c')
+
+## Start program
 window.mainloop()

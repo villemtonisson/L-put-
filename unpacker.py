@@ -1,6 +1,8 @@
 import subprocess
 from datetime import datetime
-
+import os
+from pathlib import Path
+import json
 
 #TODO teha settings fail
 loc_7z = r"C:\\Program Files\\7-Zip\\7z.exe"
@@ -51,7 +53,7 @@ def unpack(arch_loc, filenames, output='*'):
 Avab arhiivi ja võtab sealt välja failid, mille nimi on õiges ajavahemikus
 Kui mõne logifaili nime on muudetud, võtab ka selle välja
 """
-def unpack_between(arch_loc, start, end, output='*'):
+def unpack_between_filenames(arch_loc, start, end, output='*'):
     all_filenames=get_filenames(arch_loc)
     filenames=[]
     for name in all_filenames:
@@ -64,8 +66,41 @@ def unpack_between(arch_loc, start, end, output='*'):
             filenames.append(name)
             #pass , juhuks, kui ei taha muudetud nimega
     unpack(arch_loc, filenames, output=output)
-
+ 
+ 
+"""
+Avab arhiivi ja võtab sealt välja kõik failid
+"""
+def unpack_all(arch_loc, output='*'):
+    all_filenames=get_filenames(arch_loc)
+    filenames=[]
+    unpack(arch_loc, filenames, output=output)
+    
+"""
+Avab arhiivi ja võtab sealt välja kõik failid
+Seejärel vaatab failid läbi ja eemaldab need, mis ei kuulu antud ajavahemikku
+"""  
+def unpack_between_infile(arch_loc, start, end, output='*'):
+    all_filenames=get_filenames(arch_loc)
+    print(all_filenames)
+    unpack_all(arch_loc, output=output)
+    if output=='*':
+        output=arch_loc.rsplit(".", 1)[0]
+    for name in all_filenames:
+        p=Path(output).joinpath(name)
+        with open(p, 'r', encoding="UTF8") as f:
+            data=json.loads(f.read())
+            date=datetime.strptime(data[0]['time'], '%Y-%m-%dT%H:%M:%S.%f')
+        if date>start and date<end:
+            pass
+        else:
+            os.remove(p)
+                
+            
 #start=datetime(2016, 11, 26, hour=12, minute=20)
 #end=datetime(2017, 9, 9, hour=16, minute=0)
 
+#unpack_between_infile("C:/Users/Villem/Desktop/L-put-/pakk.7z", start, end, output='*')
+
 #unpack(arch_loc, filenames, output="C:\\Users\\Villem\\Desktop\\L-put-\\pakk1")
+    
