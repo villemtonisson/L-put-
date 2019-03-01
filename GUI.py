@@ -44,17 +44,17 @@ def unpack():
     return
 
 window = tk.Tk()
-window.title("Blender Rendering Farm")
+window.title("Log File Editor")
 window.geometry('800x600')
 window.configure(background='white')
 window.resizable(0, 0)
 
 # Frames for the app
-titleFrame = tk.Frame(window, width=800, height=100, background='blue')
-middleFrame = tk.Frame(window, width=800, height=300, background='cyan')
-leftFrame = tk.Frame(middleFrame, width=400, height=300, background='red')
-rightFrame = tk.Frame(middleFrame, width=400, height=300, background='green')
-bottomFrame= tk.Frame(window, width=800, height=200, background='yellow')
+titleFrame = tk.Frame(window, width=800, height=100, background='white')
+middleFrame = tk.Frame(window, width=800, height=300, background='white')
+leftFrame = tk.Frame(middleFrame, width=400, height=300, background='white')
+rightFrame = tk.Frame(middleFrame, width=400, height=300, background='white')
+bottomFrame= tk.Frame(window, width=800, height=200, background='white')
 
 #No resizing frames
 titleFrame.pack_propagate(0)
