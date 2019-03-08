@@ -22,6 +22,7 @@ def run_process(command):
 
 """
 Võtab arhiivi nime ja tagastab kõikide seal olevate failide nimed
+!!!Ei tööta, kui failinimes on tühik
 """
 def get_filenames(arch_loc):
     names=False
@@ -80,21 +81,27 @@ def unpack_all(arch_loc, output='*'):
 """
 Avab arhiivi ja võtab sealt välja kõik failid
 Seejärel vaatab failid läbi ja eemaldab need, mis ei kuulu antud ajavahemikku
+
+Tulemuskaust peab olema tühi selle töötamiseks
 """  
 def unpack_between_infile(arch_loc, start, end, output='*'):
-    all_filenames=get_filenames(arch_loc)
-    print(all_filenames)
+    #all_filenames=get_filenames(arch_loc)
+    #print(all_filenames)
     unpack_all(arch_loc, output=output)
     if output=='*':
         output=arch_loc.rsplit(".", 1)[0]
-    for name in all_filenames:
+    for name in os.listdir(output):
+        to_remove=True
         p=Path(output).joinpath(name)
         with open(p, 'r', encoding="UTF8") as f:
-            data=json.loads(f.read())
-            date=datetime.strptime(data[0]['time'], '%Y-%m-%dT%H:%M:%S.%f')
-        if date>start and date<end:
-            pass
-        else:
+            try:
+                data=json.loads(f.read())
+                date=datetime.strptime(data[0]['time'], '%Y-%m-%dT%H:%M:%S.%f')
+                if date>start and date<end:
+                    to_remove=False
+            except:
+                to_remove=True
+        if to_remove:
             os.remove(p)
                 
             
