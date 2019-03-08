@@ -15,7 +15,6 @@ Nurka küsimärk kirjeldusega, kasutamisjuhisega
 
 Peale nupu klõpsamist, kas õnnestus või mitte
 
-Faili kellaaja saamine logifaili seest
 
 
 

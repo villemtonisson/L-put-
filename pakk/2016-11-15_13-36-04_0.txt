@@ -1,0 +1,6391 @@
+[
+    {
+        "sequence": "ShowView",
+        "view_id": "GlobalsView",
+        "time": "2016-11-15T13:36:05.208563",
+        "view_class": "GlobalsView"
+    },
+    {
+        "time": "2016-11-15T13:36:05.212563",
+        "editor_class": "Editor",
+        "sequence": "EditorTextCreated",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "index1": "1.0",
+        "index2": "2.0",
+        "time": "2016-11-15T13:36:05.212563",
+        "sequence": "TextDelete",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.0",
+        "time": "2016-11-15T13:36:05.227564",
+        "tags": "()",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "def kontrolli(sisend):\n    numbrid={'1','2','3','4','5','6','7','8','9'}\n    for i in numbrid:\n        if i not in sisend:\n            return False\n    return True\n\ndef laua_kontroll(laud):\n    ##Ridadega\n    for rida in laud:\n        if not kontrolli(rida):\n            return \"Viga\"\n\n    ##Tulpadega\n    for tulp in range(9):\n        temp_list=[]\n        for rida in range(9):\n            temp_list.append(laud[rida][tulp])\n        if not kontrolli(temp_list):\n            return \"Viga\"\n\n    ##Ruutudega\n    for i in (0,3,6):\n        for j in (0,3,6):\n            temp_list=[]\n            for tulp in range(3):\n                for rida in range(3):\n                    temp_list.append(laud[rida+i][tulp+j])\n            if not kontrolli(temp_list):\n                return \"Viga\"\n    return \"OK\"\n\n##Programmi algus\nf=open(input(\"Sisesta faili nimi: \"))\nsudokulaud=[]\nfor rida in f:\n    sudokulaud.append(rida.split())\nf.close()\n\nprint(laua_kontroll(sudokulaud))",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.0",
+        "time": "2016-11-15T13:36:05.303569",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:36:05.304569",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:37:15.506902",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:37:17.727958",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:37:23.783191",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:37:23.783191",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:37:27.816369",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:39:16.538841",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:39:16.539841",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:39:41.608054",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:39:47.246272",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:39:47.247272",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:39:48.661353",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:40:18.750751",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:40:18.751751",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "2.0",
+        "time": "2016-11-15T13:40:19.164756",
+        "text_widget_context": "shell",
+        "index1": "1.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "1.4",
+        "time": "2016-11-15T13:40:19.164756",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "%cd 'C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal'\n%Run kodu5.py\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:40:19.164756",
+        "command_text": "%cd 'C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal'\n"
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:40:19.164756",
+        "command_id": "run_current_script"
+    },
+    {
+        "index": "2.0",
+        "time": "2016-11-15T13:40:19.204756",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:40:19.324756",
+        "command_text": "%Run kodu5.py\n"
+    },
+    {
+        "index": "3.0",
+        "time": "2016-11-15T13:40:19.334756",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "S",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "3.1",
+        "time": "2016-11-15T13:40:19.334756",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "isesta faili nimi: ",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:40:20.381803",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:41:43.403144",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_id": 43336016,
+        "time": "2016-11-15T13:41:43.404144",
+        "widget_class": "Button"
+    },
+    {
+        "time": "2016-11-15T13:41:43.458147",
+        "editor_class": "Editor",
+        "sequence": "EditorTextCreated",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43442352,
+        "editor_id": 58194288
+    },
+    {
+        "time": "2016-11-15T13:41:43.458147",
+        "editor_class": "Editor",
+        "sequence": "NewFile",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43442352,
+        "editor_id": 58194288
+    },
+    {
+        "widget_id": 43442352,
+        "time": "2016-11-15T13:41:44.048181",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43442352
+    },
+    {
+        "index": "1.0",
+        "time": "2016-11-15T13:41:45.740277",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "f",
+        "text_widget_id": 43442352
+    },
+    {
+        "index": "1.1",
+        "time": "2016-11-15T13:41:45.901278",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": ".",
+        "text_widget_id": 43442352
+    },
+    {
+        "index": "1.2",
+        "time": "2016-11-15T13:41:46.368280",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43442352
+    },
+    {
+        "index": "1.3",
+        "time": "2016-11-15T13:41:46.438280",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "e",
+        "text_widget_id": 43442352
+    },
+    {
+        "index": "1.4",
+        "time": "2016-11-15T13:41:46.551280",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43442352
+    },
+    {
+        "index": "1.5",
+        "time": "2016-11-15T13:41:46.888282",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "d",
+        "text_widget_id": 43442352
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:41:48.252286",
+        "index1": "1.5",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43442352
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:41:48.752288",
+        "index1": "1.4",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43442352
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:41:48.792288",
+        "index1": "1.3",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43442352
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:41:48.822288",
+        "index1": "1.2",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43442352
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:41:48.851290",
+        "index1": "1.1",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43442352
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:41:48.887290",
+        "index1": "1.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43442352
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:41:50.936345",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:42:03.688562",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_id": 43253008,
+        "time": "2016-11-15T13:42:03.688562",
+        "widget_class": "EditorNotebook"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:42:03.762564",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:42:05.905569",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:42:08.200638",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:42:36.406778",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:42:36.406778",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "34.36",
+        "time": "2016-11-15T13:42:40.077798",
+        "index1": "34.7",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "34.7",
+        "time": "2016-11-15T13:42:42.102803",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "34.8",
+        "time": "2016-11-15T13:42:42.242804",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "y",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "34.9",
+        "time": "2016-11-15T13:42:42.332804",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "34.10",
+        "time": "2016-11-15T13:42:43.372806",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": ".",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "34.11",
+        "time": "2016-11-15T13:42:43.562806",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "34.12",
+        "time": "2016-11-15T13:42:43.743806",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "34.13",
+        "time": "2016-11-15T13:42:44.113807",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "g",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "34.14",
+        "time": "2016-11-15T13:42:45.194809",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "v",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "34.15",
+        "time": "2016-11-15T13:42:46.185811",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "[",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "34.16",
+        "time": "2016-11-15T13:42:46.235811",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "]",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "34.16",
+        "time": "2016-11-15T13:42:47.061815",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "1",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T13:43:04.202881",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:43:04.212881",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:43:06.513949",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:43:50.140581",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:43:50.141581",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<Button-1>",
+        "widget_id": 43394320,
+        "time": "2016-11-15T13:43:51.243637",
+        "widget_class": "Button"
+    },
+    {
+        "index": "3.20",
+        "time": "2016-11-15T13:43:51.445637",
+        "tags": "('io',)",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "4.0",
+        "time": "2016-11-15T13:43:51.445637",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:43:52.198638",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "5.0",
+        "time": "2016-11-15T13:43:52.849639",
+        "text_widget_context": "shell",
+        "index1": "4.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "4.4",
+        "time": "2016-11-15T13:43:52.849639",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "%Run kodu5.py\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:43:52.959640",
+        "command_text": "%Run kodu5.py\n"
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:43:52.959640",
+        "command_id": "run_current_script"
+    },
+    {
+        "index": "5.0",
+        "time": "2016-11-15T13:43:53.019640",
+        "tags": "('io', 'stderr', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "T",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "5.1",
+        "time": "2016-11-15T13:43:53.019640",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "raceback (most recent call last):\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "6.0",
+        "time": "2016-11-15T13:43:53.020640",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "  ",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "6.2",
+        "time": "2016-11-15T13:43:53.020640",
+        "tags": "('io', 'stderr', 'hyperlink')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "File \"C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal\\kodu5.py\", line 34, in <module>",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "6.91",
+        "time": "2016-11-15T13:43:53.020640",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "7.0",
+        "time": "2016-11-15T13:43:53.020640",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "    f=open(sys.argv[1])\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "8.0",
+        "time": "2016-11-15T13:43:53.020640",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "NameError: name 'sys' is not defined\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "9.0",
+        "time": "2016-11-15T13:43:53.031640",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:43:57.578734",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:44:03.824864",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:44:03.824864",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.0",
+        "time": "2016-11-15T13:44:06.154897",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "\n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.0",
+        "time": "2016-11-15T13:44:07.394902",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.1",
+        "time": "2016-11-15T13:44:07.474902",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "m",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.2",
+        "time": "2016-11-15T13:44:07.694903",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "p",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.3",
+        "time": "2016-11-15T13:44:07.794904",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "o",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.4",
+        "time": "2016-11-15T13:44:07.940905",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.5",
+        "time": "2016-11-15T13:44:08.110905",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.6",
+        "time": "2016-11-15T13:44:08.250905",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.7",
+        "time": "2016-11-15T13:44:08.690906",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.8",
+        "time": "2016-11-15T13:44:08.801906",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "y",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.9",
+        "time": "2016-11-15T13:44:08.898911",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T13:44:09.425930",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:44:09.428930",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "10.0",
+        "time": "2016-11-15T13:44:10.904957",
+        "text_widget_context": "shell",
+        "index1": "9.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "9.4",
+        "time": "2016-11-15T13:44:10.914957",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "%Run kodu5.py\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:44:11.014957",
+        "command_text": "%Run kodu5.py\n"
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:44:11.014957",
+        "command_id": "run_current_script"
+    },
+    {
+        "index": "10.0",
+        "time": "2016-11-15T13:44:11.074957",
+        "tags": "('io', 'stderr', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "T",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "10.1",
+        "time": "2016-11-15T13:44:11.074957",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "raceback (most recent call last):\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "11.0",
+        "time": "2016-11-15T13:44:11.074957",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "  ",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "11.2",
+        "time": "2016-11-15T13:44:11.074957",
+        "tags": "('io', 'stderr', 'hyperlink')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "File \"C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal\\kodu5.py\", line 35, in <module>",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "11.91",
+        "time": "2016-11-15T13:44:11.074957",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "12.0",
+        "time": "2016-11-15T13:44:11.074957",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "    f=open(sys.argv[1])\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "13.0",
+        "time": "2016-11-15T13:44:11.074957",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "IndexError: list index out of range\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.0",
+        "time": "2016-11-15T13:44:11.084957",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:44:20.567998",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:44:25.716114",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:44:25.716114",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:44:32.149141",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:44:39.770353",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:44:39.770353",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.4",
+        "time": "2016-11-15T13:44:40.212357",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "c:\\minu_programmid\\sudoku> python sudoku.py mittekorrektne_lahendus.txt",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:44:40.212357",
+        "text_widget_context": "shell",
+        "sequence": "<<Paste>>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:44:42.486395",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:45:11.171478",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:45:11.171478",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:45:11.732479",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "14.37",
+        "time": "2016-11-15T13:45:14.185484",
+        "text_widget_context": "shell",
+        "index1": "14.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.4",
+        "time": "2016-11-15T13:45:14.185484",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:45:14.185484",
+        "text_widget_context": "shell",
+        "sequence": "<<Paste>>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:45:16.345488",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:17.996493",
+        "text_widget_context": "shell",
+        "index1": "14.56",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:18.176493",
+        "text_widget_context": "shell",
+        "index1": "14.56",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:18.326494",
+        "text_widget_context": "shell",
+        "index1": "14.56",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:18.496494",
+        "text_widget_context": "shell",
+        "index1": "14.56",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:18.646494",
+        "text_widget_context": "shell",
+        "index1": "14.56",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:18.969495",
+        "text_widget_context": "shell",
+        "index1": "14.56",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.56",
+        "time": "2016-11-15T13:45:19.761496",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "k",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.57",
+        "time": "2016-11-15T13:45:19.857500",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "o",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.58",
+        "time": "2016-11-15T13:45:20.196504",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "d",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.59",
+        "time": "2016-11-15T13:45:20.276504",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "u",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.60",
+        "time": "2016-11-15T13:45:20.657504",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "5",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:23.256510",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:23.758511",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:23.798511",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:23.828511",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:23.858511",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:23.888511",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:23.928511",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:23.958511",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:23.988511",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:24.028511",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:24.058511",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:24.086512",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:24.122512",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:24.152512",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:24.192512",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:24.352512",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:24.527513",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:24.701516",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:24.871519",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:25.041519",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:25.201519",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:25.361519",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:25.721520",
+        "text_widget_context": "shell",
+        "index1": "14.65",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.65",
+        "time": "2016-11-15T13:45:26.161521",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "s",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.66",
+        "time": "2016-11-15T13:45:26.352521",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "u",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.67",
+        "time": "2016-11-15T13:45:26.604522",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "d",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.68",
+        "time": "2016-11-15T13:45:26.714522",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "o",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.69",
+        "time": "2016-11-15T13:45:26.942523",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "k",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.70",
+        "time": "2016-11-15T13:45:27.159524",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "u",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "14.75",
+        "time": "2016-11-15T13:45:29.195529",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:45:29.195529",
+        "command_text": "C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal kodu5.py sudoku.txt\n"
+    },
+    {
+        "index": "15.0",
+        "time": "2016-11-15T13:45:29.205529",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "  File \"<pyshell>\", line 1\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "16.0",
+        "time": "2016-11-15T13:45:29.205529",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "    C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal kodu5.py sudoku.txt\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "17.0",
+        "time": "2016-11-15T13:45:29.205529",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "     ^\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "18.0",
+        "time": "2016-11-15T13:45:29.205529",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "SyntaxError: invalid syntax\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "19.0",
+        "time": "2016-11-15T13:45:29.205529",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "20.0",
+        "time": "2016-11-15T13:45:29.205529",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:45:33.862549",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:45:35.552552",
+        "text_widget_context": "shell",
+        "sequence": "<<Copy>>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:45:35.926553",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "20.4",
+        "time": "2016-11-15T13:45:36.236554",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal kodu5.py sudoku.txt",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:45:36.236554",
+        "text_widget_context": "shell",
+        "sequence": "<<Paste>>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:45:36.866555",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:45:38.387561",
+        "text_widget_context": "shell",
+        "index1": "20.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "20.4",
+        "time": "2016-11-15T13:45:38.517562",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "c",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "Command",
+        "denied": "True",
+        "time": "2016-11-15T13:45:39.316568",
+        "command_id": "save_file"
+    },
+    {
+        "index": "20.75",
+        "time": "2016-11-15T13:45:39.878569",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:45:39.878569",
+        "command_text": "c:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal kodu5.py sudoku.txt\n"
+    },
+    {
+        "index": "21.0",
+        "time": "2016-11-15T13:45:39.888569",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "  File \"<pyshell>\", line 1\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "22.0",
+        "time": "2016-11-15T13:45:39.888569",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "    c:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal kodu5.py sudoku.txt\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "23.0",
+        "time": "2016-11-15T13:45:39.888569",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "     ^\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "24.0",
+        "time": "2016-11-15T13:45:39.888569",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "SyntaxError: invalid syntax\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "25.0",
+        "time": "2016-11-15T13:45:39.888569",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "26.0",
+        "time": "2016-11-15T13:45:39.888569",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "26.4",
+        "time": "2016-11-15T13:45:41.412572",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "i",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "26.5",
+        "time": "2016-11-15T13:45:41.512572",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "m",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "26.6",
+        "time": "2016-11-15T13:45:41.948573",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "p",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "26.7",
+        "time": "2016-11-15T13:45:42.008575",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "o",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "26.8",
+        "time": "2016-11-15T13:45:42.178575",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "r",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "26.9",
+        "time": "2016-11-15T13:45:42.332576",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "t",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "26.10",
+        "time": "2016-11-15T13:45:42.462576",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": " ",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "26.11",
+        "time": "2016-11-15T13:45:42.812577",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "s",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "26.12",
+        "time": "2016-11-15T13:45:42.985577",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "y",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "26.13",
+        "time": "2016-11-15T13:45:43.089579",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "s",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "26.14",
+        "time": "2016-11-15T13:45:43.782580",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:45:43.782580",
+        "command_text": "import sys\n"
+    },
+    {
+        "index": "27.0",
+        "time": "2016-11-15T13:45:43.802580",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "27.4",
+        "time": "2016-11-15T13:45:44.778583",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal kodu5.py sudoku.txt",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:45:44.778583",
+        "text_widget_context": "shell",
+        "sequence": "<<Paste>>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "27.75",
+        "time": "2016-11-15T13:45:45.549584",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:45:45.549584",
+        "command_text": "C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal kodu5.py sudoku.txt\n"
+    },
+    {
+        "index": "28.0",
+        "time": "2016-11-15T13:45:45.589584",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "  File \"<pyshell>\", line 1\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "29.0",
+        "time": "2016-11-15T13:45:45.589584",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "    C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal kodu5.py sudoku.txt\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "30.0",
+        "time": "2016-11-15T13:45:45.589584",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "     ^\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "31.0",
+        "time": "2016-11-15T13:45:45.589584",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "SyntaxError: invalid syntax\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "32.0",
+        "time": "2016-11-15T13:45:45.589584",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.0",
+        "time": "2016-11-15T13:45:45.589584",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:46:24.261725",
+        "command_id": "OpenSystemShell"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:46:24.319726",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:46:35.994774",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:46:35.994774",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:46:37.792778",
+        "text_widget_context": "shell",
+        "sequence": "<<Copy>>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:46:38.124779",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:47:06.221873",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:47:10.351891",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:47:11.895898",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:47:11.895898",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:47:12.710900",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:47:31.413335",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:47:31.413335",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "1.10",
+        "time": "2016-11-15T13:47:32.442341",
+        "index1": "1.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:47:33.778343",
+        "index1": "1.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T13:47:34.352345",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:47:34.352345",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:47:43.048421",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:48:49.462049",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:48:49.462049",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.0",
+        "time": "2016-11-15T13:48:50.261053",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "\n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.0",
+        "time": "2016-11-15T13:48:51.165064",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.1",
+        "time": "2016-11-15T13:48:51.275064",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "m",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.2",
+        "time": "2016-11-15T13:48:51.516065",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "p",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.3",
+        "time": "2016-11-15T13:48:51.616065",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "o",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.4",
+        "time": "2016-11-15T13:48:51.748065",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.5",
+        "time": "2016-11-15T13:48:51.960071",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.6",
+        "time": "2016-11-15T13:48:52.089071",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.7",
+        "time": "2016-11-15T13:48:52.579072",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.8",
+        "time": "2016-11-15T13:48:52.689072",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "y",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.9",
+        "time": "2016-11-15T13:48:52.850072",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T13:48:53.366075",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:48:53.366075",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:48:55.116090",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:49:28.354234",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:49:28.354234",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "34.17",
+        "time": "2016-11-15T13:49:29.090237",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "\n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.0",
+        "time": "2016-11-15T13:49:29.090237",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "    ",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "35.4",
+        "time": "2016-11-15T13:49:29.100237",
+        "index1": "35.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.0",
+        "time": "2016-11-15T13:49:29.944238",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "f",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.1",
+        "time": "2016-11-15T13:49:30.074239",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:49:30.854240",
+        "index1": "35.1",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.1",
+        "time": "2016-11-15T13:49:31.064240",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.2",
+        "time": "2016-11-15T13:49:31.194240",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.3",
+        "time": "2016-11-15T13:49:31.564241",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "l",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.4",
+        "time": "2016-11-15T13:49:31.657242",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.5",
+        "time": "2016-11-15T13:49:31.917243",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.6",
+        "time": "2016-11-15T13:49:32.007243",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.7",
+        "time": "2016-11-15T13:49:32.207243",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "m",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.8",
+        "time": "2016-11-15T13:49:32.297243",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.9",
+        "time": "2016-11-15T13:49:33.762245",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "=",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.10",
+        "time": "2016-11-15T13:49:34.955248",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.11",
+        "time": "2016-11-15T13:49:35.146249",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "y",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.12",
+        "time": "2016-11-15T13:49:35.276249",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.13",
+        "time": "2016-11-15T13:49:36.210251",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": ".",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.14",
+        "time": "2016-11-15T13:49:36.400251",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.15",
+        "time": "2016-11-15T13:49:36.550251",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.16",
+        "time": "2016-11-15T13:49:36.800252",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "g",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.17",
+        "time": "2016-11-15T13:49:37.210252",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "v",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.18",
+        "time": "2016-11-15T13:49:38.470255",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "[",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.19",
+        "time": "2016-11-15T13:49:38.540255",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "]",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "35.19",
+        "time": "2016-11-15T13:49:39.291256",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "1",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:49:43.223264",
+        "index1": "36.17",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:49:43.723265",
+        "index1": "36.16",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:49:43.763265",
+        "index1": "36.15",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:49:43.793265",
+        "index1": "36.14",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:49:43.823265",
+        "index1": "36.13",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:49:43.865265",
+        "index1": "36.12",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:49:43.895265",
+        "index1": "36.11",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:49:43.925265",
+        "index1": "36.10",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:49:43.955265",
+        "index1": "36.9",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:49:44.295266",
+        "index1": "36.8",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:49:44.475266",
+        "index1": "36.7",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "36.7",
+        "time": "2016-11-15T13:49:44.936267",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "f",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "36.8",
+        "time": "2016-11-15T13:49:45.016267",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "36.9",
+        "time": "2016-11-15T13:49:45.096267",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "36.10",
+        "time": "2016-11-15T13:49:45.236267",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "l",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "36.11",
+        "time": "2016-11-15T13:49:45.356267",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "36.12",
+        "time": "2016-11-15T13:49:45.717268",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "36.13",
+        "time": "2016-11-15T13:49:45.807268",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "36.14",
+        "time": "2016-11-15T13:49:46.057268",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "m",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "36.15",
+        "time": "2016-11-15T13:49:46.127269",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T13:49:47.117270",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:49:47.117270",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:49:52.359290",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:50:11.200896",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:50:11.200896",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.4",
+        "time": "2016-11-15T13:50:12.086899",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "p",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.5",
+        "time": "2016-11-15T13:50:12.246899",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "y",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.6",
+        "time": "2016-11-15T13:50:12.526900",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "t",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.7",
+        "time": "2016-11-15T13:50:12.646900",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "h",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.8",
+        "time": "2016-11-15T13:50:12.736900",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "o",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.9",
+        "time": "2016-11-15T13:50:13.056900",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.10",
+        "time": "2016-11-15T13:50:14.981905",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ".",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.11",
+        "time": "2016-11-15T13:50:15.776906",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "k",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.12",
+        "time": "2016-11-15T13:50:15.886906",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "o",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.13",
+        "time": "2016-11-15T13:50:16.086906",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "d",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.14",
+        "time": "2016-11-15T13:50:17.367908",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "u",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.15",
+        "time": "2016-11-15T13:50:17.557909",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "5",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.16",
+        "time": "2016-11-15T13:50:18.211910",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ".",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.17",
+        "time": "2016-11-15T13:50:18.631911",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "p",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.18",
+        "time": "2016-11-15T13:50:18.731911",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "y",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.19",
+        "time": "2016-11-15T13:50:21.286915",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": " ",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.20",
+        "time": "2016-11-15T13:50:22.140916",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "s",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.21",
+        "time": "2016-11-15T13:50:22.250916",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "u",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.22",
+        "time": "2016-11-15T13:50:22.702917",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "d",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.23",
+        "time": "2016-11-15T13:50:22.842917",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "o",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.24",
+        "time": "2016-11-15T13:50:23.022918",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "k",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.25",
+        "time": "2016-11-15T13:50:23.201918",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "u",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.26",
+        "time": "2016-11-15T13:50:24.022920",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ".",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.27",
+        "time": "2016-11-15T13:50:24.174920",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "t",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.28",
+        "time": "2016-11-15T13:50:24.324920",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "x",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.29",
+        "time": "2016-11-15T13:50:24.444920",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "t",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "33.30",
+        "time": "2016-11-15T13:50:24.754921",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:50:24.754921",
+        "command_text": "python.kodu5.py sudoku.txt\n"
+    },
+    {
+        "index": "34.0",
+        "time": "2016-11-15T13:50:24.795922",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "  File \"<pyshell>\", line 1\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "35.0",
+        "time": "2016-11-15T13:50:24.795922",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "    python.kodu5.py sudoku.txt\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "36.0",
+        "time": "2016-11-15T13:50:24.795922",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "                         ^\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "37.0",
+        "time": "2016-11-15T13:50:24.796922",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "SyntaxError: invalid syntax\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "38.0",
+        "time": "2016-11-15T13:50:24.796922",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "39.0",
+        "time": "2016-11-15T13:50:24.796922",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:50:31.315935",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:50:32.145937",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:50:33.998939",
+        "text_widget_context": "shell",
+        "sequence": "<<Copy>>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:50:34.298940",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "39.4",
+        "time": "2016-11-15T13:50:34.578940",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "python.kodu5.py sudoku.txt",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:50:34.578940",
+        "text_widget_context": "shell",
+        "sequence": "<<Paste>>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:50:35.501942",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "39.20",
+        "time": "2016-11-15T13:50:35.775943",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\"",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:50:36.255944",
+        "text_widget_context": "shell",
+        "sequence": "<Button-1>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "39.31",
+        "time": "2016-11-15T13:50:36.576944",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\"",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "Command",
+        "denied": "True",
+        "time": "2016-11-15T13:50:37.181947",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "40.0",
+        "time": "2016-11-15T13:50:37.601948",
+        "text_widget_context": "shell",
+        "index1": "39.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "39.4",
+        "time": "2016-11-15T13:50:37.601948",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "%Run kodu5.py\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:50:37.731948",
+        "command_text": "%Run kodu5.py\n"
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:50:37.731948",
+        "command_id": "run_current_script"
+    },
+    {
+        "index": "40.0",
+        "time": "2016-11-15T13:50:37.784948",
+        "tags": "('io', 'stderr', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "T",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "40.1",
+        "time": "2016-11-15T13:50:37.784948",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "raceback (most recent call last):\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "41.0",
+        "time": "2016-11-15T13:50:37.784948",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "  ",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "41.2",
+        "time": "2016-11-15T13:50:37.784948",
+        "tags": "('io', 'stderr', 'hyperlink')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "File \"C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal\\kodu5.py\", line 35, in <module>",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "41.91",
+        "time": "2016-11-15T13:50:37.784948",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "42.0",
+        "time": "2016-11-15T13:50:37.784948",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "    failinimi=sys.argv[1]\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "43.0",
+        "time": "2016-11-15T13:50:37.784948",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "IndexError: list index out of range\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "44.0",
+        "time": "2016-11-15T13:50:37.794948",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "44.4",
+        "time": "2016-11-15T13:50:40.260953",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "python.kodu5.py sudoku.txt",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43337424,
+        "time": "2016-11-15T13:50:40.260953",
+        "text_widget_context": "shell",
+        "sequence": "<<Paste>>",
+        "text_widget_class": "ShellText",
+        "widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "44.30",
+        "time": "2016-11-15T13:50:41.870958",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "2",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:50:43.436960",
+        "text_widget_context": "shell",
+        "index1": "44.30",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "44.30",
+        "time": "2016-11-15T13:50:43.636961",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\"",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "44.20",
+        "time": "2016-11-15T13:50:45.638966",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\"",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "44.32",
+        "time": "2016-11-15T13:50:46.332967",
+        "tags": "('toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:50:46.332967",
+        "command_text": "python.kodu5.py \"sudoku.txt\"\n"
+    },
+    {
+        "index": "45.0",
+        "time": "2016-11-15T13:50:46.382968",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "  File \"<pyshell>\", line 1\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "46.0",
+        "time": "2016-11-15T13:50:46.382968",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "    python.kodu5.py \"sudoku.txt\"\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "47.0",
+        "time": "2016-11-15T13:50:46.382968",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "                               ^\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "48.0",
+        "time": "2016-11-15T13:50:46.382968",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "SyntaxError: invalid syntax\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "49.0",
+        "time": "2016-11-15T13:50:46.382968",
+        "tags": "('toplevel', 'error')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "50.0",
+        "time": "2016-11-15T13:50:46.382968",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:51:09.784038",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:51:22.561111",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:51:23.436114",
+        "command_id": "OpenSystemShell"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:51:23.466114",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:51:56.526205",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:51:58.083259",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:52:04.561334",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "1.10",
+        "time": "2016-11-15T13:52:06.519341",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "\n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.0",
+        "time": "2016-11-15T13:52:06.519341",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.0",
+        "time": "2016-11-15T13:52:07.169344",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "#",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.1",
+        "time": "2016-11-15T13:52:07.760346",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "#",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.2",
+        "time": "2016-11-15T13:52:08.666359",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "S",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.3",
+        "time": "2016-11-15T13:52:08.982360",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.4",
+        "time": "2016-11-15T13:52:09.132361",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.5",
+        "time": "2016-11-15T13:52:09.472361",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "v",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.6",
+        "time": "2016-11-15T13:52:09.472361",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "b",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:52:09.912362",
+        "index1": "2.6",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:52:10.072363",
+        "index1": "2.5",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.5",
+        "time": "2016-11-15T13:52:10.172363",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "b",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.6",
+        "time": "2016-11-15T13:52:10.302363",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.7",
+        "time": "2016-11-15T13:52:10.623363",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.8",
+        "time": "2016-11-15T13:52:10.743364",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.9",
+        "time": "2016-11-15T13:52:11.002364",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.10",
+        "time": "2016-11-15T13:52:11.143365",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.11",
+        "time": "2016-11-15T13:52:11.263365",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "e",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.12",
+        "time": "2016-11-15T13:52:11.345365",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.13",
+        "time": "2016-11-15T13:52:11.545365",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "l",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.14",
+        "time": "2016-11-15T13:52:11.636366",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.15",
+        "time": "2016-11-15T13:52:11.792367",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.16",
+        "time": "2016-11-15T13:52:12.031368",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.17",
+        "time": "2016-11-15T13:52:12.151368",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.18",
+        "time": "2016-11-15T13:52:13.407372",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.19",
+        "time": "2016-11-15T13:52:14.283374",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "9",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.20",
+        "time": "2016-11-15T13:52:14.503374",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.21",
+        "time": "2016-11-15T13:52:14.653375",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "e",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.22",
+        "time": "2016-11-15T13:52:14.743375",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "l",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.23",
+        "time": "2016-11-15T13:52:14.852377",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "e",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.24",
+        "time": "2016-11-15T13:52:15.062377",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "m",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.25",
+        "time": "2016-11-15T13:52:15.206378",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "e",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.26",
+        "time": "2016-11-15T13:52:15.340379",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.27",
+        "time": "2016-11-15T13:52:15.660379",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.28",
+        "time": "2016-11-15T13:52:15.750379",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.29",
+        "time": "2016-11-15T13:52:16.030380",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "g",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.30",
+        "time": "2016-11-15T13:52:16.150380",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.31",
+        "time": "2016-11-15T13:52:17.926389",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.32",
+        "time": "2016-11-15T13:52:18.114396",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "j",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.33",
+        "time": "2016-11-15T13:52:18.207399",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.34",
+        "time": "2016-11-15T13:52:18.335404",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.35",
+        "time": "2016-11-15T13:52:18.711420",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "k",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.36",
+        "time": "2016-11-15T13:52:18.775422",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "o",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.37",
+        "time": "2016-11-15T13:52:18.957431",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.38",
+        "time": "2016-11-15T13:52:19.103437",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.39",
+        "time": "2016-11-15T13:52:19.558442",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.40",
+        "time": "2016-11-15T13:52:19.658442",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "o",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.41",
+        "time": "2016-11-15T13:52:20.112444",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "l",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.42",
+        "time": "2016-11-15T13:52:20.262444",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "l",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.43",
+        "time": "2016-11-15T13:52:20.456445",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.44",
+        "time": "2016-11-15T13:52:20.646445",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "b",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.45",
+        "time": "2016-11-15T13:52:21.312446",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": ",",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.46",
+        "time": "2016-11-15T13:52:21.406447",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.47",
+        "time": "2016-11-15T13:52:21.566447",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "k",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.48",
+        "time": "2016-11-15T13:52:21.666448",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.49",
+        "time": "2016-11-15T13:52:21.726448",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.50",
+        "time": "2016-11-15T13:52:21.835452",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.51",
+        "time": "2016-11-15T13:52:22.256454",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "k",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.52",
+        "time": "2016-11-15T13:52:22.376454",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "\u00f5",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.53",
+        "time": "2016-11-15T13:52:23.262456",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.54",
+        "time": "2016-11-15T13:52:23.342456",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "k",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.55",
+        "time": "2016-11-15T13:52:23.572457",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.56",
+        "time": "2016-11-15T13:52:24.058458",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.57",
+        "time": "2016-11-15T13:52:24.158458",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "u",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.58",
+        "time": "2016-11-15T13:52:24.359459",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "m",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.59",
+        "time": "2016-11-15T13:52:24.567460",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "b",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.60",
+        "time": "2016-11-15T13:52:24.710460",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.61",
+        "time": "2016-11-15T13:52:24.812461",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.62",
+        "time": "2016-11-15T13:52:24.913462",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "d",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.63",
+        "time": "2016-11-15T13:52:25.033462",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.64",
+        "time": "2016-11-15T13:52:25.816463",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.65",
+        "time": "2016-11-15T13:52:25.916464",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "e",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.66",
+        "time": "2016-11-15T13:52:26.026464",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "l",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.67",
+        "time": "2016-11-15T13:52:26.176464",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:52:26.792466",
+        "index1": "2.67",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:52:26.962467",
+        "index1": "2.66",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.66",
+        "time": "2016-11-15T13:52:27.092467",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.67",
+        "time": "2016-11-15T13:52:27.252467",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "l",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.68",
+        "time": "2016-11-15T13:52:27.496470",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.69",
+        "time": "2016-11-15T13:52:27.808471",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "o",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.70",
+        "time": "2016-11-15T13:52:27.997479",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "l",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.71",
+        "time": "2016-11-15T13:52:28.249483",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "e",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.72",
+        "time": "2016-11-15T13:52:28.479483",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "m",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.73",
+        "time": "2016-11-15T13:52:28.569483",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "2.74",
+        "time": "2016-11-15T13:52:28.679483",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:52:33.872497",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.0",
+        "time": "2016-11-15T13:52:34.735500",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "\n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.0",
+        "time": "2016-11-15T13:52:35.513501",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "    ",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "31.4",
+        "time": "2016-11-15T13:52:35.832504",
+        "index1": "31.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.0",
+        "time": "2016-11-15T13:52:35.832504",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "        ",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "31.8",
+        "time": "2016-11-15T13:52:36.166505",
+        "index1": "31.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.0",
+        "time": "2016-11-15T13:52:36.166505",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "            ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.12",
+        "time": "2016-11-15T13:52:36.917506",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "p",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.13",
+        "time": "2016-11-15T13:52:37.119506",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.14",
+        "time": "2016-11-15T13:52:37.264508",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.15",
+        "time": "2016-11-15T13:52:37.357509",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.16",
+        "time": "2016-11-15T13:52:37.427509",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.17",
+        "time": "2016-11-15T13:52:37.727509",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "(",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.18",
+        "time": "2016-11-15T13:52:37.792510",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": ")",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.18",
+        "time": "2016-11-15T13:52:44.334580",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.19",
+        "time": "2016-11-15T13:52:44.454580",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "e",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.20",
+        "time": "2016-11-15T13:52:44.574580",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "m",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.21",
+        "time": "2016-11-15T13:52:44.644580",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "p",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.22",
+        "time": "2016-11-15T13:52:45.803584",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "_",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.23",
+        "time": "2016-11-15T13:52:46.283585",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "l",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.24",
+        "time": "2016-11-15T13:52:46.343585",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.25",
+        "time": "2016-11-15T13:52:46.423585",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.26",
+        "time": "2016-11-15T13:52:46.503585",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T13:52:47.150588",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:52:47.160588",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "51.0",
+        "time": "2016-11-15T13:52:49.909604",
+        "text_widget_context": "shell",
+        "index1": "50.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "50.4",
+        "time": "2016-11-15T13:52:49.909604",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "%Run kodu5.py\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:52:50.019604",
+        "command_text": "%Run kodu5.py\n"
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:52:50.019604",
+        "command_id": "run_current_script"
+    },
+    {
+        "index": "51.0",
+        "time": "2016-11-15T13:52:50.079604",
+        "tags": "('io', 'stderr', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "T",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "51.1",
+        "time": "2016-11-15T13:52:50.079604",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "raceback (most recent call last):\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "52.0",
+        "time": "2016-11-15T13:52:50.079604",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "  ",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "52.2",
+        "time": "2016-11-15T13:52:50.080604",
+        "tags": "('io', 'stderr', 'hyperlink')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "File \"C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal\\kodu5.py\", line 37, in <module>",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "52.91",
+        "time": "2016-11-15T13:52:50.080604",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "53.0",
+        "time": "2016-11-15T13:52:50.080604",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "    failinimi=sys.argv[1]\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "54.0",
+        "time": "2016-11-15T13:52:50.080604",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "IndexError: list index out of range\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "55.0",
+        "time": "2016-11-15T13:52:50.091604",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:52:54.784616",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "38.16",
+        "time": "2016-11-15T13:52:56.643620",
+        "index1": "38.7",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.7",
+        "time": "2016-11-15T13:52:56.643620",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.8",
+        "time": "2016-11-15T13:52:56.753620",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "u",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:52:57.409623",
+        "index1": "38.8",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:52:57.579624",
+        "index1": "38.7",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.7",
+        "time": "2016-11-15T13:52:57.769624",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "\"",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.8",
+        "time": "2016-11-15T13:52:58.239641",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.9",
+        "time": "2016-11-15T13:52:58.369647",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "u",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.10",
+        "time": "2016-11-15T13:52:58.623657",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "d",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.11",
+        "time": "2016-11-15T13:52:58.727660",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "o",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.12",
+        "time": "2016-11-15T13:52:59.119672",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "k",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.13",
+        "time": "2016-11-15T13:52:59.359672",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "u",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.14",
+        "time": "2016-11-15T13:53:00.203674",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": ".",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.15",
+        "time": "2016-11-15T13:53:00.443674",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.16",
+        "time": "2016-11-15T13:53:00.617675",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "x",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.17",
+        "time": "2016-11-15T13:53:00.697675",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "38.18",
+        "time": "2016-11-15T13:53:01.268676",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "\"",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "56.0",
+        "time": "2016-11-15T13:53:02.273678",
+        "text_widget_context": "shell",
+        "index1": "55.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "55.4",
+        "time": "2016-11-15T13:53:02.273678",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "%Run kodu5.py\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "time": "2016-11-15T13:53:02.273678",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:53:02.377679",
+        "command_text": "%Run kodu5.py\n"
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:53:02.377679",
+        "command_id": "run_current_script"
+    },
+    {
+        "index": "56.0",
+        "time": "2016-11-15T13:53:02.437679",
+        "tags": "('io', 'stderr', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "T",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "56.1",
+        "time": "2016-11-15T13:53:02.437679",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "raceback (most recent call last):\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "57.0",
+        "time": "2016-11-15T13:53:02.437679",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "  ",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "57.2",
+        "time": "2016-11-15T13:53:02.437679",
+        "tags": "('io', 'stderr', 'hyperlink')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "File \"C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\12. N\u00e4dal\\kodu5.py\", line 37, in <module>",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "57.91",
+        "time": "2016-11-15T13:53:02.437679",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "58.0",
+        "time": "2016-11-15T13:53:02.437679",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "    failinimi=sys.argv[1]\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "59.0",
+        "time": "2016-11-15T13:53:02.437679",
+        "tags": "('io', 'stderr')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "IndexError: list index out of range\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "60.0",
+        "time": "2016-11-15T13:53:02.447679",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:53:05.304685",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "37.0",
+        "time": "2016-11-15T13:53:05.624685",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "#",
+        "text_widget_id": 43229072
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:53:06.013686",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "61.0",
+        "time": "2016-11-15T13:53:06.383687",
+        "text_widget_context": "shell",
+        "index1": "60.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "60.4",
+        "time": "2016-11-15T13:53:06.383687",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "%Run kodu5.py\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "time": "2016-11-15T13:53:06.383687",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:53:06.493687",
+        "command_text": "%Run kodu5.py\n"
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:53:06.493687",
+        "command_id": "run_current_script"
+    },
+    {
+        "index": "61.0",
+        "time": "2016-11-15T13:53:06.493687",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "[",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "61.1",
+        "time": "2016-11-15T13:53:06.493687",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "'3', '1', '6', '2', '8', '5', '7', '9', '4']\n['4', '3', '2', '8', '6', '7', '1', '5', '9']\n['6', '7', '8', '5', '2', '1', '9', '4', '3']\n['7', '5', '2', '9', '6', '4', '8', '3', '1']\n['1', '9', '6', '3', '4', '5', '2', '7', '8']\n['5', '2', '3', '4', '8', '9', '6', '1', '7']\n['8', '4', '9', '1', '7', '3', '2', '5', '6']\n['7', '8', '5', '9', '1', '2', '3', '6', '4']\n['4', '9', '1', '6', '3', '7', '5', '2', '8']\nOK\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "71.0",
+        "time": "2016-11-15T13:53:06.523687",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:53:19.363779",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:53:20.543781",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:53:21.013782",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:53:35.084860",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:53:35.084860",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "31.28",
+        "time": "2016-11-15T13:53:37.614866",
+        "index1": "31.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:53:38.134867",
+        "index1": "30.58",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:53:43.584883",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.0",
+        "time": "2016-11-15T13:53:44.778888",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "\n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.0",
+        "time": "2016-11-15T13:53:45.578889",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "    ",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "6.4",
+        "time": "2016-11-15T13:53:45.861890",
+        "index1": "6.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.0",
+        "time": "2016-11-15T13:53:45.861890",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "        ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.8",
+        "time": "2016-11-15T13:53:47.888896",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "p",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.9",
+        "time": "2016-11-15T13:53:48.098896",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.10",
+        "time": "2016-11-15T13:53:48.388897",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.11",
+        "time": "2016-11-15T13:53:48.518897",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.12",
+        "time": "2016-11-15T13:53:48.620897",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "n",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:53:49.166899",
+        "index1": "6.12",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:53:49.336899",
+        "index1": "6.11",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:53:49.476899",
+        "index1": "6.10",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.10",
+        "time": "2016-11-15T13:53:50.478901",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.11",
+        "time": "2016-11-15T13:53:50.568901",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.12",
+        "time": "2016-11-15T13:53:50.718902",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.13",
+        "time": "2016-11-15T13:53:50.888902",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": " ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.14",
+        "time": "2016-11-15T13:53:51.599903",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.14",
+        "time": "2016-11-15T13:53:53.804909",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "(",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "6.16",
+        "time": "2016-11-15T13:53:55.611914",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": ")",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T13:53:56.945917",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:53:56.945917",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "72.0",
+        "time": "2016-11-15T13:53:57.295918",
+        "text_widget_context": "shell",
+        "index1": "71.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "71.4",
+        "time": "2016-11-15T13:53:57.295918",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "%Run kodu5.py\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:53:57.406918",
+        "command_text": "%Run kodu5.py\n"
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:53:57.406918",
+        "command_id": "run_current_script"
+    },
+    {
+        "index": "72.0",
+        "time": "2016-11-15T13:53:57.406918",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "1",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "72.1",
+        "time": "2016-11-15T13:53:57.406918",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n2\n9",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "74.1",
+        "time": "2016-11-15T13:53:57.436918",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\n1\n2\n9\n3\n6\n5\n8\n7\n4\nOK\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "316.0",
+        "time": "2016-11-15T13:53:57.446918",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:54:08.314946",
+        "index1": "6.16",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:54:08.494946",
+        "index1": "6.15",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:54:08.674947",
+        "index1": "6.14",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "6.14",
+        "time": "2016-11-15T13:54:08.836949",
+        "index1": "6.13",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:54:08.986949",
+        "index1": "6.12",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:54:09.156950",
+        "index1": "6.11",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:54:09.316950",
+        "index1": "6.10",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:54:09.466950",
+        "index1": "6.9",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:54:09.640951",
+        "index1": "6.8",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "6.8",
+        "time": "2016-11-15T13:54:09.834952",
+        "index1": "6.4",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "6.4",
+        "time": "2016-11-15T13:54:10.094953",
+        "index1": "6.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:54:10.534953",
+        "index1": "5.21",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T13:54:11.021956",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:54:11.021956",
+        "command_id": "save_file"
+    },
+    {
+        "index": "13.0",
+        "time": "2016-11-15T13:54:16.085970",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "\n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "13.0",
+        "time": "2016-11-15T13:54:16.685971",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "    ",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "13.4",
+        "time": "2016-11-15T13:54:17.135972",
+        "index1": "13.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "13.0",
+        "time": "2016-11-15T13:54:17.135972",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "        ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "13.8",
+        "time": "2016-11-15T13:54:17.610975",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "p",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "13.9",
+        "time": "2016-11-15T13:54:17.790975",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "13.10",
+        "time": "2016-11-15T13:54:17.974977",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "13.11",
+        "time": "2016-11-15T13:54:18.104977",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "13.12",
+        "time": "2016-11-15T13:54:18.174977",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "13.13",
+        "time": "2016-11-15T13:54:18.596979",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "(",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "13.14",
+        "time": "2016-11-15T13:54:18.646979",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": ")",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "13.14",
+        "time": "2016-11-15T13:54:19.909982",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "13.15",
+        "time": "2016-11-15T13:54:20.029982",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "13.16",
+        "time": "2016-11-15T13:54:20.161983",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "d",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "13.17",
+        "time": "2016-11-15T13:54:20.241983",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T13:54:20.805984",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:54:20.805984",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "317.0",
+        "time": "2016-11-15T13:54:21.205984",
+        "text_widget_context": "shell",
+        "index1": "316.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "316.4",
+        "time": "2016-11-15T13:54:21.205984",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "%Run kodu5.py\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:54:21.315984",
+        "command_text": "%Run kodu5.py\n"
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:54:21.315984",
+        "command_id": "run_current_script"
+    },
+    {
+        "index": "317.0",
+        "time": "2016-11-15T13:54:21.315984",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "[",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "317.1",
+        "time": "2016-11-15T13:54:21.315984",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "'3', '2', '7', '4', '8', '1', '6', '5', '9']\n['1', '8', '9', '3', '6', '5', '7', '2', '4']\n['6', '5', '4', '2', '7', '9', '8', '1', '3']\n['7', '9', '8', '1', '3', '2', '5', '4', '6']\n['5', '6', '3', '9', '4', '7', '2', '8', '1']\n['2', '4', '1', '6', '5', '8', '3', '9', '7']\n['8', '1', '2', '7', '9', '3', '4', '6', '5']\n['4', '7', '5', '8', '1', '6', '9', '3', '2']\n['9', '3', '6', '5', '2', '4', '1', '7', '8']\nOK\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "327.0",
+        "time": "2016-11-15T13:54:21.335985",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:54:23.375989",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:54:37.917029",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:54:37.927029",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:54:39.091031",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "13.19",
+        "time": "2016-11-15T13:54:40.207037",
+        "index1": "13.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:54:40.707038",
+        "index1": "12.21",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:54:42.907045",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.0",
+        "time": "2016-11-15T13:54:43.747047",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "\n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.0",
+        "time": "2016-11-15T13:54:44.261048",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "    ",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "21.4",
+        "time": "2016-11-15T13:54:44.573048",
+        "index1": "21.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.0",
+        "time": "2016-11-15T13:54:44.573048",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "        ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.8",
+        "time": "2016-11-15T13:54:45.289051",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "p",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.9",
+        "time": "2016-11-15T13:54:45.439051",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.10",
+        "time": "2016-11-15T13:54:45.575052",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.11",
+        "time": "2016-11-15T13:54:45.661052",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.12",
+        "time": "2016-11-15T13:54:45.711052",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.13",
+        "time": "2016-11-15T13:54:45.971053",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "(",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.14",
+        "time": "2016-11-15T13:54:46.041053",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": ")",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.14",
+        "time": "2016-11-15T13:54:46.977055",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.15",
+        "time": "2016-11-15T13:54:47.047055",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "e",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.16",
+        "time": "2016-11-15T13:54:47.137055",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "m",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.17",
+        "time": "2016-11-15T13:54:47.237055",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "p",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.18",
+        "time": "2016-11-15T13:54:47.891057",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "_",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.19",
+        "time": "2016-11-15T13:54:48.302058",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "l",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.20",
+        "time": "2016-11-15T13:54:48.382058",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.21",
+        "time": "2016-11-15T13:54:48.502058",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "21.22",
+        "time": "2016-11-15T13:54:48.542058",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T13:54:49.181062",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:54:49.181062",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "328.0",
+        "time": "2016-11-15T13:54:50.163064",
+        "text_widget_context": "shell",
+        "index1": "327.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "327.4",
+        "time": "2016-11-15T13:54:50.163064",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "%Run kodu5.py\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:54:50.273064",
+        "command_text": "%Run kodu5.py\n"
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:54:50.273064",
+        "command_id": "run_current_script"
+    },
+    {
+        "index": "328.0",
+        "time": "2016-11-15T13:54:50.273064",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "[",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "328.1",
+        "time": "2016-11-15T13:54:50.273064",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "'3', '1', '6', '7', '5', '2', '8', '4', '9']\n['2', '8', '5', '9', '6', '4', '1', '7', '3']\n['7', '9', '4', '8', '3', '1', '2', '5', '6']\n['4', '3', '2', '1', '9', '6', '7', '8', '5']\n['8', '6', '7', '3', '4', '5', '9', '1', '2']\n['1', '5', '9', '2', '7', '8', '3', '6', '4']\n['6', '7', '8', '5', '2', '3', '4', '9', '1']\n['5', '2', '1', '4', '8', '9', '6', '3', '7']\n['9', '4', '3', '6', '1', '7', '5', '2', '8']\nOK\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "338.0",
+        "time": "2016-11-15T13:54:50.303064",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:54:54.108073",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:55:10.557132",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:55:12.130137",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "21.24",
+        "time": "2016-11-15T13:55:13.732142",
+        "index1": "21.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:55:13.994144",
+        "index1": "20.46",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:55:15.352148",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.0",
+        "time": "2016-11-15T13:55:16.164149",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "\n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.0",
+        "time": "2016-11-15T13:55:16.694150",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "    ",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "31.4",
+        "time": "2016-11-15T13:55:16.910152",
+        "index1": "31.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.0",
+        "time": "2016-11-15T13:55:16.910152",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "        ",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "31.8",
+        "time": "2016-11-15T13:55:17.094153",
+        "index1": "31.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.0",
+        "time": "2016-11-15T13:55:17.094153",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "            ",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.12",
+        "time": "2016-11-15T13:55:17.813156",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "p",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.13",
+        "time": "2016-11-15T13:55:17.988157",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.14",
+        "time": "2016-11-15T13:55:18.258157",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.15",
+        "time": "2016-11-15T13:55:18.328157",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "n",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.16",
+        "time": "2016-11-15T13:55:18.448157",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.17",
+        "time": "2016-11-15T13:55:18.778158",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "(",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.18",
+        "time": "2016-11-15T13:55:18.848158",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": ")",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.18",
+        "time": "2016-11-15T13:55:19.758160",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.19",
+        "time": "2016-11-15T13:55:19.830160",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "e",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.20",
+        "time": "2016-11-15T13:55:20.060160",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "m",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.21",
+        "time": "2016-11-15T13:55:20.150160",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "p",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.22",
+        "time": "2016-11-15T13:55:20.968163",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "_",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.23",
+        "time": "2016-11-15T13:55:21.350164",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "l",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.24",
+        "time": "2016-11-15T13:55:21.430164",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.25",
+        "time": "2016-11-15T13:55:21.480164",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "s",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "31.26",
+        "time": "2016-11-15T13:55:21.580164",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T13:55:22.164166",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:55:22.174166",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "339.0",
+        "time": "2016-11-15T13:55:30.928204",
+        "text_widget_context": "shell",
+        "index1": "338.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "338.4",
+        "time": "2016-11-15T13:55:30.928204",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "%Run kodu5.py\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:55:31.038204",
+        "command_text": "%Run kodu5.py\n"
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:55:31.038204",
+        "command_id": "run_current_script"
+    },
+    {
+        "index": "339.0",
+        "time": "2016-11-15T13:55:31.093206",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "[",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "339.1",
+        "time": "2016-11-15T13:55:31.093206",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "'3', '1', '6', '2', '8', '5', '7', '9', '4']\n['4', '3', '2', '8', '6', '7', '1', '5', '9']\n['6', '7', '8', '5', '2', '1', '9', '4', '3']\n['7', '5', '2', '9', '6', '4', '8', '3', '1']\n['1', '9', '6', '3', '4', '5', '2', '7', '8']\n['5', '2', '3', '4', '8', '9', '6', '1', '7']\n['8', '4', '9', '1', '7', '3', '2', '5', '6']\n['7', '8', '5', '9', '1', '2', '3', '6', '4']\n['4', '9', '1', '6', '3', '7', '5', '2', '8']\nOK\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "349.0",
+        "time": "2016-11-15T13:55:31.102206",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:55:38.392224",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:56:05.024385",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:56:05.025385",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "28.20",
+        "time": "2016-11-15T13:56:06.493417",
+        "index1": "28.16",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "28.16",
+        "time": "2016-11-15T13:56:06.493417",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "r",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "28.17",
+        "time": "2016-11-15T13:56:06.613417",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "i",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "28.18",
+        "time": "2016-11-15T13:56:06.743417",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "d",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "28.19",
+        "time": "2016-11-15T13:56:06.834417",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "a",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:56:08.592441",
+        "index1": "29.23",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:56:08.790443",
+        "index1": "29.22",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:56:08.948444",
+        "index1": "29.21",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:56:09.132447",
+        "index1": "29.20",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "29.20",
+        "time": "2016-11-15T13:56:09.716449",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "t",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "29.21",
+        "time": "2016-11-15T13:56:09.807449",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "u",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "29.22",
+        "time": "2016-11-15T13:56:09.915450",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "l",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "29.23",
+        "time": "2016-11-15T13:56:10.125450",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "p",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T13:56:10.811452",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:56:10.811452",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "350.0",
+        "time": "2016-11-15T13:56:12.156461",
+        "text_widget_context": "shell",
+        "index1": "349.4",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "349.4",
+        "time": "2016-11-15T13:56:12.156461",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "%Run kodu5.py\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "sequence": "ShellCommand",
+        "time": "2016-11-15T13:56:12.256461",
+        "command_text": "%Run kodu5.py\n"
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:56:12.256461",
+        "command_id": "run_current_script"
+    },
+    {
+        "index": "350.0",
+        "time": "2016-11-15T13:56:12.256461",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "[",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "350.1",
+        "time": "2016-11-15T13:56:12.256461",
+        "tags": "('io', 'stdout')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": "'3', '2', '7', '1', '8', '9', '6', '5', '4']\n['4', '8', '1', '3', '6', '5', '2', '7', '9']\n['6', '5', '9', '7', '2', '4', '8', '1', '3']\n['7', '9', '8', '5', '6', '3', '2', '4', '1']\n['1', '3', '2', '9', '4', '7', '6', '5', '8']\n['5', '4', '6', '2', '8', '1', '3', '9', '7']\n['8', '1', '2', '4', '7', '5', '9', '3', '6']\n['7', '9', '3', '8', '1', '6', '5', '2', '4']\n['4', '6', '5', '9', '3', '2', '1', '7', '8']\nOK\n",
+        "text_widget_id": 43337424
+    },
+    {
+        "index": "360.0",
+        "time": "2016-11-15T13:56:12.276461",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_id": 43337424
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:56:19.379527",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "Command",
+        "denied": "True",
+        "time": "2016-11-15T13:56:20.656531",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:56:21.757534",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:56:37.757623",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:56:38.724626",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:56:39.752629",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:56:41.504635",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "31.28",
+        "time": "2016-11-15T13:56:42.718678",
+        "index1": "31.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:56:43.077679",
+        "index1": "30.58",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T13:56:44.300682",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T13:56:44.310682",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:56:46.166719",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T13:59:43.278929",
+        "widget_class": "Workbench"
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:59:43.278929",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:59:47.567973",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "sequence": "TextDelete",
+        "index2": "None",
+        "time": "2016-11-15T13:59:49.721976",
+        "index1": "36.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:59:51.468984",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "index": "37.0",
+        "time": "2016-11-15T13:59:51.983985",
+        "tags": "None",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "#",
+        "text_widget_id": 43229072
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:59:53.828998",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:59:56.124008",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "widget_id": 43229072,
+        "time": "2016-11-15T13:59:59.651015",
+        "widget_class": "CodeViewText",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072
+    },
+    {
+        "time": "2016-11-15T14:00:20.891258",
+        "editor_class": "Editor",
+        "sequence": "Save",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43229072,
+        "editor_id": 43442224
+    },
+    {
+        "sequence": "Command",
+        "denied": "False",
+        "time": "2016-11-15T14:00:20.894258",
+        "command_id": "save_file"
+    },
+    {
+        "sequence": "<FocusOut>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T14:00:22.323336",
+        "widget_class": "Workbench"
+    },
+    {
+        "sequence": "<FocusIn>",
+        "widget_id": 43226320,
+        "time": "2016-11-15T14:03:48.675272",
+        "widget_class": "Workbench"
+    }
+]

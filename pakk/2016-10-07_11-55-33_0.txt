@@ -1,0 +1,722 @@
+[
+    {
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 57087408,
+        "sequence": "EditorTextCreated",
+        "editor_id": 43462640,
+        "time": "2016-10-07T11:55:34.115163"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "1.0",
+        "sequence": "TextDelete",
+        "text_widget_id": 57087408,
+        "index2": "2.0",
+        "time": "2016-10-07T11:55:34.115163"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "#Programmi sees 10=90; J=91; Q=92; K=93; A=94\n\ntugevuslist=[\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"90\",\"91\",\"92\",\"93\",\"94\"]\nk\u00e4e_tugevuslist=[\"K\u00f5rge kaart\", \"\u00dcks paar\", \"Kaks paari\", \"Kolmik\", \"Rida\",\"Mast\",\"Maja\",\"Nelik\",\"Mastirida\",\"Kuninglik mastirida\"]\n\ndef kaardinumber(kaart):\n    x=kaart[:-1]\n    t\u00e4hed=[\"10\",\"J\",\"Q\",\"K\",\"A\"]\n    numbrid=[\"90\", \"91\", \"92\", \"93\", \"94\",] #Muudab t\u00e4hed ja arvu 10 arvudeks 90-94, et saaks kasutada sorted funktsiooni\n    if x in t\u00e4hed:\n        for i in range (5):\n            if x==t\u00e4hed[i]:\n                x=numbrid[i]\n    return x\n        \ndef kaardimast(kaart):\n    x=kaart[-1]\n    return x\n   \ndef kaardid_listi(kaart1, kaart2, kaart3, kaart4, kaart5):\n    kaardid=[kaart1, kaart2, kaart3, kaart4, kaart5]\n\n    kaardinumbrid=[]\n    for i in range(5):\n        temp=kaardinumber(kaardid[i])\n        kaardinumbrid.append(temp)\n\n    kaardimastid=[]\n    for i in range(5):\n        kaardimastid+=(kaardimast(kaardid[i]))\n    \n    return kaardimastid, kaardinumbrid\n\n#Kontrollib, kas on tegemist reaga.\ndef rea_kontroll(numbrid):\n    a=0\n    for i in range(14):\n        if numbrid[0]==tugevuslist[i]:          #a saab v\u00e4\u00e4rtuse\n            a=i\n            break\n    c=0\n    for i in range(4):\n        if numbrid[i]==tugevuslist[a+i]:\n            c+=1\n    if c==4 and numbrid[3]!=\"94\":\n        return True\n    elif numbrid==[\"2\",\"3\",\"4\",\"5\",\"94\"]:\n        return True\n    else:\n        return False\n            \n    \ndef k\u00e4si(kaart1, kaart2, kaart3, kaart4, kaart5):\n    mastid, numbrid = kaardid_listi(kaart1, kaart2, kaart3, kaart4, kaart5)\n    numbrid=sorted(numbrid)\n    print(mastid)\n    print(numbrid)\n    #Mastikontroll\n    v\u00e4\u00e4rtus=0\n    if mastid[0]==mastid[1]==mastid[2]==mastid[3]==mastid[4]:\n        #Kontrollib, kas on tegemist kuningliku mastirea, v\u00f5i mastireaga\n        if rea_kontroll(numbrid):\n            v\u00e4\u00e4rtus=9 #Mastirida\n            if numbrid[0]==\"90\":\n                v\u00e4\u00e4rtus=10 #Kuninglik mastirida\n\n        else:\n            v\u00e4\u00e4rtus=6 #Mast\n       \n    elif rea_kontroll(numbrid) and v\u00e4\u00e4rtus <6:\n        v\u00e4\u00e4rtus=5\n       \n    for i in range(5):\n        x=numbrid.count(numbrid[i])\n        if x==4:                #Kontrollib nelikut\n            v\u00e4\u00e4rtus=8 #Nelik\n        elif x==3:              #Kontrollib kolmikut\n            for j in range(5):\n                y=numbrid.count(numbrid[j])\n                if y==2:\n                    v\u00e4\u00e4rtus=7 #Maja\n                    break\n                else:\n                    if v\u00e4\u00e4rtus<4:\n                        v\u00e4\u00e4rtus=4 #Kolmik\n    \n        elif x==2 and v\u00e4\u00e4rtus<3:\n            for j in range(5):\n                y=numbrid.count(numbrid[j])\n                if y==2 :\n                    v\u00e4\u00e4rtus=3 #Kaks paari\n                    break\n                else:\n                    v\u00e4\u00e4rtus=2 #\u00dcks paar\n\n        elif x==1 and v\u00e4\u00e4rtus<2:\n            v\u00e4\u00e4rtus=1\n    return k\u00e4e_tugevuslist[v\u00e4\u00e4rtus-1]\n\n\nprint(k\u00e4si('7\u2665', '7\u2663', '6\u2665', '6\u2665', '6\u2665'))",
+        "tags": "()",
+        "text_widget_id": 57087408,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:55:34.130763",
+        "index": "1.0"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_context": "shell",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:55:34.208763",
+        "index": "1.0"
+    },
+    {
+        "time": "2016-10-07T11:55:34.208763",
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 43257488
+    },
+    {
+        "time": "2016-10-07T11:55:39.858973",
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 43409520
+    },
+    {
+        "time": "2016-10-07T11:55:39.921374",
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "widget_id": 43257488
+    },
+    {
+        "time": "2016-10-07T11:55:42.076177",
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 43257488
+    },
+    {
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43459280,
+        "sequence": "EditorTextCreated",
+        "editor_id": 56978288,
+        "time": "2016-10-07T11:55:42.091777"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "1.0",
+        "sequence": "TextDelete",
+        "text_widget_id": 43459280,
+        "index2": "2.0",
+        "time": "2016-10-07T11:55:42.091777"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "def k\u00f5ik_\u00fchest_mastist(mastid):\n    \n    if len(set(mastid)) == 1:\n        return True\n    return False\ndef j\u00e4rjestikused_kaardid(k\u00f5rgused):\n    # \u00c4ss esimene A, 2, 3, 4, 5\n    if 14 in k\u00f5rgused:\n        return(set((2, 3, 4, 5)) in k\u00f5rgused)\n    else:                \n        for k in range(1, len(k\u00f5rgused)):\n            if not (k\u00f5rgused[k] == k\u00f5rgused[k-1] + 1 ):\n                return False\n        \n    return True\n        \ndef k\u00e4si(kaart_1, kaart_2, kaart_3, kaart_4, kaart_5):\n    \n    mastid = [x[-1:] for x in (kaart_1, kaart_2, kaart_3, kaart_4, kaart_5)]\n    \n    k\u00f5rgused = []\n    # K\u00f5rgused asendatakse t\u00e4isarvuga, et saaks sorteerida   \n    for kaart in (kaart_1, kaart_2, kaart_3, kaart_4, kaart_5):\n        if kaart[:-1] == \"J\":\n            k\u00f5rgused.append(11)\n        elif kaart[:-1] == \"Q\":\n            k\u00f5rgused.append(12)            \n        elif kaart[:-1] == \"K\":\n            k\u00f5rgused.append(13)          \n        elif kaart[:-1] == \"A\":\n            k\u00f5rgused.append(14)\n        else:\n            k\u00f5rgused.append(int(kaart[:-1]))\n    k\u00f5rgused.sort()\n    unikaalsed_k\u00f5rgused = set(k\u00f5rgused)\n    erinevad_k\u00f5rgused = []\n    \n    for k\u00f5rgus in unikaalsed_k\u00f5rgused:\n        erinevad_k\u00f5rgused.append(k\u00f5rgused.count(k\u00f5rgus))\n        \n    # Pokkeri k\u00e4e tugevused k\u00f5rgemast madalamani\n    if k\u00f5ik_\u00fchest_mastist(mastid) and set((10, 11, 12, 13, 14)) == set(k\u00f5rgused):\n        return (\"Kuninglik mastirida\")\n    \n    elif k\u00f5ik_\u00fchest_mastist(mastid) and j\u00e4rjestikused_kaardid(k\u00f5rgused):\n        return(\"Mastirida\")\n    elif 4 in erinevad_k\u00f5rgused:\n        return(\"Nelik\")\n    elif 3 in erinevad_k\u00f5rgused and 2 in erinevad_k\u00f5rgused:\n        return(\"Maja\")\n    elif k\u00f5ik_\u00fchest_mastist(mastid):\n        return(\"Mast\")\n    elif j\u00e4rjestikused_kaardid(k\u00f5rgused):\n        return(\"Rida\")\n    elif 3 in erinevad_k\u00f5rgused:\n        return(\"Kolmik\")\n    elif erinevad_k\u00f5rgused.count(2) == 2:\n        return(\"Kaks paari\")\n    elif erinevad_k\u00f5rgused.count(2) == 1:\n        return(\"\u00dcks paar\")\n    else:\n        return(\"K\u00f5rge kaart\")\n    \nprint(k\u00e4si('2\u2665', '3\u2665', '4\u2665', '5\u2665', '6\u2666'))",
+        "tags": "()",
+        "text_widget_id": 43459280,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:55:42.107377",
+        "index": "1.0"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 43459280,
+        "text_widget_id": 43459280,
+        "sequence": "<Button-1>",
+        "time": "2016-10-07T11:55:44.371382"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "6.0",
+        "sequence": "TextDelete",
+        "text_widget_id": 43459280,
+        "index2": "13.28",
+        "time": "2016-10-07T11:55:46.541785"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "def j\u00e4rjestikused_kaardid(k\u00f5rgused):\n\n    # \u00c4ss esimene A, 2, 3, 4, 5, \u00e4ss viimane 10, 11, 12, 13, 14\n    if 14 in k\u00f5rgused:\n        return set((2, 3, 4, 5)).issubset(set(k\u00f5rgused)) or set((10, 11, 12, 13)).issubset(set(k\u00f5rgused))\n    else:                \n        for k in range(1, len(k\u00f5rgused)):\n            if not (k\u00f5rgused[k] == k\u00f5rgused[k-1] + 1 ):\n                return False        \n    return True",
+        "tags": "None",
+        "text_widget_id": 43459280,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:55:46.541785",
+        "index": "6.0"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 43459280,
+        "text_widget_id": 43459280,
+        "sequence": "<<Paste>>",
+        "time": "2016-10-07T11:55:46.557386"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 43459280,
+        "text_widget_id": 43459280,
+        "sequence": "<Button-1>",
+        "time": "2016-10-07T11:55:47.761191"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index1": "1.4",
+        "text_widget_context": "shell",
+        "index2": "2.0",
+        "text_widget_id": 43410928,
+        "sequence": "TextDelete",
+        "time": "2016-10-07T11:55:50.303996"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "%Run raul.py\n",
+        "text_widget_context": "shell",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:55:50.303996",
+        "index": "1.4"
+    },
+    {
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43459280,
+        "sequence": "Save",
+        "editor_id": 56978288,
+        "time": "2016-10-07T11:55:50.303996"
+    },
+    {
+        "time": "2016-10-07T11:55:50.428796",
+        "sequence": "ShellCommand",
+        "command_text": "%Run raul.py\n"
+    },
+    {
+        "time": "2016-10-07T11:55:50.428796",
+        "command_id": "run_current_script",
+        "sequence": "Command",
+        "denied": "False"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "R",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:55:50.491196",
+        "index": "2.0"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "ida\n",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:55:50.491196",
+        "index": "2.1"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_context": "shell",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:55:50.506796",
+        "index": "3.0"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 43459280,
+        "text_widget_id": 43459280,
+        "sequence": "<Button-1>",
+        "time": "2016-10-07T11:55:52.724000"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "66.12",
+        "sequence": "TextDelete",
+        "text_widget_id": 43459280,
+        "index2": "None",
+        "time": "2016-10-07T11:55:53.597602"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "A",
+        "tags": "None",
+        "text_widget_id": 43459280,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:55:53.878402",
+        "index": "66.12"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "66.18",
+        "sequence": "TextDelete",
+        "text_widget_id": 43459280,
+        "index2": "None",
+        "time": "2016-10-07T11:55:57.472409"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "2",
+        "tags": "None",
+        "text_widget_id": 43459280,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:55:57.597209",
+        "index": "66.18"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "66.36",
+        "sequence": "TextDelete",
+        "text_widget_id": 43459280,
+        "index2": "None",
+        "time": "2016-10-07T11:56:01.531416"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "3",
+        "tags": "None",
+        "text_widget_id": 43459280,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:01.671816",
+        "index": "66.36"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index1": "3.4",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "text_widget_id": 43410928,
+        "index2": "4.0",
+        "time": "2016-10-07T11:56:02.233417"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "%Run raul.py\n",
+        "text_widget_context": "shell",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:02.233417",
+        "index": "3.4"
+    },
+    {
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43459280,
+        "sequence": "Save",
+        "editor_id": 56978288,
+        "time": "2016-10-07T11:56:02.233417"
+    },
+    {
+        "time": "2016-10-07T11:56:02.358217",
+        "sequence": "ShellCommand",
+        "command_text": "%Run raul.py\n"
+    },
+    {
+        "time": "2016-10-07T11:56:02.358217",
+        "command_id": "run_current_script",
+        "sequence": "Command",
+        "denied": "False"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "R",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:02.420618",
+        "index": "4.0"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "ida\n",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:02.420618",
+        "index": "4.1"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_context": "shell",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:02.436218",
+        "index": "5.0"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 43459280,
+        "text_widget_id": 43459280,
+        "sequence": "<Button-1>",
+        "time": "2016-10-07T11:56:04.589021"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "66.18",
+        "sequence": "TextDelete",
+        "text_widget_id": 43459280,
+        "index2": "None",
+        "time": "2016-10-07T11:56:05.415823"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "K",
+        "tags": "None",
+        "text_widget_id": 43459280,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:05.634223",
+        "index": "66.18"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "66.24",
+        "sequence": "TextDelete",
+        "text_widget_id": 43459280,
+        "index2": "None",
+        "time": "2016-10-07T11:56:07.865027"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "Q",
+        "tags": "None",
+        "text_widget_id": 43459280,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:08.270628",
+        "index": "66.24"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "66.30",
+        "sequence": "TextDelete",
+        "text_widget_id": 43459280,
+        "index2": "None",
+        "time": "2016-10-07T11:56:09.661030"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "K",
+        "tags": "None",
+        "text_widget_id": 43459280,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:10.066631",
+        "index": "66.30"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "66.30",
+        "sequence": "TextDelete",
+        "text_widget_id": 43459280,
+        "index2": "None",
+        "time": "2016-10-07T11:56:10.910033"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "J",
+        "tags": "None",
+        "text_widget_id": 43459280,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:11.317634",
+        "index": "66.30"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "66.36",
+        "sequence": "TextDelete",
+        "text_widget_id": 43459280,
+        "index2": "None",
+        "time": "2016-10-07T11:56:13.714438"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "1",
+        "tags": "None",
+        "text_widget_id": 43459280,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:13.870439",
+        "index": "66.36"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "0",
+        "tags": "None",
+        "text_widget_id": 43459280,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:13.964039",
+        "index": "66.37"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index1": "5.4",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "text_widget_id": 43410928,
+        "index2": "6.0",
+        "time": "2016-10-07T11:56:14.525640"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "%Run raul.py\n",
+        "text_widget_context": "shell",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:14.525640",
+        "index": "5.4"
+    },
+    {
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43459280,
+        "sequence": "Save",
+        "editor_id": 56978288,
+        "time": "2016-10-07T11:56:14.525640"
+    },
+    {
+        "time": "2016-10-07T11:56:14.650440",
+        "sequence": "ShellCommand",
+        "command_text": "%Run raul.py\n"
+    },
+    {
+        "time": "2016-10-07T11:56:14.650440",
+        "command_id": "run_current_script",
+        "sequence": "Command",
+        "denied": "False"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "R",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:14.712840",
+        "index": "6.0"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "ida\n",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:14.712840",
+        "index": "6.1"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_context": "shell",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:56:14.712840",
+        "index": "7.0"
+    },
+    {
+        "time": "2016-10-07T11:56:17.960857",
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "widget_id": 43257488
+    },
+    {
+        "time": "2016-10-07T11:56:57.274462",
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 43257488
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 43459280,
+        "text_widget_id": 43459280,
+        "sequence": "<Button-1>",
+        "time": "2016-10-07T11:56:57.277462"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 43459280,
+        "text_widget_id": 43459280,
+        "sequence": "<<Copy>>",
+        "time": "2016-10-07T11:56:58.194515"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 43459280,
+        "text_widget_id": 43459280,
+        "sequence": "<Button-1>",
+        "time": "2016-10-07T11:56:58.721545"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 43459280,
+        "text_widget_id": 43459280,
+        "sequence": "<Button-1>",
+        "time": "2016-10-07T11:56:59.734603"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "66.38",
+        "sequence": "TextDelete",
+        "text_widget_id": 43459280,
+        "index2": "None",
+        "time": "2016-10-07T11:57:00.558650"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "\u2665",
+        "tags": "None",
+        "text_widget_id": 43459280,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:57:00.797664",
+        "index": "66.38"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 43459280,
+        "text_widget_id": 43459280,
+        "sequence": "<<Paste>>",
+        "time": "2016-10-07T11:57:00.799664"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index1": "7.4",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "text_widget_id": 43410928,
+        "index2": "8.0",
+        "time": "2016-10-07T11:57:01.418699"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "%Run raul.py\n",
+        "text_widget_context": "shell",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:57:01.419699",
+        "index": "7.4"
+    },
+    {
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43459280,
+        "sequence": "Save",
+        "editor_id": 56978288,
+        "time": "2016-10-07T11:57:01.419699"
+    },
+    {
+        "time": "2016-10-07T11:57:01.538706",
+        "sequence": "ShellCommand",
+        "command_text": "%Run raul.py\n"
+    },
+    {
+        "time": "2016-10-07T11:57:01.538706",
+        "command_id": "run_current_script",
+        "sequence": "Command",
+        "denied": "False"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "K",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:57:01.589709",
+        "index": "8.0"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "uninglik mastirida\n",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:57:01.589709",
+        "index": "8.1"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_context": "shell",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:57:01.605710",
+        "index": "9.0"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 43459280,
+        "text_widget_id": 43459280,
+        "sequence": "<Button-1>",
+        "time": "2016-10-07T11:57:06.940015"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "66.12",
+        "sequence": "TextDelete",
+        "text_widget_id": 43459280,
+        "index2": "None",
+        "time": "2016-10-07T11:57:08.350096"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "9",
+        "tags": "None",
+        "text_widget_id": 43459280,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:57:08.436100",
+        "index": "66.12"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index1": "9.4",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "text_widget_id": 43410928,
+        "index2": "10.0",
+        "time": "2016-10-07T11:57:08.859125"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "%Run raul.py\n",
+        "text_widget_context": "shell",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:57:08.859125",
+        "index": "9.4"
+    },
+    {
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 43459280,
+        "sequence": "Save",
+        "editor_id": 56978288,
+        "time": "2016-10-07T11:57:08.860125"
+    },
+    {
+        "time": "2016-10-07T11:57:08.981132",
+        "sequence": "ShellCommand",
+        "command_text": "%Run raul.py\n"
+    },
+    {
+        "time": "2016-10-07T11:57:08.981132",
+        "command_id": "run_current_script",
+        "sequence": "Command",
+        "denied": "False"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "M",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:57:09.032135",
+        "index": "10.0"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": "astirida\n",
+        "text_widget_context": "shell",
+        "tags": "('io', 'stdout')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:57:09.032135",
+        "index": "10.1"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_context": "shell",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text_widget_id": 43410928,
+        "sequence": "TextInsert",
+        "time": "2016-10-07T11:57:09.047135",
+        "index": "11.0"
+    }
+]

@@ -1,0 +1,49 @@
+[
+    {
+        "time": "2016-12-16T22:26:35.696581",
+        "view_class": "OutlineView",
+        "view_id": "OutlineView",
+        "sequence": "ShowView"
+    },
+    {
+        "editor_class": "Editor",
+        "sequence": "EditorTextCreated",
+        "time": "2016-12-16T22:26:35.706581",
+        "editor_id": 43335472,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 57661296
+    },
+    {
+        "index2": "2.0",
+        "sequence": "TextDelete",
+        "time": "2016-12-16T22:26:35.727582",
+        "index1": "1.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 57661296
+    },
+    {
+        "tags": "()",
+        "index": "1.0",
+        "sequence": "TextInsert",
+        "time": "2016-12-16T22:26:35.742583",
+        "text": "import pygame\nfrom random import randint\n\ndef joonista_laud(m\u00e4ngulaud):\n    for i, rida in enumerate(m\u00e4ngulaud):\n        for j in range(10):\n            ruut=pygame.Rect((175+j*25),(50+i*25),24,24)\n            if rida[j]==\"X\":\n                pygame.draw.rect(ekraani_pind, (255,0,0), ruut)    \n            else:\n                pygame.draw.rect(ekraani_pind, (0,0,0),ruut)\n    pygame.display.flip()\n\ndef vali_jupp():\n    jupid=[\"I\", \"L\", \"RL\", \"S\", \"RS\" , \"Ruut\", \"T\"]\n    x=randint(0,6)\n    valik=jupid[randint(0,6)]\n    if valik==\"I\":\n        return[(0,3),(0,4),(0,5),(0,6)]\n    elif valik==\"L\":\n        return[(0,4),(0,5),(1,5),(2,5)]\n    elif valik==\"RL\":\n        return[(0,6),(0,5),(1,5),(2,5)]\n    elif valik==\"S\":\n        return[(0,5),(0,6),(1,4),(1,5)]\n    elif valik==\"RS\":\n        return[(0,4),(0,5),(1,5),(1,6)]\n    elif valik==\"Ruut\":\n        return[(0,4),(0,5),(1,5),(1,4)]\n    elif valik==\"T\":\n        return[(0,5),(0,6),(0,4),(1,5)]\n\ndef liiguta(plokk, m\u00e4ngulaud, suund):\n    ##Eelnevasse asukohta teeb t\u00fchjad ruudud\n    eelnev_asukoht=plokk\n    for i in eelnev_asukoht:\n        m\u00e4ngulaud[i[0]][i[1]]=\"\"\n      \n    if suund==\"alla\":\n        y=1\n        x=0\n    elif suund==\"vasakule\":\n        for a in plokk:\n            if a[1] == 0:\n                x = 0\n                y = 0\n                break\n            else:\n                x = -1\n                y = 0\n    elif suund==\"paremale\":\n        x=1\n        y=0\n    elif suund==\"t\u00fchi\":\n        x=0\n        y=0\n\n    plokk=[]\n    for kordinaat in eelnev_asukoht:\n        plokk.append((kordinaat[0]+y, kordinaat[1]+x))              \n\n    for i in plokk:\n        m\u00e4ngulaud[i[0]][i[1]]=\"X\"\n\n    return(plokk, m\u00e4ngulaud)\n\n    \n\n###PROGRAMM ALGAB\nm\u00e4ngulaud=[]\nfor i in range(20):\n    temp=[]\n    for j in range(10):\n        temp.append(\"\")\n    m\u00e4ngulaud.append(temp)\n\n\n\npygame.init()\n##\u00dcks ruut 25x25, m\u00e4ngulaua k\u00f5rgus 500 pikslit, laius 250\n##\u00dcleval ja all 50 pikslit t\u00fchja ruumi, vasakul ja paremal \nekraani_pind = pygame.display.set_mode( (600, 600) )\npygame.display.set_caption(\"Tetris\")\nekraani_pind.fill( (0,0,255) )\nristkylik1 = pygame.Rect(175, 50, 249, 499)\npygame.draw.rect(ekraani_pind, (255,255,255), ristkylik1)\npygame.display.flip()\n\nclock=pygame.time.Clock()\n\n\u00f5hus=vali_jupp()\nfor i in \u00f5hus:\n    m\u00e4ngulaud[i[0]][i[1]]=\"X\"\n\nt=75\ncounter=0\n\ngameexit=False\n##M\u00e4ngu loop\nwhile gameexit==False:\n    \n    ##Kui counter j\u00f5uab 100'ni, kukub plokk \u00fche v\u00f5rra\n    clock.tick(t)\n    counter+=1 \n    if counter==100:\n        \u00f5hus, m\u00e4ngulaud=liiguta(\u00f5hus, m\u00e4ngulaud, \"alla\")\n        counter=0\n    for event in pygame.event.get():\n    \n        if event.type == pygame.QUIT:\n            gameexit=True\n        if event.type == pygame.KEYDOWN:\n            if event.key == pygame.K_LEFT:\n                try:\n                    \u00f5hus,m\u00e4ngulaud=liiguta(\u00f5hus, m\u00e4ngulaud, \"vasakule\")\n                except:\n                    \u00f5hus,m\u00e4ngulaud=liiguta(\u00f5hus, m\u00e4ngulaud, \"t\u00fchi\")\n            elif event.key == pygame.K_RIGHT:\n                try:\n                    \u00f5hus,m\u00e4ngulaud=liiguta(\u00f5hus, m\u00e4ngulaud, \"paremale\")\n                except:\n                    \u00f5hus,m\u00e4ngulaud=liiguta(\u00f5hus, m\u00e4ngulaud, \"t\u00fchi\")\n            elif event.key == pygame.K_DOWN:\n                \u00f5hus, m\u00e4ngulaud=liiguta(\u00f5hus, m\u00e4ngulaud, \"alla\")\n       \n    joonista_laud(m\u00e4ngulaud)    \n\n                \npygame.quit()",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 57661296
+    },
+    {
+        "tags": "('toplevel', 'prompt')",
+        "index": "1.0",
+        "sequence": "TextInsert",
+        "time": "2016-12-16T22:26:35.872591",
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43280912,
+        "text_widget_context": "shell"
+    },
+    {
+        "time": "2016-12-16T22:26:35.873591",
+        "widget_class": "Workbench",
+        "widget_id": 43160656,
+        "sequence": "<FocusIn>"
+    }
+]

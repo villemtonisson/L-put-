@@ -1,0 +1,809 @@
+[
+    {
+        "text_widget_id": 52827440,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "editor_id": 18161008,
+        "time": "2016-10-02T14:58:47.827780",
+        "sequence": "EditorTextCreated"
+    },
+    {
+        "index2": "2.0",
+        "text_widget_id": 52827440,
+        "index1": "1.0",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-02T14:58:47.827780",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 52827440,
+        "text_widget_class": "CodeViewText",
+        "text": "isapalk=float(input(\"Sisesta isa brutopalk. \"))\nemapalk=float(input(\"Sisesta ema brutopalk. \"))\nlaps=int(input(\"Sisesta alaealiste laste arv. \"))\nsissetulek=0\n\nif isapalk<=170:\n    sissetulek+=isapalk\n    \nelif isapalk>=170:\n    sissetulek+=(isapalk-170)*0.79+170\n\n\nif emapalk<=170:\n    sissetulek+=emapalk\n    \nelif emapalk>170:\n    sissetulek+=(emapalk-170)*0.79+170\n\nfor i in range (laps):\n    sissetulek+=50\n\nprint (\"Pere sissetulek on \" ,round(sissetulek,2), \" eurot kuus.\")",
+        "tags": "()",
+        "index": "1.0",
+        "time": "2016-10-02T14:58:47.843781",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "tags": "('toplevel', 'prompt')",
+        "index": "1.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:58:47.890783",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-02T14:58:47.913785",
+        "widget_id": 17994832,
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>"
+    },
+    {
+        "time": "2016-10-02T14:58:48.648827",
+        "widget_id": 17994832,
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>"
+    },
+    {
+        "time": "2016-10-02T14:58:49.476864",
+        "widget_id": 17994832,
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>"
+    },
+    {
+        "text_widget_id": 52827440,
+        "widget_class": "CodeViewText",
+        "text_widget_class": "CodeViewText",
+        "widget_id": 52827440,
+        "time": "2016-10-02T14:58:52.221898",
+        "sequence": "<Button-1>"
+    },
+    {
+        "time": "2016-10-02T14:58:55.067945",
+        "widget_id": 17994832,
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>"
+    },
+    {
+        "time": "2016-10-02T14:59:39.335482",
+        "widget_id": 17994832,
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>"
+    },
+    {
+        "text_widget_id": 52827440,
+        "widget_class": "CodeViewText",
+        "text_widget_class": "CodeViewText",
+        "widget_id": 52827440,
+        "time": "2016-10-02T14:59:39.335482",
+        "sequence": "<Button-1>"
+    },
+    {
+        "index2": "None",
+        "text_widget_id": 52827440,
+        "index1": "9.13",
+        "text_widget_class": "CodeViewText",
+        "time": "2016-10-02T14:59:43.297498",
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_id": 52827440,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "editor_id": 18161008,
+        "time": "2016-10-02T14:59:44.753500",
+        "sequence": "Save"
+    },
+    {
+        "command_id": "save_file",
+        "time": "2016-10-02T14:59:44.763500",
+        "denied": "False",
+        "sequence": "Command"
+    },
+    {
+        "index2": "2.0",
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "time": "2016-10-02T14:59:46.018505",
+        "index1": "1.4"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "%cd 'C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\3. n\u00e4dal'\n%Run kodu2.py\n",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "index": "1.4",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:46.018505",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-02T14:59:46.018505",
+        "command_text": "%cd 'C:\\Users\\Villem\\Desktop\\Kool\\.thonny\\T\u00f6\u00f6d\\3. n\u00e4dal'\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "command_id": "run_current_script",
+        "time": "2016-10-02T14:59:46.018505",
+        "denied": "False",
+        "sequence": "Command"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "tags": "('toplevel', 'prompt')",
+        "index": "2.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:46.048505",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-02T14:59:46.158505",
+        "command_text": "%Run kodu2.py\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "S",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "index": "3.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:46.158505",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "isesta isa brutopalk. ",
+        "tags": "('io', 'stdout')",
+        "index": "3.1",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:46.158505",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "1",
+        "tags": "('io', 'stdin')",
+        "index": "3.23",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:48.542510",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "7",
+        "tags": "('io', 'stdin')",
+        "index": "3.24",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:48.708511",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "0",
+        "tags": "('io', 'stdin')",
+        "index": "3.25",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:48.840511",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "tags": "('io', 'stdin')",
+        "index": "3.26",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:49.513512",
+        "sequence": "TextInsert"
+    },
+    {
+        "input_text": "170\n",
+        "time": "2016-10-02T14:59:49.523512",
+        "sequence": "ShellInput"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "Sisesta ema brutopalk. ",
+        "tags": "('io', 'stdout')",
+        "index": "4.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:49.553513",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "3",
+        "tags": "('io', 'stdin')",
+        "index": "4.23",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:50.598514",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "3",
+        "tags": "('io', 'stdin')",
+        "index": "4.24",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:50.758514",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "3",
+        "tags": "('io', 'stdin')",
+        "index": "4.25",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:50.938515",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "tags": "('io', 'stdin')",
+        "index": "4.26",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:51.058515",
+        "sequence": "TextInsert"
+    },
+    {
+        "input_text": "333\n",
+        "time": "2016-10-02T14:59:51.058515",
+        "sequence": "ShellInput"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "Sisesta alaealiste laste arv. ",
+        "tags": "('io', 'stdout')",
+        "index": "5.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:51.068515",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "4",
+        "tags": "('io', 'stdin')",
+        "index": "5.30",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:51.952516",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "tags": "('io', 'stdin')",
+        "index": "5.31",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:52.273517",
+        "sequence": "TextInsert"
+    },
+    {
+        "input_text": "4\n",
+        "time": "2016-10-02T14:59:52.273517",
+        "sequence": "ShellInput"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "Pere sissetulek on  668.77  eurot kuus.\n",
+        "tags": "('io', 'stdout')",
+        "index": "6.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:52.283517",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "index": "7.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T14:59:52.283517",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-02T14:59:59.414562",
+        "widget_id": 17994832,
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>"
+    },
+    {
+        "time": "2016-10-02T15:00:33.315361",
+        "widget_id": 17994832,
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>"
+    },
+    {
+        "text_widget_id": 18113456,
+        "widget_class": "ShellText",
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:33.316361",
+        "widget_id": 18113456,
+        "sequence": "<Button-1>"
+    },
+    {
+        "index2": "8.0",
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "time": "2016-10-02T15:00:38.135410",
+        "index1": "7.4"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "%Run kodu2.py\n",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "index": "7.4",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:38.135410",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-02T15:00:38.235410",
+        "command_text": "%Run kodu2.py\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "command_id": "run_current_script",
+        "time": "2016-10-02T15:00:38.235410",
+        "denied": "False",
+        "sequence": "Command"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "S",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "index": "8.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:38.235410",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "isesta isa brutopalk. ",
+        "tags": "('io', 'stdout')",
+        "index": "8.1",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:38.245410",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "1",
+        "tags": "('io', 'stdin')",
+        "index": "8.23",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:42.028434",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "6",
+        "tags": "('io', 'stdin')",
+        "index": "8.24",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:42.138435",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "9",
+        "tags": "('io', 'stdin')",
+        "index": "8.25",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:42.218435",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "tags": "('io', 'stdin')",
+        "index": "8.26",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:42.818438",
+        "sequence": "TextInsert"
+    },
+    {
+        "input_text": "169\n",
+        "time": "2016-10-02T15:00:42.819438",
+        "sequence": "ShellInput"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "Sisesta ema brutopalk. ",
+        "tags": "('io', 'stdout')",
+        "index": "9.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:42.837439",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "3",
+        "tags": "('io', 'stdin')",
+        "index": "9.23",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:43.201440",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "3",
+        "tags": "('io', 'stdin')",
+        "index": "9.24",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:43.355442",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "3",
+        "tags": "('io', 'stdin')",
+        "index": "9.25",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:43.545442",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "tags": "('io', 'stdin')",
+        "index": "9.26",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:44.377448",
+        "sequence": "TextInsert"
+    },
+    {
+        "input_text": "333\n",
+        "time": "2016-10-02T15:00:44.377448",
+        "sequence": "ShellInput"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "Sisesta alaealiste laste arv. ",
+        "tags": "('io', 'stdout')",
+        "index": "10.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:44.418448",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "4",
+        "tags": "('io', 'stdin')",
+        "index": "10.30",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:44.623449",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "tags": "('io', 'stdin')",
+        "index": "10.31",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:44.947451",
+        "sequence": "TextInsert"
+    },
+    {
+        "input_text": "4\n",
+        "time": "2016-10-02T15:00:44.947451",
+        "sequence": "ShellInput"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "Pere sissetulek on  667.77  eurot kuus.\n",
+        "tags": "('io', 'stdout')",
+        "index": "11.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:44.997451",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "index": "12.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:44.997451",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 52827440,
+        "widget_class": "CodeViewText",
+        "text_widget_class": "CodeViewText",
+        "widget_id": 52827440,
+        "time": "2016-10-02T15:00:49.467480",
+        "sequence": "<Button-1>"
+    },
+    {
+        "text_widget_id": 52827440,
+        "text_widget_class": "CodeViewText",
+        "text": "=",
+        "tags": "None",
+        "index": "9.13",
+        "time": "2016-10-02T15:00:50.445485",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 52827440,
+        "widget_class": "CodeViewText",
+        "text_widget_class": "CodeViewText",
+        "widget_id": 52827440,
+        "time": "2016-10-02T15:00:51.357491",
+        "sequence": "<Button-1>"
+    },
+    {
+        "index2": "13.0",
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "time": "2016-10-02T15:00:52.668496",
+        "index1": "12.4"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "%Run kodu2.py\n",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "index": "12.4",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:52.668496",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 52827440,
+        "editor_class": "Editor",
+        "text_widget_class": "CodeViewText",
+        "editor_id": 18161008,
+        "time": "2016-10-02T15:00:52.668496",
+        "sequence": "Save"
+    },
+    {
+        "time": "2016-10-02T15:00:52.778496",
+        "command_text": "%Run kodu2.py\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "command_id": "run_current_script",
+        "time": "2016-10-02T15:00:52.778496",
+        "denied": "False",
+        "sequence": "Command"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "S",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "index": "13.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:52.788496",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "isesta isa brutopalk. ",
+        "tags": "('io', 'stdout')",
+        "index": "13.1",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:52.788496",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "1",
+        "tags": "('io', 'stdin')",
+        "index": "13.23",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:54.397509",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "7",
+        "tags": "('io', 'stdin')",
+        "index": "13.24",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:54.713512",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "0",
+        "tags": "('io', 'stdin')",
+        "index": "13.25",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:54.837513",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "tags": "('io', 'stdin')",
+        "index": "13.26",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:55.769517",
+        "sequence": "TextInsert"
+    },
+    {
+        "input_text": "170\n",
+        "time": "2016-10-02T15:00:55.769517",
+        "sequence": "ShellInput"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "Sisesta ema brutopalk. ",
+        "tags": "('io', 'stdout')",
+        "index": "14.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:55.809517",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "3",
+        "tags": "('io', 'stdin')",
+        "index": "14.23",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:56.198518",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "3",
+        "tags": "('io', 'stdin')",
+        "index": "14.24",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:56.367520",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "3",
+        "tags": "('io', 'stdin')",
+        "index": "14.25",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:56.897524",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "tags": "('io', 'stdin')",
+        "index": "14.26",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:57.129524",
+        "sequence": "TextInsert"
+    },
+    {
+        "input_text": "333\n",
+        "time": "2016-10-02T15:00:57.129524",
+        "sequence": "ShellInput"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "Sisesta alaealiste laste arv. ",
+        "tags": "('io', 'stdout')",
+        "index": "15.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:57.139524",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "4",
+        "tags": "('io', 'stdin')",
+        "index": "15.30",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:57.545526",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "\n",
+        "tags": "('io', 'stdin')",
+        "index": "15.31",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:57.726527",
+        "sequence": "TextInsert"
+    },
+    {
+        "input_text": "4\n",
+        "time": "2016-10-02T15:00:57.726527",
+        "sequence": "ShellInput"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": "Pere sissetulek on  668.77  eurot kuus.\n",
+        "tags": "('io', 'stdout')",
+        "index": "16.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:57.756527",
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_id": 18113456,
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "index": "17.0",
+        "text_widget_context": "shell",
+        "time": "2016-10-02T15:00:57.756527",
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2016-10-02T15:01:10.967632",
+        "widget_id": 17994832,
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>"
+    },
+    {
+        "time": "2016-10-02T15:01:12.520665",
+        "widget_id": 17994832,
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>"
+    },
+    {
+        "text_widget_id": 52827440,
+        "widget_class": "CodeViewText",
+        "text_widget_class": "CodeViewText",
+        "widget_id": 52827440,
+        "time": "2016-10-02T15:01:12.520665",
+        "sequence": "<Button-1>"
+    }
+]

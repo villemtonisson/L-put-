@@ -1,0 +1,1088 @@
+[
+    {
+        "time": "2017-09-25T20:19:31.140984",
+        "view_class": "OutlineView",
+        "sequence": "ShowView",
+        "view_id": "OutlineView"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "editor_id": 51536784,
+        "time": "2017-09-25T20:19:31.156584",
+        "editor_class": "Editor",
+        "text_widget_id": 51570800,
+        "sequence": "EditorTextCreated"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "editor_id": 51536784,
+        "time": "2017-09-25T20:19:31.156584",
+        "editor_class": "Editor",
+        "text_widget_id": 51570800,
+        "sequence": "NewFile"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "time": "2017-09-25T20:19:31.172184",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "text": ">>> ",
+        "index": "1.0",
+        "text_widget_id": 42813296,
+        "sequence": "TextInsert"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:19:31.226385"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:19:32.593235",
+        "widget_id": 51570800,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 51570800,
+        "sequence": "<Button-1>"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "time": "2017-09-25T20:19:32.832636",
+        "text": "from pykkar import *\n\ndef left():\n    right()\n    right()\n    right()\n\ncreate_world(\"\"\"\n##########\n#        #\n#        #\n#        #\n#v       #\n##########\n\"\"\")\n\nleft()\nwhile is_wall():\n    left()\n    break\nwhile not is_wall():\n    step()\n    if is_wall() and get_direction()==\"N\":\n        break\n    elif is_wall():\n        left()",
+        "index": "1.0",
+        "text_widget_id": 51570800,
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:19:32.832636",
+        "widget_id": 51570800,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 51570800,
+        "sequence": "<<Paste>>"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 42813904,
+        "time": "2017-09-25T20:19:34.346042"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:19:34.455242"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:19:37.540653"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "filename": "C:/Users/Villem/.thonny/Juhendaja kraam/Tali 3. 4..py",
+        "editor_id": 51536784,
+        "time": "2017-09-25T20:19:37.560653",
+        "editor_class": "Editor",
+        "text_widget_id": 51570800,
+        "sequence": "SaveAs"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 42869104,
+        "time": "2017-09-25T20:19:39.377260"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "index1": "1.4",
+        "index2": "2.0",
+        "text_widget_context": "shell",
+        "text_widget_id": 42813296,
+        "sequence": "TextDelete",
+        "time": "2017-09-25T20:19:39.455260"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "time": "2017-09-25T20:19:39.455260",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "text": "%Run 'Tali 3. 4..py'\n",
+        "index": "1.4",
+        "text_widget_id": 42813296,
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2017-09-25T20:19:39.580060",
+        "sequence": "ShellCommand",
+        "command_text": "%Run 'Tali 3. 4..py'\n"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:19:39.704861"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "time": "2017-09-25T20:19:44.720733",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "text": ">>> ",
+        "index": "2.0",
+        "text_widget_id": 42813296,
+        "sequence": "TextInsert"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:19:46.142551"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:19:46.142551",
+        "widget_id": 51570800,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 51570800,
+        "sequence": "<Button-1>"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:20:07.530060"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:20:29.921592"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:21:07.615181",
+        "widget_id": 51570800,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 51570800,
+        "sequence": "<Button-1>"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:21:24.070042"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:21:24.148042"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:21:24.786052",
+        "widget_id": 51570800,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 51570800,
+        "sequence": "<Button-1>"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:21:25.503653",
+        "widget_id": 51570800,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 51570800,
+        "sequence": "<Button-1>"
+    },
+    {
+        "index1": "13.1",
+        "text_widget_class": "CodeViewText",
+        "index2": "None",
+        "time": "2017-09-25T20:21:26.548855",
+        "text_widget_id": 51570800,
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "time": "2017-09-25T20:21:27.674057",
+        "text": " ",
+        "index": "13.1",
+        "text_widget_id": 51570800,
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "tags": "None",
+        "time": "2017-09-25T20:21:29.314060",
+        "text": "v",
+        "index": "12.2",
+        "text_widget_id": 51570800,
+        "sequence": "TextInsert"
+    },
+    {
+        "index1": "12.3",
+        "text_widget_class": "CodeViewText",
+        "index2": "None",
+        "time": "2017-09-25T20:21:30.100062",
+        "text_widget_id": 51570800,
+        "sequence": "TextDelete"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 42869104,
+        "time": "2017-09-25T20:21:31.332464"
+    },
+    {
+        "index1": "2.4",
+        "text_widget_class": "ShellText",
+        "index2": "3.0",
+        "text_widget_context": "shell",
+        "text_widget_id": 42813296,
+        "sequence": "TextDelete",
+        "time": "2017-09-25T20:21:31.379264"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "time": "2017-09-25T20:21:31.394864",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "text": "%Run 'Tali 3. 4..py'\n",
+        "index": "2.4",
+        "text_widget_id": 42813296,
+        "sequence": "TextInsert"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "editor_id": 51536784,
+        "time": "2017-09-25T20:21:31.394864",
+        "editor_class": "Editor",
+        "text_widget_id": 51570800,
+        "sequence": "Save"
+    },
+    {
+        "time": "2017-09-25T20:21:31.519665",
+        "sequence": "ShellCommand",
+        "command_text": "%Run 'Tali 3. 4..py'\n"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:21:31.628865"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "time": "2017-09-25T20:21:35.939274",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "text": ">>> ",
+        "index": "3.0",
+        "text_widget_id": 42813296,
+        "sequence": "TextInsert"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:21:37.526490"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186704,
+        "time": "2017-09-25T20:21:41.476310"
+    },
+    {
+        "index1": "3.4",
+        "text_widget_class": "ShellText",
+        "index2": "4.0",
+        "text_widget_context": "shell",
+        "text_widget_id": 42813296,
+        "sequence": "TextDelete",
+        "time": "2017-09-25T20:21:41.554310"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "time": "2017-09-25T20:21:41.554310",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "text_widget_context": "shell",
+        "text": "%Debug 'Tali 3. 4..py'\n",
+        "index": "3.4",
+        "text_widget_id": 42813296,
+        "sequence": "TextInsert"
+    },
+    {
+        "time": "2017-09-25T20:21:41.679110",
+        "sequence": "ShellCommand",
+        "command_text": "%Debug 'Tali 3. 4..py'\n"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:21:44.523346"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:21:46.239349"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:21:48.650154"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:21:48.868555"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:21:51.348959"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:21:51.348959"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:21:52.050960"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:21:54.205764"
+    },
+    {
+        "index1": "1.0",
+        "text_widget_class": "CodeViewText",
+        "index2": "2.0",
+        "time": "2017-09-25T20:21:54.377365",
+        "text_widget_id": 52125200,
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "tags": "()",
+        "time": "2017-09-25T20:21:54.392965",
+        "text": "def left():\n    right()\n    right()\n    right()\n",
+        "index": "1.0",
+        "text_widget_id": 52125200,
+        "sequence": "TextInsert"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:21:54.408565"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:21:57.376570",
+        "widget_id": 52125200,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 52125200,
+        "sequence": "<Button-1>"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:21:57.877771",
+        "widget_id": 52125200,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 52125200,
+        "sequence": "<Button-1>"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:21:58.361372",
+        "widget_id": 52125200,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 52125200,
+        "sequence": "<Button-1>"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:22:01.351980"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:22:02.055981"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:22:02.055981",
+        "widget_id": 52125200,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 52125200,
+        "sequence": "<Button-1>"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:22:02.523982",
+        "widget_id": 52125200,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 52125200,
+        "sequence": "<Button-1>"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:22:02.913983",
+        "widget_id": 52125200,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 52125200,
+        "sequence": "<Button-1>"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:22:03.209388",
+        "widget_id": 52125200,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 52125200,
+        "sequence": "<Button-1>"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:22:03.583788",
+        "widget_id": 52125200,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 52125200,
+        "sequence": "<Button-1>"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "time": "2017-09-25T20:22:03.958189",
+        "widget_id": 52125200,
+        "widget_class": "CodeViewText",
+        "text_widget_id": 52125200,
+        "sequence": "<Button-1>"
+    },
+    {
+        "widget_class": "Notebook",
+        "sequence": "<Button-1>",
+        "widget_id": 52125392,
+        "time": "2017-09-25T20:22:04.410590"
+    },
+    {
+        "widget_class": "Treeview",
+        "sequence": "<Button-1>",
+        "widget_id": 51700848,
+        "time": "2017-09-25T20:22:05.284191"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:22:08.910398"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:08.925998"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:09.674799"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:10.220800"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:10.533801"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:11.722403"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:12.299604"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:12.564805"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:12.754005"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:12.941205"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:13.130406"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:13.333206"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:13.520406"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:13.725207"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:14.692409"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:15.472410"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:16.252411"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:17.018813"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:17.596014"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:22.894225"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:25.470230"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:31.338241"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:32.009043"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:32.539443"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:35.875651"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:36.907253"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:37.458254"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:38.565856"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:41.299861"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:41.941462"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:43.082264"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:43.534665"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:43.753066"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:43.940266"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:44.143066"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:44.330267"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:44.517467"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:46.769871"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:47.256472"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:47.677673"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:48.554676"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:49.022676"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:49.412677"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:22:49.833878"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:52.877883"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:53.392684"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:53.940685"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:54.517886"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:55.331088"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:55.879089"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:56.315890"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:56.692290"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:57.035491"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:57.347492"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:57.737492"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:58.127493"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:58.486294"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:58.831494"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:59.408695"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:22:59.817697"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:23:01.213113"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:23:02.000916"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:23:02.673718"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:23:03.488523"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:23:04.457725"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:23:05.019326"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73186352,
+        "time": "2017-09-25T20:23:05.801327"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:14.408745"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:15.081546"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:15.549547"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:16.378348"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:17.285150"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:17.833151"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:18.328153"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:18.766954"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:20.830158"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:21.407359"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:22.142561"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:22.784162"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:23.361363"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:23.956164"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:24.455365"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:24.925366"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:25.424567"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:25.910168"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:26.863769"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:27.362970"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:27.817371"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:28.285372"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 73212432,
+        "time": "2017-09-25T20:23:29.096573"
+    },
+    {
+        "index1": "1.0",
+        "text_widget_class": "CodeViewText",
+        "index2": "2.0",
+        "time": "2017-09-25T20:23:29.330574",
+        "text_widget_id": 44860304,
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "tags": "()",
+        "time": "2017-09-25T20:23:29.346174",
+        "text": "def left():\n    right()\n    right()\n    right()\n",
+        "index": "1.0",
+        "text_widget_id": 44860304,
+        "sequence": "TextInsert"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:23:29.346174"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:23:33.198184"
+    },
+    {
+        "widget_class": "Button",
+        "sequence": "<Button-1>",
+        "widget_id": 42869808,
+        "time": "2017-09-25T20:23:34.409986"
+    },
+    {
+        "text_widget_class": "ShellText",
+        "time": "2017-09-25T20:23:34.581587",
+        "tags": "('toplevel', 'prompt')",
+        "text_widget_context": "shell",
+        "text": ">>> ",
+        "index": "4.0",
+        "text_widget_id": 42813296,
+        "sequence": "TextInsert"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:23:36.645803"
+    },
+    {
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 42702000,
+        "time": "2017-09-25T20:23:36.708204"
+    }
+]

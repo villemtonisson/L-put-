@@ -1,0 +1,92 @@
+[
+    {
+        "time": "2016-10-05T21:25:45.398357",
+        "text_widget_class": "CodeViewText",
+        "editor_class": "Editor",
+        "editor_id": 43200208,
+        "text_widget_id": 82057040,
+        "sequence": "EditorTextCreated"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "index1": "1.0",
+        "time": "2016-10-05T21:25:45.398357",
+        "index2": "2.0",
+        "text_widget_id": 82057040,
+        "sequence": "TextDelete"
+    },
+    {
+        "text_widget_class": "CodeViewText",
+        "text": "from pykkar import *\n\n#Teeb kindlaks, kas sisend sobib maailma parameetriks\ndef maailma_arv(tekst):\n    a=0\n    while a==0:\n        x=(input(tekst))\n        try:\n            x=int(x)\n            if x>2:\n                a=1\n            else:\n                print(\"Vale sisend, proovi uuesti.\")\n        except:\n            print(\"Vale sisend, proovi uuesti.\")\n    return x\n\n#Teeb kindlaks, kas sisend sobib pykkari kordinaadiks\ndef kordinaadi_kontroll(tekst, piir):\n    a=0\n    while a==0:\n        x=(input(tekst))\n        try:\n            x=int(x)\n            if x<(piir) and x>1:\n                a=1\n            else:\n                print(\"Vale sisend, proovi uuesti.\")\n        except:\n            print(\"Vale sisend, proovi uuesti.\")\n    return x    \n\n#Loob listi, kus on maailm listina v\u00e4ljendatud\ndef kast(laius, korgus):\n    maailm=[]\n    maailm+=(\"#\"*(laius)+\"\\n\")\n\n    for i in range(korgus-2):\n        maailm+= (\"#\")\n        for i in range(laius-2):\n            maailm+=\" \"\n        maailm+=\"#\\n\"\n\n    maailm+=(\"#\"*(laius))\n    return maailm\n\n#Millist s\u00fcmbolit kasutada pykkari v\u00e4ljendamiseks\ndef nool(suund):\n    ilmakaar=[\"^\",\">\",\"v\",\"<\",\"N\",\"E\",\"S\",\"W\",\"n\",\"e\",\"s\",\"w\"]\n    slist=[\"^\",\">\",\"v\",\"<\"]\n    for i in range(12):\n        if suund==ilmakaar[i]:\n            suund=slist[i%4]\n    return suund\n\n#Loob listi, kus on kirjas, milline on maailm, kus pykkar asub\ndef pykkari_maailm(laius, korgus, pykkarx, pykkary, suund):\n    maailm=kast(laius, korgus)\n\n    asukoht=(pykkary-1)*(laius+1)+pykkarx-1\n    maailm[asukoht]=nool(suund)\n    \n    return maailm\n\n#Pykkari k\u00e4sud\ndef ules():\n    while get_direction()!=\"N\":\n        right()\n\ndef paremale():\n    while get_direction()!=\"E\":\n        right()\n\ndef alla():\n    while get_direction()!=\"S\":\n        right()\n\ndef vasakule():\n    while get_direction()!=\"W\":\n        right()\n\ndef liigu_seinani():\n    while not is_wall():\n        step()\n\n\n#Programm algab\n        \n#Kasutajalt muutujate k\u00fcsimine\n\nmlaius=maailma_arv(\"Sisesta maailma laius. \") #naturaalarv suurem kahest\nmkorgus=maailma_arv(\"Sisesta maailma k\u00f5rgus. \") #naturaalarv suurem kahest\npykkx=kordinaadi_kontroll(\"Sisesta pykkari x kordinaat. \", mlaius) #2 kuni mlaius-1\npykky=kordinaadi_kontroll(\"Sisesta pykkari y kordinaat. \", mkorgus) #2 kuni mkorgus-1\n\nwhile True:\n    suund=input(\"Sisesta pykkari algsuund nimekirjast N,E,S,W,n,e,s,w,^,>,v,<  \")\n    if suund in [\"N\",\"E\",\"S\",\"W\",\"n\",\"e\",\"s\",\"w\",\"^\",\">\",\"v\",\"<\"]:\n        break\n    else:\n        print(\"Vale sisend, proovi uuesti. \")\n\n#Tekitab maailma, muutes listi mitmerealiseks s\u00f5neks\nsone_listina=pykkari_maailm(mlaius,mkorgus,pykkx,pykky,suund)\nworld=\"\"\nfor i in range(len(sone_listina)):\n    world+=sone_listina[i]\n\ncreate_world(world)\n\n#Alla vasakule nurka\nalla()\nliigu_seinani()\nvasakule()\nliigu_seinani()\n\n#Loeb maailma k\u00f5rguse ja laiuse\nules()\nlugemx=0\nlugemy=0\nwhile not is_wall():\n    step()\n    lugemx+=1\n\nparemale()\nwhile not is_wall():\n    step()\n    lugemy+=1\n\n#Liigub keskele\nalla()\nfor i in range(lugemy//2):\n    step()\n\nvasakule()\nfor i in range(lugemx//2):\n    step()\n\n#Hakkab v\u00e4rvima\npaint()\n\nif lugemy%2==1 and lugemx%2==1:\n    alla()\n    step()\n    paint()\n    for i in range(2):\n        right()\n        step()\n        paint()\n\nelif lugemy%2==1:\n    step()\n    paint()\n    \nelif lugemx%2==1:\n    alla()\n    step()\n    paint()\n\n#Programmi l\u00f5petuseks liigub tagasi \u00fcles paremale nurka\nules()\nliigu_seinani()\nparemale()\nliigu_seinani()",
+        "tags": "()",
+        "time": "2016-10-05T21:25:45.415358",
+        "text_widget_id": 82057040,
+        "sequence": "TextInsert",
+        "index": "1.0"
+    },
+    {
+        "text_widget_context": "shell",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "tags": "('toplevel', 'prompt')",
+        "time": "2016-10-05T21:25:45.529364",
+        "text_widget_id": 43149488,
+        "sequence": "TextInsert",
+        "index": "1.0"
+    },
+    {
+        "time": "2016-10-05T21:25:45.530364",
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 43029648
+    },
+    {
+        "widget_class": "CodeViewText",
+        "text_widget_class": "CodeViewText",
+        "widget_id": 82057040,
+        "time": "2016-10-05T21:26:00.714233",
+        "text_widget_id": 82057040,
+        "sequence": "<Button-1>"
+    },
+    {
+        "time": "2016-10-05T21:26:05.280494",
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 43029648
+    },
+    {
+        "time": "2016-10-05T21:26:16.799153",
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 43029648
+    },
+    {
+        "widget_class": "ShellText",
+        "text_widget_class": "ShellText",
+        "sequence": "<Button-1>",
+        "time": "2016-10-05T21:26:16.800153",
+        "text_widget_context": "shell",
+        "widget_id": 43149488,
+        "text_widget_id": 43149488
+    },
+    {
+        "widget_class": "CodeViewText",
+        "text_widget_class": "CodeViewText",
+        "widget_id": 82057040,
+        "time": "2016-10-05T21:26:17.172174",
+        "text_widget_id": 82057040,
+        "sequence": "<Button-1>"
+    },
+    {
+        "time": "2016-10-05T21:26:18.229235",
+        "widget_class": "Workbench",
+        "sequence": "<FocusOut>",
+        "widget_id": 43029648
+    },
+    {
+        "time": "2016-10-05T21:28:44.210584",
+        "widget_class": "Workbench",
+        "sequence": "<FocusIn>",
+        "widget_id": 43029648
+    }
+]

@@ -1,0 +1,143 @@
+[
+    {
+        "time": "2016-10-12T10:14:03.316738",
+        "sequence": "EditorTextCreated",
+        "editor_class": "Editor",
+        "editor_id": 18230384,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 51193296
+    },
+    {
+        "time": "2016-10-12T10:14:03.316738",
+        "sequence": "NewFile",
+        "editor_class": "Editor",
+        "editor_id": 18230384,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 51193296
+    },
+    {
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "time": "2016-10-12T10:14:03.348740",
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 18180432,
+        "index": "1.0",
+        "tags": "('toplevel', 'prompt')"
+    },
+    {
+        "time": "2016-10-12T10:14:03.349740",
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 18105456
+    },
+    {
+        "time": "2016-10-12T10:14:05.158844",
+        "sequence": "<Button-1>",
+        "widget_class": "Button",
+        "widget_id": 18178352
+    },
+    {
+        "time": "2016-10-12T10:14:05.207846",
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "widget_id": 18105456
+    },
+    {
+        "time": "2016-10-12T10:14:07.068953",
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "widget_id": 18105456
+    },
+    {
+        "time": "2016-10-12T10:14:07.082954",
+        "sequence": "EditorTextCreated",
+        "editor_class": "Editor",
+        "editor_id": 51233040,
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 51233008
+    },
+    {
+        "time": "2016-10-12T10:14:07.082954",
+        "sequence": "TextDelete",
+        "index2": "2.0",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 51233008,
+        "index1": "1.0"
+    },
+    {
+        "time": "2016-10-12T10:14:07.085954",
+        "sequence": "TextInsert",
+        "text": "for i in range(10):\n    a=i+1\n\n    b=2**a\n\n    c=2*a+3\n    \n    print(str(c)+\"/\"+str(b))",
+        "text_widget_class": "CodeViewText",
+        "text_widget_id": 51233008,
+        "index": "1.0",
+        "tags": "()"
+    },
+    {
+        "text_widget_context": "shell",
+        "sequence": "TextDelete",
+        "time": "2016-10-12T10:14:09.276079",
+        "index2": "2.0",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 18180432,
+        "index1": "1.4"
+    },
+    {
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "time": "2016-10-12T10:14:09.276079",
+        "text": "%Run Maailmapilt.py\n",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 18180432,
+        "index": "1.4",
+        "tags": "('automagic', 'toplevel', 'command')"
+    },
+    {
+        "time": "2016-10-12T10:14:09.414087",
+        "command_text": "%Run Maailmapilt.py\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2016-10-12T10:14:09.414087",
+        "sequence": "Command",
+        "command_id": "run_current_script",
+        "denied": "False"
+    },
+    {
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "time": "2016-10-12T10:14:09.416087",
+        "tags": "('io', 'stdout', 'vertically_spaced')",
+        "text": "5",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 18180432,
+        "index": "2.0"
+    },
+    {
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "time": "2016-10-12T10:14:09.416087",
+        "text": "/2\n7/4\n9/8\n11/16\n13/32\n15/64\n17/128\n19/256\n21/512\n23/1024\n",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 18180432,
+        "index": "2.1",
+        "tags": "('io', 'stdout')"
+    },
+    {
+        "text_widget_context": "shell",
+        "sequence": "TextInsert",
+        "time": "2016-10-12T10:14:09.436088",
+        "text": ">>> ",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 18180432,
+        "index": "12.0",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')"
+    },
+    {
+        "time": "2016-10-12T10:25:46.467956",
+        "sequence": "<Button-1>",
+        "widget_class": "EditorNotebook",
+        "widget_id": 18082544
+    }
+]
