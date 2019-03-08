@@ -162,9 +162,9 @@ select_mode_label.pack(anchor='c')
 
 # Creating radiobuttons for selecting mode
 MODES = [
-        ("One Logfile", "1log"),
+        ("One logfile", "1log"),
         ("One archive", "1arch"),
-        ("Multiple Logfiles", "2log"),
+        ("Multiple logfiles", "2log"),
         ("Multiple archives", "2arch"),
     ]
 
@@ -183,7 +183,7 @@ use_dates_button.pack(anchor='c', pady="8")
 
 # Checkbutton for separating exercises from logs 
 separate_exercises_var = tk.IntVar()
-separate_exercises_button = tk.Checkbutton(leftBottomFrame, text="Separate by exercises", variable=separate_exercises_var)
+separate_exercises_button = tk.Checkbutton(leftBottomFrame, text="Separate by .py files", variable=separate_exercises_var)
 separate_exercises_button.pack(anchor='c')
 
 ## Start program

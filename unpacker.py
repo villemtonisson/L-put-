@@ -35,6 +35,7 @@ def get_filenames(arch_loc):
             #Juhuks, kui failinimed pole õiges formaadis
             try:
                 name_list.append(line.rsplit(" ", 1)[1].strip())
+                print(line)
             except:
                 pass
     return name_list
