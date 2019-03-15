@@ -1,0 +1,79 @@
+[
+    {
+        "time": "2016-11-29T22:29:12.821870",
+        "sequence": "EditorTextCreated",
+        "text_widget_class": "CodeViewText",
+        "editor_id": 43392752,
+        "editor_class": "Editor",
+        "text_widget_id": 82322960
+    },
+    {
+        "time": "2016-11-29T22:29:12.821870",
+        "sequence": "TextDelete",
+        "text_widget_class": "CodeViewText",
+        "index1": "1.0",
+        "index2": "2.0",
+        "text_widget_id": 82322960
+    },
+    {
+        "tags": "()",
+        "time": "2016-11-29T22:29:12.835871",
+        "sequence": "TextInsert",
+        "text_widget_class": "CodeViewText",
+        "text": "from random import randint\n\ndef arvamism\u00e4ng(arv):\n    \n    arvamus = int(input(\"Arva \u00e4ra \u00fcks arv mis on v\u00e4iksem kui 1000 : \"))\n    ##arvamised = 1\n    if arvamus == arv:\n        return \"\u00d5IGE!!!\"\n    elif arv > arvamus:\n        print(\"minu arv on suurem\")\n        return arvamism\u00e4ng(arv)\n\n    elif arv < arvamus:\n        print(\"minu arv on v\u00e4iksem \")\n        return arvamism\u00e4ng(arv)\n            \n    \narv = randint(1,10)\nprint(arv)\nprint(arvamism\u00e4ng(arv))",
+        "index": "1.0",
+        "text_widget_id": 82322960
+    },
+    {
+        "tags": "('toplevel', 'prompt')",
+        "time": "2016-11-29T22:29:12.873873",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "text": ">>> ",
+        "text_widget_context": "shell",
+        "index": "1.0",
+        "text_widget_id": 43338064
+    },
+    {
+        "widget_class": "Workbench",
+        "widget_id": 43226224,
+        "sequence": "<FocusIn>",
+        "time": "2016-11-29T22:29:12.906875"
+    },
+    {
+        "time": "2016-11-29T22:29:14.848986",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 82322960,
+        "text_widget_id": 82322960
+    },
+    {
+        "time": "2016-11-29T22:29:17.027111",
+        "sequence": "<<Copy>>",
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 82322960,
+        "text_widget_id": 82322960
+    },
+    {
+        "widget_class": "Workbench",
+        "widget_id": 43226224,
+        "sequence": "<FocusOut>",
+        "time": "2016-11-29T22:29:17.914162"
+    },
+    {
+        "widget_class": "Workbench",
+        "widget_id": 43226224,
+        "sequence": "<FocusIn>",
+        "time": "2016-11-29T22:29:22.465422"
+    },
+    {
+        "time": "2016-11-29T22:29:22.468422",
+        "sequence": "<Button-1>",
+        "text_widget_class": "CodeViewText",
+        "widget_class": "CodeViewText",
+        "widget_id": 82322960,
+        "text_widget_id": 82322960
+    }
+]

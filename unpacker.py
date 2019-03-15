@@ -4,8 +4,17 @@ import os
 from pathlib import Path
 import json
 
-#TODO teha settings fail
-loc_7z = r"C:\\Program Files\\7-Zip\\7z.exe"
+
+if __name__ == "__main__":
+    loc_7z = Path("C:\\Program Files\\7-Zip\\7z.exe")
+    with open("settings.json", encoding="utf8") as f:    
+        try:
+            loc_7z=Path(json.loads(f.read())['loc_7z'])
+        except:
+            loc_7z = Path("C:\\Program Files\\7-Zip\\7z.exe")
+            
+    
+
 
 """
 Võtab antud käsu ja käivitab selle käsurealt
@@ -22,23 +31,26 @@ def run_process(command):
 
 """
 Võtab arhiivi nime ja tagastab kõikide seal olevate failide nimed
-!!!Ei tööta, kui failinimes on tühik
 """
 def get_filenames(arch_loc):
     names=False
     name_list=[]
-    command= loc_7z + " l " + arch_loc
+    prev_line=""
+    startindex=0
+    command = str(loc_7z) + " l " + arch_loc
     for line in run_process(command):
         if line.startswith("----"):
             names=not names
+            if names:
+                startindex=prev_line.index("Name")
             continue
         if names:
             #Juhuks, kui failinimed pole õiges formaadis
             try:
-                name_list.append(line.rsplit(" ", 1)[1].strip())
-                print(line)
+                name_list.append(line[startindex:].strip())
             except:
                 pass
+        prev_line=line
     return name_list
 
 """
@@ -46,7 +58,7 @@ Avab arhiivi ja võtab seal välja failid, mille nimed on antud
 Argumentideks on arhiivi asukoht, failinimed, väljundkaust
 """
 def unpack(arch_loc, filenames, output='*'):
-    command = loc_7z+" e "+ arch_loc +" -aoa -o"+output+" "+" ".join(filenames)
+    command = str(loc_7z)+" e "+ arch_loc +" -aoa -o"+output+" "+" ".join(filenames)
     for i in run_process(command):
         print(i, end="")
     
@@ -85,12 +97,11 @@ Seejärel vaatab failid läbi ja eemaldab need, mis ei kuulu antud ajavahemikku
 Tulemuskaust peab olema tühi selle töötamiseks
 """  
 def unpack_between_infile(arch_loc, start, end, output='*'):
-    #all_filenames=get_filenames(arch_loc)
-    #print(all_filenames)
+    all_filenames=get_filenames(arch_loc)
     unpack_all(arch_loc, output=output)
     if output=='*':
         output=arch_loc.rsplit(".", 1)[0]
-    for name in os.listdir(output):
+    for name in all_filenames:
         to_remove=True
         p=Path(output).joinpath(name)
         with open(p, 'r', encoding="UTF8") as f:
@@ -108,7 +119,7 @@ def unpack_between_infile(arch_loc, start, end, output='*'):
 #start=datetime(2016, 11, 26, hour=12, minute=20)
 #end=datetime(2017, 9, 9, hour=16, minute=0)
 
-#unpack_between_infile("C:/Users/Villem/Desktop/L-put-/pakk.7z", start, end, output='*')
+#unpack_between_infile("C:/Loputoo/L-put-/pakk.7z", start, end, output='C:/Loputoo/L-put-/pakk2')
 
 #unpack(arch_loc, filenames, output="C:\\Users\\Villem\\Desktop\\L-put-\\pakk1")
-    
+#print(get_filenames("C:/Loputoo/L-put-/pakk.7z"))    

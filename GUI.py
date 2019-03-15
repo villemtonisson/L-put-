@@ -6,15 +6,22 @@ from datepicker import Datepicker
 from unpacker import unpack_between_filenames, unpack_between_infile
 from datetime import datetime
 
-
-#TODO teha settings fail
-loc_7z = r"C:\\Program Files\\7-Zip\\7z.exe"
-
+if __name__ == "__main__":
+    loc_7z = Path("C:\\Program Files\\7-Zip\\7z.exe")
+    with open("settings.json", encoding="utf8") as f:    
+        try:
+            loc_7z=Path(json.loads(f.read())['loc_7z'])
+        except:
+            loc_7z = Path("C:\\Program Files\\7-Zip\\7z.exe")
 
 #filename = askopenfilename()
 #print(filename)
 #filedialog.askdirectory()
 #askopenfilename(title="Select file", filetypes=(("all files", "*.*"),("RAR files", "*.rar"), ("ZIP files", "*.zip"),("7z files", "*.7z"),("TAR files", "*.tar")))
+
+#start=datetime(2016, 11, 26, hour=12, minute=20)
+#end=datetime(2017, 9, 9, hour=16, minute=0)
+
 
 def pick_file():
     global chosen_file
@@ -25,8 +32,6 @@ def pick_file():
     return
 
 
-#start=datetime(2016, 11, 26, hour=12, minute=20)
-#end=datetime(2017, 9, 9, hour=16, minute=0)
 def unpack():
     global start_date_picker, start_hour_picker, start_minute_picker
     global end_date_picker, end_hour_picker, end_minute_picker, chosen_file_field
@@ -145,7 +150,7 @@ end_minute_picker.pack(anchor='c')
 ### BOTTOM
 ## RIGHTBOTTOM
 # File Picker
-file_pick_button = tk.Button(rightBottomFrame, text="Pick File", command=pick_file)
+file_pick_button = tk.Button(rightBottomFrame, text="Pick File(s)", command=pick_file)
 file_pick_button.pack(anchor='c')
 
 chosen_file_var = tk.StringVar()

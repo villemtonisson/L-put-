@@ -1,0 +1,709 @@
+[
+    {
+        "time": "2017-03-08T23:15:10.392160",
+        "view_id": "OutlineView",
+        "view_class": "OutlineView",
+        "sequence": "ShowView"
+    },
+    {
+        "time": "2017-03-08T23:15:10.401160",
+        "text_widget_id": 51784176,
+        "sequence": "EditorTextCreated",
+        "text_widget_class": "CodeViewText",
+        "editor_id": 43265808,
+        "editor_class": "Editor"
+    },
+    {
+        "time": "2017-03-08T23:15:10.401160",
+        "text_widget_id": 51784176,
+        "sequence": "NewFile",
+        "text_widget_class": "CodeViewText",
+        "editor_id": 43265808,
+        "editor_class": "Editor"
+    },
+    {
+        "time": "2017-03-08T23:15:10.421162",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'prompt')",
+        "text": ">>> ",
+        "index": "1.0"
+    },
+    {
+        "widget_class": "Workbench",
+        "time": "2017-03-08T23:15:10.501166",
+        "widget_id": 43140176,
+        "sequence": "<FocusIn>"
+    },
+    {
+        "time": "2017-03-08T23:15:11.576228",
+        "text_widget_context": "shell",
+        "widget_id": 43207408,
+        "sequence": "<Button-1>",
+        "widget_class": "ShellText",
+        "text_widget_class": "ShellText",
+        "text_widget_id": 43207408
+    },
+    {
+        "time": "2017-03-08T23:15:11.841243",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "2",
+        "index": "1.4"
+    },
+    {
+        "time": "2017-03-08T23:15:13.209321",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "1.5"
+    },
+    {
+        "time": "2017-03-08T23:15:13.345329",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "1.6"
+    },
+    {
+        "time": "2017-03-08T23:15:13.489337",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "2",
+        "index": "1.7"
+    },
+    {
+        "time": "2017-03-08T23:15:14.425391",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "+",
+        "index": "1.8"
+    },
+    {
+        "time": "2017-03-08T23:15:14.753409",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "3",
+        "index": "1.9"
+    },
+    {
+        "time": "2017-03-08T23:15:15.097429",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "1.10"
+    },
+    {
+        "time": "2017-03-08T23:15:15.249438",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "1.11"
+    },
+    {
+        "time": "2017-03-08T23:15:15.425448",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "2",
+        "index": "1.12"
+    },
+    {
+        "time": "2017-03-08T23:15:16.881531",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "\n",
+        "index": "1.13"
+    },
+    {
+        "time": "2017-03-08T23:15:16.881531",
+        "command_text": "2**2+3**2\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2017-03-08T23:15:16.900532",
+        "text_widget_context": "shell",
+        "index": "2.0",
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'value', 'object_1826838992')",
+        "text": "13\n",
+        "text_widget_id": 43207408
+    },
+    {
+        "time": "2017-03-08T23:15:16.900532",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text": ">>> ",
+        "index": "3.0"
+    },
+    {
+        "time": "2017-03-08T23:15:22.592858",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "2",
+        "index": "3.4"
+    },
+    {
+        "time": "2017-03-08T23:15:22.920877",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "3.5"
+    },
+    {
+        "time": "2017-03-08T23:15:23.064885",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "3.6"
+    },
+    {
+        "time": "2017-03-08T23:15:23.208893",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "2",
+        "index": "3.7"
+    },
+    {
+        "time": "2017-03-08T23:15:24.384960",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "3.8"
+    },
+    {
+        "time": "2017-03-08T23:15:26.049056",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "3",
+        "index": "3.9"
+    },
+    {
+        "time": "2017-03-08T23:15:26.361073",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "3.10"
+    },
+    {
+        "time": "2017-03-08T23:15:26.521083",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "3.11"
+    },
+    {
+        "time": "2017-03-08T23:15:26.809099",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "2",
+        "index": "3.12"
+    },
+    {
+        "time": "2017-03-08T23:15:27.169120",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "\n",
+        "index": "3.13"
+    },
+    {
+        "time": "2017-03-08T23:15:27.169120",
+        "command_text": "2**2*3**2\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2017-03-08T23:15:27.213122",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'value', 'object_1826839360')",
+        "text": "36\n",
+        "index": "4.0"
+    },
+    {
+        "time": "2017-03-08T23:15:27.214122",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text": ">>> ",
+        "index": "5.0"
+    },
+    {
+        "time": "2017-03-08T23:15:31.913391",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "3",
+        "index": "5.4"
+    },
+    {
+        "time": "2017-03-08T23:15:32.177406",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "5.5"
+    },
+    {
+        "time": "2017-03-08T23:15:32.329415",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "5.6"
+    },
+    {
+        "time": "2017-03-08T23:15:32.905448",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "4",
+        "index": "5.7"
+    },
+    {
+        "time": "2017-03-08T23:15:34.073514",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "+",
+        "index": "5.8"
+    },
+    {
+        "time": "2017-03-08T23:15:36.208637",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "5",
+        "index": "5.9"
+    },
+    {
+        "time": "2017-03-08T23:15:37.040684",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "5.10"
+    },
+    {
+        "time": "2017-03-08T23:15:37.168692",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "5.11"
+    },
+    {
+        "time": "2017-03-08T23:15:37.488710",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "4",
+        "index": "5.12"
+    },
+    {
+        "time": "2017-03-08T23:15:40.248868",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "\n",
+        "index": "5.13"
+    },
+    {
+        "time": "2017-03-08T23:15:40.248868",
+        "command_text": "3**4+5**4\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2017-03-08T23:15:40.277869",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'value', 'object_13173968')",
+        "text": "706\n",
+        "index": "6.0"
+    },
+    {
+        "time": "2017-03-08T23:15:40.277869",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text": ">>> ",
+        "index": "7.0"
+    },
+    {
+        "time": "2017-03-08T23:15:40.872903",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "1",
+        "index": "7.4"
+    },
+    {
+        "time": "2017-03-08T23:15:40.984910",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "5",
+        "index": "7.5"
+    },
+    {
+        "time": "2017-03-08T23:15:42.104974",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "7.6"
+    },
+    {
+        "time": "2017-03-08T23:15:42.392990",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "4",
+        "index": "7.7"
+    },
+    {
+        "time": "2017-03-08T23:15:42.881018",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "\n",
+        "index": "7.8"
+    },
+    {
+        "time": "2017-03-08T23:15:42.881018",
+        "command_text": "15*4\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2017-03-08T23:15:42.883018",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'value', 'object_1826839744')",
+        "text": "60\n",
+        "index": "8.0"
+    },
+    {
+        "time": "2017-03-08T23:15:42.883018",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text": ">>> ",
+        "index": "9.0"
+    },
+    {
+        "time": "2017-03-08T23:15:49.233382",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "1",
+        "index": "9.4"
+    },
+    {
+        "time": "2017-03-08T23:15:49.320387",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "5",
+        "index": "9.5"
+    },
+    {
+        "time": "2017-03-08T23:15:49.689408",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "9.6"
+    },
+    {
+        "time": "2017-03-08T23:15:49.832416",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "9.7"
+    },
+    {
+        "time": "2017-03-08T23:15:50.672464",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "4",
+        "index": "9.8"
+    },
+    {
+        "time": "2017-03-08T23:15:50.824473",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "\n",
+        "index": "9.9"
+    },
+    {
+        "time": "2017-03-08T23:15:50.825473",
+        "command_text": "15**4\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2017-03-08T23:15:50.845474",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'value', 'object_13173504')",
+        "text": "50625\n",
+        "index": "10.0"
+    },
+    {
+        "time": "2017-03-08T23:15:50.845474",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text": ">>> ",
+        "index": "11.0"
+    },
+    {
+        "time": "2017-03-08T23:15:56.136776",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "3",
+        "index": "11.4"
+    },
+    {
+        "time": "2017-03-08T23:15:56.744811",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "11.5"
+    },
+    {
+        "time": "2017-03-08T23:15:57.352846",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "11.6"
+    },
+    {
+        "time": "2017-03-08T23:15:58.040885",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "4",
+        "index": "11.7"
+    },
+    {
+        "time": "2017-03-08T23:15:58.960938",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "11.8"
+    },
+    {
+        "time": "2017-03-08T23:15:59.744983",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "5",
+        "index": "11.9"
+    },
+    {
+        "time": "2017-03-08T23:16:00.177008",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "11.10"
+    },
+    {
+        "time": "2017-03-08T23:16:00.337017",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "*",
+        "index": "11.11"
+    },
+    {
+        "time": "2017-03-08T23:16:00.753040",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "4",
+        "index": "11.12"
+    },
+    {
+        "time": "2017-03-08T23:16:01.417078",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'command')",
+        "text": "\n",
+        "index": "11.13"
+    },
+    {
+        "time": "2017-03-08T23:16:01.417078",
+        "command_text": "3**4*5**4\n",
+        "sequence": "ShellCommand"
+    },
+    {
+        "time": "2017-03-08T23:16:01.457081",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'value', 'object_13173568')",
+        "text": "50625\n",
+        "index": "12.0"
+    },
+    {
+        "time": "2017-03-08T23:16:01.457081",
+        "text_widget_context": "shell",
+        "text_widget_id": 43207408,
+        "sequence": "TextInsert",
+        "text_widget_class": "ShellText",
+        "tags": "('toplevel', 'prompt', 'vertically_spaced')",
+        "text": ">>> ",
+        "index": "13.0"
+    }
+]

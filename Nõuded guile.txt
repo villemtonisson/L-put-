@@ -1,20 +1,14 @@
 Failide valimine
 
+Eralda ülesanded radiobutton - funktsionaalsus külge panna
+Outputi määramine, vaikimisi sama, mis arhiivil
+Nurka küsimärk kirjeldusega, kasutamisjuhisega
+Peale nupu klõpsamist, kas õnnestus või mitte
+
 Üks logifail
 Üks pakitud fail
 kaust logifailidega
 kaust pakitud failidega
-
-
-Eralda ülesanded radiobutton
-
-Outputi määramine, vaikimisi sama, mis arhiivil
-
-Nurka küsimärk kirjeldusega, kasutamisjuhisega
-
-
-Peale nupu klõpsamist, kas õnnestus või mitte
-
 
 
 

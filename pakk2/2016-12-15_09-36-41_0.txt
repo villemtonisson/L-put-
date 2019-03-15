@@ -1,0 +1,153 @@
+[
+    {
+        "sequence": "ShowView",
+        "view_class": "OutlineView",
+        "time": "2016-12-15T09:36:42.934502",
+        "view_id": 59662032
+    },
+    {
+        "time": "2016-12-15T09:36:43.041706",
+        "text_widget_id": 59758640,
+        "sequence": "EditorTextCreated",
+        "editor_class": "Editor",
+        "editor_id": 43461840,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-12-15T09:36:43.041706",
+        "text_widget_id": 59758640,
+        "sequence": "TextDelete",
+        "index1": "1.0",
+        "index2": "2.0",
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-12-15T09:36:43.057306",
+        "tags": "()",
+        "text_widget_id": 59758640,
+        "sequence": "TextInsert",
+        "text": "import pygame\nfrom random import randint\n\ndef joonista_laud(m\u00e4ngulaud):\n    for i, rida in enumerate(m\u00e4ngulaud):\n        for j in range(10):\n            ruut=pygame.Rect((175+j*25),(50+i*25),24,24)\n            if rida[j]==\"X\":\n                pygame.draw.rect(ekraani_pind, (255,0,0), ruut)    \n            else:\n                pygame.draw.rect(ekraani_pind, (0,0,0),ruut)\n    pygame.display.flip()\n\ndef vali_jupp():\n    jupid=[\"I\", \"L\", \"RL\", \"S\", \"RS\" , \"Ruut\", \"T\"]\n    x=randint(0,6)\n    valik=jupid[randint(0,6)]\n    if valik==\"I\":\n        return[(0,3),(0,4),(0,5),(0,6)]\n    elif valik==\"L\":\n        return[(0,4),(0,5),(1,5),(2,5)]\n    elif valik==\"RL\":\n        return[(0,5),(0,4),(1,4),(2,4)]\n    elif valik==\"S\":\n        return[(0,5),(0,6),(1,4),(1,5)]\n    elif valik==\"RS\":\n        return[(0,4),(0,5),(1,5),(1,6)]\n    elif valik==\"Ruut\":\n        return[(0,4),(0,5),(1,5),(1,4)]\n    elif valik==\"T\":\n        return[(0,6),(0,4),(0,5),(1,5)]\n\ndef liiguta(plokk, suund):\n    \n    if suund==\"alla\":\n        for a in plokk:\n            if a[0] == 19:\n                x,y = 0,0\n                break\n            else:\n                x,y = 0, 1    \n        \n    elif suund==\"vasakule\":\n        for a in plokk:\n            if a[1] == 0:\n                x,y = 0,0\n                break\n            else:\n                x,y = -1, 0\n                \n    elif suund==\"paremale\":\n        for a in plokk:\n            if a[1] == 9:\n                x,y = 0,0\n                break\n            else:\n                x,y = 1,0\n                \n    uus=[]\n    for kordinaat in plokk:\n        uus.append((kordinaat[0]+y, kordinaat[1]+x))\n\n    return(uus)\n\ndef p\u00f6\u00f6ra(plokk, kese):\n\n    uus=[]\n    for kordinaadid in plokk:\n        y=kordinaadid[0]\n        x=kordinaadid[1]    \n        if kordinaadid!=plokk[kese]:\n            suhex=x-plokk[kese][1]\n            suhey=y-plokk[kese][0] \n            y=plokk[kese][0]+suhex\n            x=plokk[kese][1]-suhey\n\n        uus.append((y,x))\n    return (uus)\n\ndef kokkup\u00f5rge(\u00f5hus, maas):\n    for i in \u00f5hus:\n        if i in maas:\n            return True\n    return False\n\ndef eemalda_t\u00e4is(maas):\n    t\u00e4is=[]\n    for i in range(20):\n        counter=0\n        for j in range(10):\n            if (i, j) in maas:\n                counter+=1\n        if counter==10:\n            t\u00e4is.append(i)\n\n    for rida in t\u00e4is:\n        for i in range(10): \n            maas.remove((rida, i))\n\n    for rida in t\u00e4is:\n        for i, kordinaadid in enumerate(maas):\n            if kordinaadid[0]<rida:\n                maas[i]=(maas[i][0]+1, maas[i][1])\n\n    return maas\n\n\ndef t\u00fchi_laud():  \n    m\u00e4ngulaud=[]\n    for i in range(20):\n        temp=[]\n        for j in range(10):\n            temp.append(\"\")\n        m\u00e4ngulaud.append(temp)\n    return m\u00e4ngulaud\n    \n###PROGRAMM ALGAB\nm\u00e4ngulaud=t\u00fchi_laud()\n\npygame.init()\n##\u00dcks ruut 24x24, nende vahel 1 laiused valged jooned,  m\u00e4ngulaua k\u00f5rgus 499 pikslit, laius 249\n##\u00dcleval ja all 50 pikslit t\u00fchja ruumi, vasakul ja paremal \nekraani_pind = pygame.display.set_mode( (600, 600) )\npygame.display.set_caption(\"Tetris\")\nekraani_pind.fill( (0,0,255) )\nristkylik1 = pygame.Rect(175, 50, 249, 499)\npygame.draw.rect(ekraani_pind, (255,255,255), ristkylik1)\npygame.display.flip()\n\n\n\u00f5hus=vali_jupp()\nmaas=[]\n\nt=75\ncounter=0\nclock=pygame.time.Clock()\n\ngameexit=False\n##M\u00e4ngu loop\nwhile gameexit==False:\n\n    print(maas)\n    ##Joonistab ruudud, mis on maas ja \u00f5hus\n    m\u00e4ngulaud=t\u00fchi_laud()\n    for i in \u00f5hus:\n        m\u00e4ngulaud[i[0]][i[1]]=\"X\"\n    for i in maas:\n        m\u00e4ngulaud[i[0]][i[1]]=\"X\"\n    joonista_laud(m\u00e4ngulaud)   \n\n\n    ##Kui counter j\u00f5uab 100'ni, kukub plokk \u00fche v\u00f5rra\n    clock.tick(t)\n    counter+=1\n    if counter==50:\n        if \u00f5hus==liiguta(\u00f5hus, \"alla\") or kokkup\u00f5rge(liiguta(\u00f5hus, \"alla\"), maas):\n            for i in \u00f5hus:\n                 maas.append(i)\n            \u00f5hus=vali_jupp()\n        else:\n            \u00f5hus=liiguta(\u00f5hus, \"alla\")\n        counter=0\n\n    ##Kasutaja tegevused\n    for event in pygame.event.get():\n    \n        if event.type == pygame.QUIT:\n            gameexit=True\n        elif event.type == pygame.KEYDOWN:\n\n            if event.key == pygame.K_LEFT:\n                \u00f5hus=liiguta(\u00f5hus, \"vasakule\")\n                \n            elif event.key == pygame.K_RIGHT:\n                \u00f5hus=liiguta(\u00f5hus, \"paremale\")\n\n            elif event.key == pygame.K_DOWN:\n                if \u00f5hus==liiguta(\u00f5hus, \"alla\") or kokkup\u00f5rge(liiguta(\u00f5hus, \"alla\"), maas):\n                    for i in \u00f5hus:\n                        maas.append(i)\n                    \u00f5hus=vali_jupp()\n                else:\n                    \u00f5hus=liiguta(\u00f5hus, \"alla\")\n                    \n            elif event.key == pygame.K_UP:\n                \u00f5hus=p\u00f6\u00f6ra(\u00f5hus, 3)\n\n    maas=eemalda_t\u00e4is(maas) \n\n                \npygame.quit()\n",
+        "index": "1.0",
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-12-15T09:36:43.213307",
+        "tags": "('toplevel', 'prompt')",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "text": ">>> ",
+        "index": "1.0",
+        "text_widget_id": 43412016,
+        "text_widget_class": "ShellText"
+    },
+    {
+        "widget_id": 43291792,
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "time": "2016-12-15T09:36:43.213307"
+    },
+    {
+        "widget_class": "CodeViewText",
+        "time": "2016-12-15T09:36:47.239916",
+        "sequence": "<Button-1>",
+        "widget_id": 59758640,
+        "text_widget_id": 59758640,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "widget_class": "CodeViewText",
+        "time": "2016-12-15T09:36:51.774325",
+        "sequence": "<Button-1>",
+        "widget_id": 59758640,
+        "text_widget_id": 59758640,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-12-15T09:36:53.525528",
+        "text_widget_id": 59758640,
+        "index1": "142.0",
+        "sequence": "TextDelete",
+        "index2": "142.15",
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-12-15T09:36:53.837529",
+        "text_widget_id": 59758640,
+        "index1": "141.0",
+        "sequence": "TextDelete",
+        "index2": "None",
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "time": "2016-12-15T09:36:54.363731",
+        "sequence": "TextDelete",
+        "text_widget_id": 43412016,
+        "text_widget_context": "shell",
+        "index1": "1.4",
+        "index2": "2.0",
+        "text_widget_class": "ShellText"
+    },
+    {
+        "time": "2016-12-15T09:36:54.363731",
+        "tags": "('automagic', 'toplevel', 'command')",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "text": "%Run vol3.py\n",
+        "index": "1.4",
+        "text_widget_id": 43412016,
+        "text_widget_class": "ShellText"
+    },
+    {
+        "time": "2016-12-15T09:36:54.364731",
+        "text_widget_id": 59758640,
+        "sequence": "Save",
+        "editor_class": "Editor",
+        "editor_id": 43461840,
+        "text_widget_class": "CodeViewText"
+    },
+    {
+        "sequence": "ShellCommand",
+        "command_text": "%Run vol3.py\n",
+        "time": "2016-12-15T09:36:54.478932"
+    },
+    {
+        "command_id": "run_current_script",
+        "denied": "False",
+        "time": "2016-12-15T09:36:54.478932",
+        "sequence": "Command"
+    },
+    {
+        "widget_id": 43291792,
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "time": "2016-12-15T09:36:54.869342"
+    },
+    {
+        "widget_id": 43291792,
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "time": "2016-12-15T09:37:21.901888"
+    },
+    {
+        "time": "2016-12-15T09:37:21.945891",
+        "tags": "('toplevel', 'prompt')",
+        "sequence": "TextInsert",
+        "text_widget_context": "shell",
+        "text": ">>> ",
+        "index": "2.0",
+        "text_widget_id": 43412016,
+        "text_widget_class": "ShellText"
+    },
+    {
+        "widget_id": 43291792,
+        "sequence": "<FocusOut>",
+        "widget_class": "Workbench",
+        "time": "2016-12-15T09:37:22.914946"
+    },
+    {
+        "widget_id": 43291792,
+        "sequence": "<FocusIn>",
+        "widget_class": "Workbench",
+        "time": "2016-12-15T09:39:44.199027"
+    }
+]
