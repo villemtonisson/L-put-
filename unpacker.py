@@ -18,6 +18,7 @@ Võtab antud käsu ja käivitab selle käsurealt
 Väljastab kõik read, mida käsu täitmisel näidataks
 """
 def run_process(command):    
+    print(command)
     p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     while(True):
         retcode = p.poll() #returns None while subprocess is running
@@ -34,7 +35,7 @@ def get_filenames(loc_7z, arch_loc):
     name_list=[]
     prev_line=""
     startindex=0
-    command = str(loc_7z) + " l " + arch_loc
+    command = stringify(str(loc_7z)) + " l " + stringify(arch_loc)
     for line in run_process(command):
         if line.startswith("----"):
             names=not names
@@ -55,7 +56,8 @@ Avab arhiivi ja võtab seal välja failid, mille nimed on antud
 Argumentideks on arhiivi asukoht, failinimed, väljundkaust
 """
 def unpack(loc_7z, arch_loc, filenames, output='*'):
-    command = str(loc_7z)+" e "+ arch_loc +" -aoa -o"+output+" "+" ".join(filenames)
+    filenames_str=[stringify(filename) for filename in filenames]
+    command = stringify(str(loc_7z))+" e "+ stringify(arch_loc) + " -aoa -o"+ stringify(output)+ " ".join(filenames_str)
     for i in run_process(command):
         print(i, end="")
  
@@ -101,6 +103,15 @@ def unpack_between_infile(loc_7z, arch_loc, start, end, output='*'):
             all_filenames.remove(name)
     filenames=[str(Path(output).joinpath(x)) for x in all_filenames]
     return filenames
+
+"""
+Võtab failinime ja paneb sinna ümber jutumärgid.
+Vajalik selleks, et failinimes saaks "-" sees olla
+"""
+def stringify(fname):
+    return '"'+fname+'"'
+    
+
 
 """
 Avab arhiivi ja võtab sealt välja failid, mille nimi on õiges ajavahemikus

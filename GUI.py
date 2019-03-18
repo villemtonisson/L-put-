@@ -92,10 +92,8 @@ def unpack():
     elif mode=="1arch":
         if use_dates:
             filenames=unpack_between_infile(loc_7z, chosen_file_field.get(), start_date, end_date)
-            print(filenames)
         else:
             filenames=unpack_all(loc_7z, chosen_file_field.get())
-            print(filenames)
         
     elif mode=="2log":
         if use_dates:
