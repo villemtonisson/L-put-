@@ -8,15 +8,6 @@ from splitter import separate_by_ids
 from unpacker import unpack_between_infile, unpack_all
 from datetime import datetime
 
-
-if __name__ == "__main__":
-    loc_7z = Path("C:\\Program Files\\7-Zip\\7z.exe")
-    with open("settings.json", encoding="utf8") as f:    
-        try:
-            loc_7z=Path(json.loads(f.read())['loc_7z'])
-        except:
-            loc_7z = Path("C:\\Program Files\\7-Zip\\7z.exe")
-
 #filename = askopenfilename()
 #print(filename)
 #filedialog.askdirectory()
@@ -91,9 +82,9 @@ def unpack():
     #1 archive
     elif mode=="1arch":
         if use_dates:
-            filenames=unpack_between_infile(loc_7z, chosen_file_field.get(), start_date, end_date)
+            filenames=unpack_between_infile(chosen_file_field.get(), start_date, end_date)
         else:
-            filenames=unpack_all(loc_7z, chosen_file_field.get())
+            filenames=unpack_all(chosen_file_field.get())
         
     elif mode=="2log":
         if use_dates:
@@ -103,10 +94,10 @@ def unpack():
     elif mode=="2arch":
         if use_dates:
             for f in json.loads(chosen_file_field.get()):
-                filenames.extend(unpack_between_infile(loc_7z, f, start_date, end_date))
+                filenames.extend(unpack_between_infile(f, start_date, end_date))
         else:
             for f in json.loads(chosen_file_field.get()):
-                filenames.extend(unpack_all(loc_7z, f))
+                filenames.extend(unpack_all(f))
     
     if separate:
         for f in filenames:

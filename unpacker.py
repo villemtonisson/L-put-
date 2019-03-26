@@ -4,15 +4,16 @@ import os
 from pathlib import Path
 import json
 
+with open("settings.json", encoding="utf8") as f:    
+    try:
+        data=json.loads(f.read())
+        loc_7z=Path(data['loc_7z'])
+        encoding=data['encoding']
+    except:
+        loc_7z = Path("C:\\Program Files\\7-Zip\\7z.exe")
+        encoding="utf8"
 
-if __name__ == "__main__":
-    loc_7z = Path("C:\\Program Files\\7-Zip\\7z.exe")
-    with open("settings.json", encoding="utf8") as f:    
-        try:
-            loc_7z=Path(json.loads(f.read())['loc_7z'])
-        except:
-            loc_7z = Path("C:\\Program Files\\7-Zip\\7z.exe")
-            
+
 """
 Võtab antud käsu ja käivitab selle käsurealt
 Väljastab kõik read, mida käsu täitmisel näidataks
@@ -22,7 +23,8 @@ def run_process(command):
     p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     while(True):
         retcode = p.poll() #returns None while subprocess is running
-        line = p.stdout.readline().decode("utf8")
+        #https://superuser.com/questions/1170656/windows-10-terminal-encoding
+        line = p.stdout.readline().decode(encoding)
         yield line
         if(retcode is not None):
             break
@@ -30,7 +32,7 @@ def run_process(command):
 """
 Võtab arhiivi nime ja tagastab kõikide seal olevate failide nimed
 """
-def get_filenames(loc_7z, arch_loc):
+def get_filenames(arch_loc):
     names=False
     name_list=[]
     prev_line=""
@@ -55,7 +57,7 @@ def get_filenames(loc_7z, arch_loc):
 Avab arhiivi ja võtab seal välja failid, mille nimed on antud
 Argumentideks on arhiivi asukoht, failinimed, väljundkaust
 """
-def unpack(loc_7z, arch_loc, filenames, output='*'):
+def unpack(arch_loc, filenames, output='*'):
     filenames_str=[stringify(filename) for filename in filenames]
     command = stringify(str(loc_7z))+" e "+ stringify(arch_loc) + " -aoa -o"+ stringify(output)+ " ".join(filenames_str)
     for i in run_process(command):
@@ -65,12 +67,12 @@ def unpack(loc_7z, arch_loc, filenames, output='*'):
 Avab arhiivi ja võtab sealt välja kõik failid
 Tagastab failinimed
 """
-def unpack_all(loc_7z, arch_loc, output='*'):
-    all_filenames=get_filenames(loc_7z, arch_loc)
+def unpack_all(arch_loc, output='*'):
+    all_filenames=get_filenames(arch_loc)
     if output=='*':
         output, ext = os.path.splitext(arch_loc)
     
-    unpack(loc_7z, arch_loc, [], output=output)
+    unpack(arch_loc, [], output=output)
         
     filenames=[str(Path(output).joinpath(x)) for x in all_filenames]
     return filenames
@@ -82,11 +84,11 @@ Seejärel vaatab failid läbi ja eemaldab need, mis ei kuulu antud ajavahemikku
 Tulemuskaust peab olema tühi selle töötamiseks
 Tagastab allesjäänud failide nimed
 """  
-def unpack_between_infile(loc_7z, arch_loc, start, end, output='*'):
-    all_filenames=get_filenames(loc_7z, arch_loc)
+def unpack_between_infile(arch_loc, start, end, output='*'):
+    all_filenames=get_filenames(arch_loc)
     if output=='*':
         output, ext = os.path.splitext(arch_loc)
-    unpack_all(loc_7z, arch_loc, output=output)
+    unpack_all(arch_loc, output=output)
     for name in all_filenames[:]:
         to_remove=True
         p=Path(output).joinpath(name)
@@ -138,4 +140,6 @@ def unpack_between_filenames(loc_7z, arch_loc, start, end, output='*'):
 #unpack_between_infile("C:/Loputoo/L-put-/pakk.7z", start, end, output='C:/Loputoo/L-put-/pakk2')
 
 #unpack(loc_7z, arch_loc, filenames, output="C:\\Users\\Villem\\Desktop\\L-put-\\pakk1")
-#print(get_filenames("C:/Loputoo/L-put-/pakk.7z"))    
+#print(get_filenames("C:/Loputoo/L-put-/pakk.7z"))
+#for i in unpack_all("C:\\Users\\Villem\\Desktop\\Lõputöö\\L-put-\\täst\\pöüäõkk.7z"):
+#    print(i)
