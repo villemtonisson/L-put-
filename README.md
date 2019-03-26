@@ -24,7 +24,7 @@ Programmi normaalse töö jaoks tuleb sisestada nii algusaeg, kui ka lõpp. Kui 
 
 	
 ### settings.json 
-Selle programmi kasutamise jaoks on vajalik **7-Zip** olemasolu. Settings.json faili tuleb panna **loc-7z** alla jutumärkides oma **7z.exe** asukoht. Enne programmi kasutamist on vaja see kindlasti seadistada.
+Selle programmi kasutamise jaoks on vajalik **7-Zip** olemasolu. Settings.json faili tuleb panna **loc-7z** alla jutumärkides oma **7z.exe** asukoht. Enne programmi kasutamist on vaja see kindlasti seadistada. Kui tekib probleeme programmi tööga ja tuleb DecodeError, võib encodingu alt "cp775" vahetada "utf8" vastu. Sellisel juhul ei pruugi programm töötada täpitähtedega failiteedega.
 
 ### Töö käik
 1. Valida töörežiim Select mode alt
