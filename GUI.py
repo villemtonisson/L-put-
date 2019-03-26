@@ -114,13 +114,13 @@ window.configure(background=background)
 window.resizable(0, 0)
 
 # Frames for the app
-titleFrame = tk.Frame(window, width=800, height=100, background=background)
-middleFrame = tk.Frame(window, width=800, height=300, background=background)
-leftFrame = tk.Frame(middleFrame, width=400, height=300, background=background)
-rightFrame = tk.Frame(middleFrame, width=400, height=300, background=background)
-bottomFrame= tk.Frame(window, width=800, height=200, background=background)
-leftBottomFrame= tk.Frame(bottomFrame, width=400, height=200, background=background)
-rightBottomFrame= tk.Frame(bottomFrame, width=400, height=200, background=background)
+titleFrame = tk.Frame(window, width=800, height=100, background=background, padx=25)
+middleFrame = tk.Frame(window, width=800, height=250, background=background, padx=25)
+leftFrame = tk.Frame(middleFrame, width=400, height=250, background=background)
+rightFrame = tk.Frame(middleFrame, width=400, height=250, background=background)
+bottomFrame= tk.Frame(window, width=800, height=250, background=background, padx=25)
+leftBottomFrame= tk.Frame(bottomFrame, width=400, height=250, background=background)
+rightBottomFrame= tk.Frame(bottomFrame, width=400, height=250, background=background)
 
 
 #No resizing frames
@@ -137,7 +137,7 @@ titleFrame.pack(anchor='n', side=tk.TOP)
 middleFrame.pack(anchor='n', side=tk.TOP)
 leftFrame.pack(anchor="n", side=tk.LEFT)
 rightFrame.pack(anchor="n", side=tk.RIGHT)
-bottomFrame.pack(anchor="s", side=tk.BOTTOM)
+bottomFrame.pack(anchor="s", side=tk.TOP)
 leftBottomFrame.pack(anchor="n", side=tk.LEFT)
 rightBottomFrame.pack(anchor="n", side=tk.RIGHT)
 
