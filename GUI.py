@@ -87,10 +87,7 @@ def unpack():
             filenames=unpack_all(chosen_file_field.get())
         
     elif mode=="2log":
-        if use_dates:
-            pass
-        else:
-            filenames=json.loads(chosen_file_field.get())
+        filenames=json.loads(chosen_file_field.get())
     elif mode=="2arch":
         if use_dates:
             for f in json.loads(chosen_file_field.get()):
