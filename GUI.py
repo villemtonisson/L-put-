@@ -98,7 +98,11 @@ def unpack():
     
     if separate:
         for f in filenames:
-            separate_by_ids(f)
+            # Juhuks, kui mõni fail ei ole õiges vormingus
+            try:
+                separate_by_ids(f)
+            except:
+                pass
     
     return
 
@@ -232,10 +236,16 @@ MODES = [
 chosen_mode_var = tk.StringVar()
 chosen_mode_var.set("1arch") # initialize
 
+def empty_chosen_file():
+    global chosen_file_var
+    chosen_file_var.set("")
+
 for text, mode in MODES:
     b = tk.Radiobutton(leftBottomFrame, text=text,
-                    variable=chosen_mode_var, value=mode)
+                    variable=chosen_mode_var, value=mode, command=empty_chosen_file)
     b.pack(anchor='c')
+
+
 
 # Checkbutton for using date system
 use_dates_var = tk.IntVar()
