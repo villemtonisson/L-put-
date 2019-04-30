@@ -25,7 +25,7 @@ def pick_file():
     mode=chosen_mode_var.get()
     #1 file
     if mode=="1log":
-        filename=Path(askopenfilename(title="Select file", filetypes=(("all files", "*.*"), ("text files", "*.txt"))))
+        filename=Path(askopenfilename(title="Select file", filetypes=(("text files", "*.txt"), ("all files", "*.*"))))
         print(filename)
         chosen_file_var.set(filename)
     #1 archive
