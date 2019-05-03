@@ -8,14 +8,6 @@ from splitter import separate_by_ids
 from unpacker import unpack_between_infile, unpack_all
 from datetime import datetime
 
-#filename = askopenfilename()
-#print(filename)
-#filedialog.askdirectory()
-#askopenfilename(title="Select file", filetypes=(("all files", "*.*"),("RAR files", "*.rar"), ("ZIP files", "*.zip"),("7z files", "*.7z"),("TAR files", "*.tar")))
-
-#start=datetime(2016, 11, 26, hour=12, minute=20)
-#end=datetime(2017, 9, 9, hour=16, minute=0)
-
 """
 Olenevalt kasutaja sisestusest, valib kas mitu või ühe faili
 """
@@ -109,7 +101,7 @@ def unpack():
 background='ghost white'
 
 window = tk.Tk()
-window.title("Log File Editor")
+window.title("Thonny Log File Editor")
 window.geometry('800x600')
 window.configure(background=background)
 window.resizable(0, 0)
@@ -144,7 +136,7 @@ rightBottomFrame.pack(anchor="n", side=tk.RIGHT)
 
 ## TOP
 #Title
-title_label = tk.Label(titleFrame, text="Log File Editor", bg=background, font=("Arial Bold", 30), pady=15)
+title_label = tk.Label(titleFrame, text="Thonny Log File Editor", bg=background, font=("Arial Bold", 30), pady=15)
 title_label.pack()
 
 ### MIDDLE
