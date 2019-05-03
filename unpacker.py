@@ -1,8 +1,9 @@
 import subprocess
-from datetime import datetime
 import os
-from pathlib import Path
 import json
+from datetime import datetime
+from pathlib import Path
+
 
 with open("settings.json", encoding="utf8") as f:    
     try:
@@ -113,33 +114,3 @@ Vajalik selleks, et failinimes saaks "-" sees olla
 def stringify(fname):
     return '"'+fname+'"'
     
-
-
-"""
-Avab arhiivi ja võtab sealt välja failid, mille nimi on õiges ajavahemikus
-Kui mõne logifaili nime on muudetud, võtab ka selle välja
-
-def unpack_between_filenames(loc_7z, arch_loc, start, end, output='*'):
-    all_filenames=get_filenames(loc_7z, arch_loc)
-    filenames=[]
-    for name in all_filenames:
-        #Juhuks, kui mõne faili nime on muudetud
-        try:
-            date=datetime.strptime(name.rsplit("_", 1)[0], '%Y-%m-%d_%H-%M-%S')
-            if date>start and date<end:
-                filenames.append(name)
-        except:
-            filenames.append(name)
-            #pass , juhuks, kui ei taha muudetud nimega
-    unpack(loc_7z, arch_loc, filenames, output=output)
-    return filenames
-"""
-#start=datetime(2016, 11, 26, hour=12, minute=20)
-#end=datetime(2017, 9, 9, hour=16, minute=0)
-
-#unpack_between_infile("C:/Loputoo/L-put-/pakk.7z", start, end, output='C:/Loputoo/L-put-/pakk2')
-
-#unpack(loc_7z, arch_loc, filenames, output="C:\\Users\\Villem\\Desktop\\L-put-\\pakk1")
-#print(get_filenames("C:/Loputoo/L-put-/pakk.7z"))
-#for i in unpack_all("C:\\Users\\Villem\\Desktop\\Lõputöö\\L-put-\\täst\\pöüäõkk.7z"):
-#    print(i)
