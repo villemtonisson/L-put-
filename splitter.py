@@ -2,11 +2,6 @@ import json
 import os
 from pathlib import Path
 
-#text_widget_id
-#text_widget_class
-#"ShellText"
-#"CodeViewText"
-
 """
 Võtab faili täistee ja eraldab sealt erinevate id'dega text widgetid.
 Kõik muud paneb kaasa kõigile
@@ -73,5 +68,3 @@ def separate_by_ids(file_loc):
         p=Path(name+"_"+py_files[i]+ext)
         with open(p, 'w', encoding="UTF8") as f:
             json.dump(output[i], f, indent=4)
-
-#separate_by_ids("C:/Loputoo/debug/samanimi2.txt")
