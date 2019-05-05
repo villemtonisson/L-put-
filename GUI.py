@@ -228,10 +228,8 @@ MODES = [
 chosen_mode_var = tk.StringVar()
 chosen_mode_var.set("1arch") # initialize
 
-def empty_chosen_file():
-    global chosen_file_var
-    chosen_file_var.set("")
-
+# Kui vahetada töörežiimi tühjendab valitud faili välja
+empty_chosen_file= lambda : chosen_file_var.set("") 
 for text, mode in MODES:
     b = tk.Radiobutton(leftBottomFrame, text=text,
                     variable=chosen_mode_var, value=mode, command=empty_chosen_file)
